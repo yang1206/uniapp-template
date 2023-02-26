@@ -1,0 +1,44 @@
+{
+  "pages": [
+    {
+      "path": "pages/count/count",
+      "type": "page",
+      "style": {}
+    },
+    {
+      "path": "pages/index/index",
+      "type": "page",
+      "style": {}
+    },
+    {
+      "path": "pages/not-found/index",
+      "type": "page",
+      "style": {
+        "navigationBarTitleText": "NotFound"
+      },
+      "name": "notfound"
+    },
+    {
+      "path": "pages/test/test",
+      "type": "page",
+      "style": {}
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#777",
+    "navigationBarTitleText": "uniapp-vue3"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Home"
+      },
+      {
+        "pagePath": "pages/count/count",
+        "text": "Count"
+      }
+    ]
+  }
+}
