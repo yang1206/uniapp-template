@@ -43,6 +43,6 @@ pnpm  build
 
 ## Variations
 
-- [react-template]('https://github.com/yang1206/react-template.git')
+- [react-template](https://github.com/yang1206/react-template.git)
 
-- [vue-template]('https://github.com/yang1206/vue-template.git')
+- [vue-template](https://github.com/yang1206/vue-template.git)
