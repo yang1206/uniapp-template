@@ -82,7 +82,6 @@
     "eslint": "^8.34.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
-    "miniprogram-api-typings": "^3.9.0",
     "sass": "^1.58.3",
     "typescript": "^4.9.5",
     "unocss": "^0.50.1",
@@ -90,6 +89,9 @@
     "unplugin-auto-import": "^0.15.0",
     "vite": "4.1.4",
     "vue-tsc": "^1.2.0"
+  },
+  "lint-staged": {
+    "*.{vue,js,ts}": "eslint --fix"
   },
   "eslintConfig": {
     "extends": "@antfu"
@@ -99,8 +101,5 @@
       "path": "node_modules/cz-git",
       "useEmoji": true
     }
-  },
-  "lint-staged": {
-    "*.{vue,js,ts}": "eslint --fix"
   }
 }
