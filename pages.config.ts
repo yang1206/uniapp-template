@@ -8,10 +8,6 @@ export default defineUniPages({
       type: 'page',
     },
     {
-      path: 'pages/count/count',
-      type: 'page',
-    },
-    {
       path: 'pages/test/test',
       type: 'page',
     },

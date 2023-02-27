@@ -1,12 +1,12 @@
 {
   "pages": [
     {
-      "path": "pages/index/index",
+      "path": "pages/count/count",
       "type": "page",
       "style": {}
     },
     {
-      "path": "pages/count/count",
+      "path": "pages/index/index",
       "type": "page",
       "style": {}
     },
