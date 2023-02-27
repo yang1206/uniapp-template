@@ -20,7 +20,7 @@ specifiers:
   '@dcloudio/uni-mp-weixin': 3.0.0-alpha-3070420230224002
   '@dcloudio/uni-quickapp-webview': 3.0.0-alpha-3070420230224002
   '@dcloudio/uni-stacktracey': 3.0.0-alpha-3070420230224002
-  '@dcloudio/vite-plugin-uni': 3.0.0-alpha-3070420230224002
+  '@dcloudio/vite-plugin-uni': 3.0.0-alpha-3070620230227001
   '@iconify-json/carbon': ^1.1.16
   '@iconify-json/line-md': ^1.1.23
   '@types/node': ^18.14.1
@@ -72,7 +72,7 @@ devDependencies:
   '@dcloudio/uni-automator': 3.0.0-alpha-3070620230227001_vue@3.2.47
   '@dcloudio/uni-cli-shared': 3.0.0-alpha-3070420230224002_vue@3.2.47
   '@dcloudio/uni-stacktracey': 3.0.0-alpha-3070420230224002
-  '@dcloudio/vite-plugin-uni': 3.0.0-alpha-3070420230224002_vite@4.1.4+vue@3.2.47
+  '@dcloudio/vite-plugin-uni': 3.0.0-alpha-3070620230227001_vite@4.1.4+vue@3.2.47
   '@iconify-json/carbon': 1.1.16
   '@iconify-json/line-md': 1.1.23
   '@types/node': 18.14.1
@@ -2068,8 +2068,8 @@ packages:
       - vue
     dev: false
 
-  /@dcloudio/vite-plugin-uni/3.0.0-alpha-3070420230224002_vite@4.1.4+vue@3.2.47:
-    resolution: {integrity: sha512-pH8aBnSSUnoSwsnwVgIaI3Mtbui8VUGAzD1D4Xy7WETwYmPU5hurCS/zCFoMa6Fqp+CPbysOpK30yz/TkmA7mA==}
+  /@dcloudio/vite-plugin-uni/3.0.0-alpha-3070620230227001_vite@4.1.4+vue@3.2.47:
+    resolution: {integrity: sha512-B/Ok5bRg2dT+A9T3Fuh75om9g2gbLZgKXp1hrmASZIPdtZ2TnP0Z15cR/JSnGe3p89+/4Kr4HQ6MGgWxUaETXw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -2078,8 +2078,8 @@ packages:
       '@babel/core': 7.21.0
       '@babel/plugin-syntax-import-meta': 7.10.4_@babel+core@7.21.0
       '@babel/plugin-transform-typescript': 7.21.0_@babel+core@7.21.0
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-3070420230224002_vue@3.2.47
-      '@dcloudio/uni-shared': 3.0.0-alpha-3070420230224002
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-3070620230227001_vue@3.2.47
+      '@dcloudio/uni-shared': 3.0.0-alpha-3070620230227001
       '@rollup/pluginutils': 4.2.1
       '@vitejs/plugin-legacy': 4.0.1_terser@5.16.5+vite@4.1.4
       '@vitejs/plugin-vue': 4.0.0_vite@4.1.4+vue@3.2.47
