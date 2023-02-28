@@ -1,9 +1,5 @@
 🚀🚀🚀 一个Uniapp的起始模版，基于Vite
 
-<p align='center'>
-<a href="https://vue-template-yang.netlify.app/">Live Demo</a>
-</p>
-
 Inspired by [Vitesse](https://github.com/antfu/vitesse) ❤
 
 ### Features
