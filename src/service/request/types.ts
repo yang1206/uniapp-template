@@ -4,7 +4,7 @@ export interface RequestInterceptors<T> {
   requestInterceptors?: (config: AjaxRequestConfig) => AjaxRequestConfig
   requestInterceptorsCatch?: (err: any) => any
   // 响应拦截
-  responseInterceptors?: (config: AjaxResponse) => AjaxResponse
+  responseInterceptors?: (config: AjaxResponse<T>) => AjaxResponse<T>
   responseInterceptorsCatch?: (err: any) => any
 }
 

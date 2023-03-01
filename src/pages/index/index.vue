@@ -13,11 +13,11 @@ function goTest() {
 </script>
 
 <template>
-  <div font-sans px-4 py-10 text-center text-gray-700 class="dark:text-gray-200">
+  <div px-4 py-10 text-center font-sans text-gray-700 class="dark:text-gray-200">
     <div>
-      <div class="i-carbon-campsite text-4xl inline-block" />
+      <div class="i-carbon-campsite inline-block text-4xl" />
       <p>
-        <a rel="noreferrer" href="https://github.com/yang1206/react-template" target="_blank">
+        <a rel="noreferrer" href="https://github.com/yang1206/uniapp-template" target="_blank">
           一个uniapp，vite，vue3的起始模版
         </a>
       </p>
@@ -44,10 +44,8 @@ function goTest() {
         数据请求
       </div>
     </div>
+    <Footer />
   </div>
-  <!-- #ifdef H5 -->
-  <Footer />
-  <!-- #endif -->
 </template>
 
 <style scoped>

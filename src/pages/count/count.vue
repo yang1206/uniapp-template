@@ -5,14 +5,14 @@ const { inc, dec } = useCount
 </script>
 
 <template>
-  <div font-sans px-4 py-10 text-center text-gray-700 class="dark:text-gray-200">
+  <div px-4 py-10 text-center font-sans text-gray-700 class="dark:text-gray-200">
     <p class="font-semibold">
       {{ useCount.count }}
     </p>
-    <button class="btn m-4 h-8  w-8 rounded-full lh-8  text-center" @click="inc()">
+    <button class="m-4 h-8 w-8 rounded-full text-center lh-8 btn" @click="inc()">
       +
     </button>
-    <button class="btn m-4 h-8 w-8 rounded-full lh-8 text-center" @click="dec()">
+    <button class="m-4 h-8 w-8 rounded-full text-center lh-8 btn" @click="dec()">
       -
     </button>
   </div>

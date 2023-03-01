@@ -26,14 +26,6 @@ export default defineConfig((configEnv: ConfigEnv) => {
       commonjsOptions: {
         ignoreTryCatch: false,
       },
-      terserOptions: {
-        // detail to look https://terser.org/docs/api-reference#compress-options
-        compress: {
-          drop_console: false,
-          pure_funcs: ['console.log', 'console.info'],
-          drop_debugger: true,
-        },
-      },
     },
     resolve: {
       alias: {
