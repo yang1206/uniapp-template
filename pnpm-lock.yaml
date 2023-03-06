@@ -24,7 +24,7 @@ specifiers:
   '@iconify-json/carbon': ^1.1.16
   '@iconify-json/line-md': ^1.1.23
   '@types/node': ^18.14.2
-  '@uni-helper/uni-app-types': ^0.4.0
+  '@uni-helper/uni-app-types': ^0.5.0
   '@uni-helper/uni-ui-types': ^0.4.0
   '@uni-helper/vite-plugin-uni-components': ^0.0.3
   '@uni-helper/vite-plugin-uni-manifest': ^0.1.1
@@ -77,8 +77,8 @@ devDependencies:
   '@iconify-json/carbon': 1.1.16
   '@iconify-json/line-md': 1.1.23
   '@types/node': 18.14.2
-  '@uni-helper/uni-app-types': 0.4.0_typescript@4.9.5
-  '@uni-helper/uni-ui-types': 0.4.0_xfkg4s2owa2sgikoptip4r75ue
+  '@uni-helper/uni-app-types': 0.5.1_typescript@4.9.5
+  '@uni-helper/uni-ui-types': 0.4.0_jmjjbyglpi24ktihwr26glknfe
   '@uni-helper/vite-plugin-uni-components': 0.0.3
   '@uni-helper/vite-plugin-uni-manifest': 0.1.1
   '@uni-helper/vite-plugin-uni-pages': 0.1.4
@@ -3092,8 +3092,8 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@uni-helper/uni-app-types/0.4.0_typescript@4.9.5:
-    resolution: {integrity: sha512-kKERTsBRqJYunNsp+fCXrsYgxibqQvcO3H3Ohh0FhUbXFYQj3WsmWfciokTZ2dt5GftdERgWul+/ey5DhQnAdw==}
+  /@uni-helper/uni-app-types/0.5.1_typescript@4.9.5:
+    resolution: {integrity: sha512-rJsBDyQAsjSK+1I/wipqE0UA94xNsjWJhuJ6geZLTHNup1zeuq1ilx8L2IdbBnAEPLlZDHirNr78zQ3Vs33Zyg==}
     engines: {node: '>=14.18'}
     peerDependencies:
       typescript: ^4.8.0
@@ -3103,7 +3103,7 @@ packages:
       vue3: /vue/3.2.47
     dev: true
 
-  /@uni-helper/uni-ui-types/0.4.0_xfkg4s2owa2sgikoptip4r75ue:
+  /@uni-helper/uni-ui-types/0.4.0_jmjjbyglpi24ktihwr26glknfe:
     resolution: {integrity: sha512-y8W74Yf5TuKWuYnkAPyYWQ2tl7tT6sJqupkoniAHDgrYEKzlgZfJZMXPn96Qr7ZCGS6qrf1xUge3K32T+uJzog==}
     engines: {node: '>=14.18'}
     peerDependencies:
@@ -3113,7 +3113,7 @@ packages:
         optional: true
     dependencies:
       '@dcloudio/types': 3.2.11
-      '@uni-helper/uni-app-types': 0.4.0_typescript@4.9.5
+      '@uni-helper/uni-app-types': 0.5.1_typescript@4.9.5
       vue3: /vue/3.2.47
     dev: true
 
