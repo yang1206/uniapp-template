@@ -8,7 +8,7 @@ specifiers:
   '@dcloudio/uni-app': 3.0.0-alpha-3070620230227001
   '@dcloudio/uni-app-plus': 3.0.0-alpha-3070620230227001
   '@dcloudio/uni-automator': 3.0.0-alpha-3070620230227001
-  '@dcloudio/uni-cli-shared': 3.0.0-alpha-3070620230227001
+  '@dcloudio/uni-cli-shared': 3.0.0-alpha-3070720230309001
   '@dcloudio/uni-components': 3.0.0-alpha-3070620230227001
   '@dcloudio/uni-h5': 3.0.0-alpha-3070620230227001
   '@dcloudio/uni-mp-alipay': 3.0.0-alpha-3070620230227001
@@ -71,7 +71,7 @@ devDependencies:
   '@commitlint/config-conventional': 17.4.4
   '@dcloudio/types': 3.2.11
   '@dcloudio/uni-automator': 3.0.0-alpha-3070620230227001_vue@3.2.47
-  '@dcloudio/uni-cli-shared': 3.0.0-alpha-3070620230227001_vue@3.2.47
+  '@dcloudio/uni-cli-shared': 3.0.0-alpha-3070720230309001_vue@3.2.47
   '@dcloudio/uni-stacktracey': 3.0.0-alpha-3070620230227001
   '@dcloudio/vite-plugin-uni': 3.0.0-alpha-3070620230227001_vite@4.1.4+vue@3.2.47
   '@iconify-json/carbon': 1.1.16
@@ -1704,6 +1704,57 @@ packages:
       - ts-node
       - vue
 
+  /@dcloudio/uni-cli-shared/3.0.0-alpha-3070720230309001_vue@3.2.47:
+    resolution: {integrity: sha512-/dq8YIB6ap5HD6nK44CfBGAEdjg1QTSYhElM6v018NlaKH8rPllINWK1Em32KF14IxqykYX6F7JtwlVEmDFF7w==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    dependencies:
+      '@ampproject/remapping': 2.2.0
+      '@babel/core': 7.21.0
+      '@babel/parser': 7.21.2
+      '@babel/types': 7.21.2
+      '@dcloudio/uni-i18n': 3.0.0-alpha-3070720230309001
+      '@dcloudio/uni-shared': 3.0.0-alpha-3070720230309001
+      '@intlify/core-base': 9.1.9
+      '@intlify/shared': 9.1.9
+      '@intlify/vue-devtools': 9.1.9
+      '@rollup/pluginutils': 4.2.1
+      '@vue/compiler-core': 3.2.47
+      '@vue/compiler-dom': 3.2.47
+      '@vue/compiler-sfc': 3.2.47
+      '@vue/server-renderer': 3.2.47_vue@3.2.47
+      '@vue/shared': 3.2.47
+      autoprefixer: 10.4.13
+      base64url: 3.0.1
+      chokidar: 3.5.3
+      compare-versions: 3.6.0
+      debug: 4.3.4
+      es-module-lexer: 0.9.3
+      esbuild: 0.16.17
+      estree-walker: 2.0.2
+      fast-glob: 3.2.12
+      fs-extra: 10.1.0
+      hash-sum: 2.0.0
+      jsonc-parser: 3.2.0
+      magic-string: 0.27.0
+      merge: 2.1.1
+      mime: 3.0.0
+      module-alias: 2.2.2
+      os-locale-s-fix: 1.0.8-fix-1
+      picocolors: 1.0.0
+      postcss-import: 14.1.0
+      postcss-load-config: 3.1.4
+      postcss-modules: 4.3.1
+      postcss-selector-parser: 6.0.11
+      resolve: 1.22.1
+      tapable: 2.2.1
+      xregexp: 3.1.0
+    transitivePeerDependencies:
+      - postcss
+      - supports-color
+      - ts-node
+      - vue
+    dev: true
+
   /@dcloudio/uni-cloud/3.0.0-alpha-3070620230227001_vue@3.2.47:
     resolution: {integrity: sha512-uZbmd+hHvHtoCq/O3Qmer9sqKcLtg6VQg+P0uDKF3xXKU81veyuzymfUkzjIuvcwKvsSPoMk+1W+PN5ENuGapw==}
     dependencies:
@@ -1774,6 +1825,10 @@ packages:
 
   /@dcloudio/uni-i18n/3.0.0-alpha-3070620230227001:
     resolution: {integrity: sha512-odTafp94TuzMEqaeVibLTDPhD0APdteJCYTgIrpjZImmhmbAk3Z/P3s6PVgEQ8LfT85hqoiOA2rdRZxzzdnYww==}
+
+  /@dcloudio/uni-i18n/3.0.0-alpha-3070720230309001:
+    resolution: {integrity: sha512-eyW+hfqJPjd1DWhuygu507PvCZBi0uOTT8+e0HSk2Hs9Th1dRjCNBHZPHYWTnUwC8D6Y7jAw2dSIj8oiLCAqEg==}
+    dev: true
 
   /@dcloudio/uni-mp-alipay/3.0.0-alpha-3070620230227001_vue@3.2.47:
     resolution: {integrity: sha512-nsp1WOTTYiuQp5ROOBokBquldOyB1ALNTnNCR/K3KHJbsd+BVL2Yo++C0FPSIPht3FOt60i1SU5t9I6pyAwkng==}
@@ -1991,6 +2046,12 @@ packages:
     resolution: {integrity: sha512-2nvcPqF/42/dTlTn0ewBU95OQY5kEFRctzdp1zOXSFd888Uxd3JeW1G/H3JQyHsDXEAccImVH26IaVW7b1vsvw==}
     dependencies:
       '@vue/shared': 3.2.47
+
+  /@dcloudio/uni-shared/3.0.0-alpha-3070720230309001:
+    resolution: {integrity: sha512-2XfQPzcpwLlCzfQJSKVN5/cc5E/S6ioooRuOU/KTaWm8GSiAuzv/eXts1+aXSudeTF/IHZWi9I1Ptv/xdJ2UUw==}
+    dependencies:
+      '@vue/shared': 3.2.47
+    dev: true
 
   /@dcloudio/uni-stacktracey/3.0.0-alpha-3070620230227001:
     resolution: {integrity: sha512-wvqxTBc2/iBIeNHVZjMcrvnInFuL4HPWHjgcXtvlMCLLKYt7PjL02vI/aBf6BhCb/tyuAM6PLRg9OSZ/3LCNHw==}
