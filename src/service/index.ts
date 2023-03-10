@@ -1,39 +1,40 @@
+import ajax from 'uni-ajax'
 import type { AjaxRequestConfig, AjaxResponse } from 'uni-ajax'
-import Request from './request'
-
-export const request = new Request({
-  baseURL: import.meta.env.VITE_APP_GLOB_BASE_API,
-  timeout: 1000 * 60 * 5,
-  interceptors: {
-    // 请求拦截器
-    requestInterceptors: (config: AjaxRequestConfig) => {
-      uni.showLoading({
-        title: '正在请求',
-      })
-      return config
-    },
-    // 响应拦截器
-    responseInterceptors: (result: AjaxResponse) => {
-      uni.hideLoading()
-      return result
-    },
-    responseInterceptorsCatch: (error) => {
-      uni.hideLoading()
-      // eslint-disable-next-line no-unused-expressions
-      error.response
-      return Promise.reject(new Error(error.response.data))
-    },
-  },
+const baseURL = import.meta.env.VITE_APP_GLOB_BASE_API
+export interface BaseRes<T = any> {
+  code: number
+  msg: string
+  data: T
+  [key: string]: unknown
+}
+const request = ajax.create(() => {
+  return {
+    baseURL,
+    timeout: 1000 * 60 * 5,
+  }
 })
 
-/**
- * @description: 函数的描述
- * @generic D 请求参数
- * @generic T 响应结构
- * @param {HttpRequestConfig} config 不管是GET还是POST请求都使用data
- * @returns {Promise}
- */
-const HttpRequest = <T = any>(config: AjaxRequestConfig) => {
-  return request.request<T>(config)
-}
-export default HttpRequest
+request.interceptors.request.use(
+  (config: AjaxRequestConfig) => {
+    return config
+    // 在发送请求之前做些什么
+  },
+  (error) => {
+    // 对请求错误做些什么
+    return Promise.reject(error)
+  },
+)
+
+// 添加响应拦截器
+request.interceptors.response.use(
+  (response: AjaxResponse<any>) => {
+    return response.data
+  },
+  (error) => {
+    // 超出 2xx 范围的状态码都会触发该函数
+    // 对响应错误做点什么
+    return Promise.reject(error)
+  },
+)
+
+export default request

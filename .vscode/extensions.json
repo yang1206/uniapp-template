@@ -3,6 +3,7 @@
     "uni-helper.uni-helper-vscode",
     "vue.volar",
     "vue.vscode-typescript-vue-plugin",
-    "antfu.unocss"
+    "antfu.unocss",
+    "voorjaar.windicss-intellisense"
   ]
 }
