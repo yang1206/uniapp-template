@@ -2,7 +2,7 @@
   "extends": "@vue/tsconfig/tsconfig.json",
   "compilerOptions": {
     "sourceMap": true,
-    "module":"esnext",
+    "module": "esnext",
     "baseUrl": ".",
     "paths": {
       "@/*": [
@@ -21,7 +21,9 @@
       "vite/client",
       "node",
       "@uni-helper/uni-app-types",
-      "@uni-helper/uni-ui-types"
+      "@uni-helper/uni-ui-types",
+      "pinia-plugin-persist-uni",
+      "miniprogram-api-typings"
     ]
   },
   "vueCompilerOptions": {

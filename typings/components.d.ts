@@ -10,5 +10,7 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Footer: typeof import('./../src/components/Footer.vue')['default']
+    NutButton: typeof import('uni-nutui/components/sky-nutui/packages/__VUE/button/index.vue')['default']
+    NutIcon: typeof import('uni-nutui/components/sky-nutui/packages/__VUE/icon/index.vue')['default']
   }
 }

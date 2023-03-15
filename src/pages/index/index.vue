@@ -40,9 +40,9 @@ function goTest() {
       <div @click="changeTitle">
         changeTitle
       </div>
-      <div @click="goTest">
-        数据请求
-      </div>
+      <nut-button shape="square" type="info" @click="goTest">
+        test
+      </nut-button>
     </div>
     <Footer />
   </div>

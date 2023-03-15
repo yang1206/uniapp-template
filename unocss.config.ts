@@ -11,6 +11,7 @@ import {
   transformerApplet,
   transformerAttributify,
 } from 'unocss-applet'
+import { presetExtra } from 'unocss-preset-extra'
 const isApplet = process.env?.UNI_PLATFORM?.startsWith('mp')
 export default defineConfig({
   exclude: [
@@ -51,6 +52,7 @@ export default defineConfig({
         'vertical-align': 'middle',
       },
     }),
+    presetExtra(),
     presetApplet({ enable: isApplet }),
     /**
      * you can add `presetAttributify()` here to enable unocss attributify mode prompt

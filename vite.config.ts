@@ -27,6 +27,13 @@ export default defineConfig((configEnv: ConfigEnv) => {
         ignoreTryCatch: false,
       },
     },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import \'uni-nutui/components/sky-nutui/packages/styles/variables.scss\';',
+        },
+      },
+    },
     resolve: {
       alias: {
         '~': rootPath,

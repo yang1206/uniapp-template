@@ -8,7 +8,7 @@ Inspired by [Vitesse](https://github.com/antfu/vitesse) ❤
 
 - ⚡️ [Vue3](https://vuejs.org/), [Vite 4](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [ESBuild](https://github.com/evanw/esbuild) - 就是快！
 - 🗂 [基于文件的路由](https://github.com/uni-helper/vite-plugin-uni-pages)
-- 📦 [组件自动化加载](./src/components)
+- 📦 [组件自动化加载](https://github.com/uni-helper/vite-plugin-uni-components)
 - 🎨 [UnoCSS](https://github.com/antfu/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎
 - 😃 [各种图标集为你所用](https://github.com/antfu/unocss/tree/main/packages/preset-icons)
 - 🔥 使用 [新的 `<script setup>` 语法](https://github.com/vuejs/rfcs/pull/227)
@@ -24,6 +24,7 @@ Inspired by [Vitesse](https://github.com/antfu/vitesse) ❤
 ### UI 框架
 
 - [UnoCSS](https://github.com/antfu/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎
+- [UniNutUi](https://github.com/jwaterwater/uni-nutui) - 京东风格UI组件库 UniApp版本，支持TS，VUE3
 
 ### Icons
 

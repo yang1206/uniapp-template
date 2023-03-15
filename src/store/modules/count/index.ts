@@ -18,5 +18,8 @@ export const useCounterStore = defineStore('counter', {
       }, 300)
     },
   },
+  persist: {
+    enabled: true,
+  },
 
 })

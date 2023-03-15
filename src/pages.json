@@ -1,4 +1,12 @@
 {
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "nut-(.*)?-(.*)": "uni-nutui/components/sky-nutui/packages/__VUE/$1$2/index.vue",
+      "nut-(.*)": "uni-nutui/components/sky-nutui/packages/__VUE/$1/index.vue",
+      "^vin-(.*)": "@vingogo/uni-ui/components/$1/index.vue"
+    }
+  },
   "pages": [
     {
       "path": "pages/count/count",
