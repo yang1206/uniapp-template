@@ -93,7 +93,7 @@
     "unocss-preset-extra": "^0.4.3",
     "unplugin-auto-import": "^0.15.1",
     "unplugin-vue-components": "0.24.1",
-    "vite": "4.1.4",
+    "vite": "4.2.0",
     "vue-tsc": "^1.2.0"
   },
   "lint-staged": {
