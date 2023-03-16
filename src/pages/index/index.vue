@@ -3,6 +3,7 @@ import { useTitle } from '@/composables/useTitle'
 import { router } from '@/router'
 import { useCounterStore } from '@/store'
 const useCount = useCounterStore()
+const show = ref(true)
 const { title, changeTitle } = useTitle()
 function goTest() {
   router.push({
@@ -40,13 +41,18 @@ function goTest() {
       <div @click="changeTitle">
         changeTitle
       </div>
-      <nut-button shape="square" type="info" @click="goTest">
+      <vin-button shape="square" type="info" @click="goTest">
         test
-      </nut-button>
+      </vin-button>
     </div>
-    <Footer />
   </div>
+  <TabBar :active-index="0" />
 </template>
+
+<route type="home" lang="yaml">
+style:
+  navigationBarTitleText: 首页
+</route>
 
 <style scoped>
 .content {

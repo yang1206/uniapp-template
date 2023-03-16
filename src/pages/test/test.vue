@@ -6,6 +6,10 @@ const getData = async () => {
   githubInfo.value = data
 }
 getData()
+const popup = ref()
+const open = () => {
+  popup.value.open()
+}
 </script>
 
 <template>

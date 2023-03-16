@@ -30,7 +30,7 @@ export default defineConfig((configEnv: ConfigEnv) => {
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@import \'uni-nutui/components/sky-nutui/packages/styles/variables.scss\';',
+          additionalData: '@import \'@vingogo/uni-ui/styles/variables.scss\';',
         },
       },
     },

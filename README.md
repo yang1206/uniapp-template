@@ -24,7 +24,7 @@ Inspired by [Vitesse](https://github.com/antfu/vitesse) ❤
 ### UI 框架
 
 - [UnoCSS](https://github.com/antfu/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎
-- [UniNutUi](https://github.com/jwaterwater/uni-nutui) - 京东风格UI组件库 UniApp版本，支持TS，VUE3
+- [VinUi](https://github.com/vingogo/vin-ui/tree/main/packages/uni-ui#readme) - 京东风格UI组件库 UniApp版本，支持TS，VUE3
 
 ### Icons
 

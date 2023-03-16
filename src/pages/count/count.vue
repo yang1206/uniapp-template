@@ -4,6 +4,11 @@ const useCount = useCounterStore()
 const { inc, dec } = useCount
 </script>
 
+<route  lang="yaml">
+style:
+  navigationBarTitleText: Count
+</route>
+
 <template>
   <div px-4 py-10 text-center font-sans text-gray-700 class="dark:text-gray-200">
     <p class="font-semibold">
@@ -16,6 +21,7 @@ const { inc, dec } = useCount
       -
     </button>
   </div>
+  <TabBar :active-index="1" />
 </template>
 
 <style lang="scss" scoped></style>

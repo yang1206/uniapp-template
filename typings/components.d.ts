@@ -9,8 +9,10 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    Footer: typeof import('./../src/components/Footer.vue')['default']
-    NutButton: typeof import('uni-nutui/components/sky-nutui/packages/__VUE/button/index.vue')['default']
-    NutIcon: typeof import('uni-nutui/components/sky-nutui/packages/__VUE/icon/index.vue')['default']
+    TabBar: typeof import('./../src/components/TabBar.vue')['default']
+    VinButton: typeof import('@vingogo/uni-ui/components/button/index.vue')['default']
+    VinIcon: typeof import('@vingogo/uni-ui/components/icon/index.vue')['default']
+    VinTabbar: typeof import('@vingogo/uni-ui/components/tabbar/index.vue')['default']
+    VinTabbarItem: typeof import('@vingogo/uni-ui/components/tabbar-item/index.vue')['default']
   }
 }

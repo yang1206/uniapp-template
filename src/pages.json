@@ -2,8 +2,6 @@
   "easycom": {
     "autoscan": true,
     "custom": {
-      "nut-(.*)?-(.*)": "uni-nutui/components/sky-nutui/packages/__VUE/$1$2/index.vue",
-      "nut-(.*)": "uni-nutui/components/sky-nutui/packages/__VUE/$1/index.vue",
       "^vin-(.*)": "@vingogo/uni-ui/components/$1/index.vue"
     }
   },
@@ -11,12 +9,16 @@
     {
       "path": "pages/count/count",
       "type": "page",
-      "style": {}
+      "style": {
+        "navigationBarTitleText": "Count"
+      }
     },
     {
       "path": "pages/index/index",
       "type": "page",
-      "style": {}
+      "style": {
+        "navigationBarTitleText": "首页"
+      }
     },
     {
       "path": "pages/not-found/index",
@@ -47,6 +49,7 @@
         "pagePath": "pages/count/count",
         "text": "Count"
       }
-    ]
+    ],
+    "custom": true
   }
 }

@@ -21,18 +21,8 @@
       "vite/client",
       "node",
       "@uni-helper/uni-app-types",
-      "@uni-helper/uni-ui-types",
       "pinia-plugin-persist-uni",
       "miniprogram-api-typings"
-    ]
-  },
-  "vueCompilerOptions": {
-    "experimentalRuntimeMode": "runtime-uni-app",
-    "nativeTags": [
-      "block",
-      "component",
-      "template",
-      "slot"
     ]
   },
   "exclude": [

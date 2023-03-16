@@ -4,8 +4,6 @@ export default defineUniPages({
   easycom: {
     autoscan: true,
     custom: {
-      'nut-(.*)?-(.*)': 'uni-nutui/components/sky-nutui/packages/__VUE/$1$2/index.vue',
-      'nut-(.*)': 'uni-nutui/components/sky-nutui/packages/__VUE/$1/index.vue',
       '^vin-(.*)': '@vingogo/uni-ui/components/$1/index.vue',
     },
   },
@@ -32,7 +30,7 @@ export default defineUniPages({
     navigationBarTextStyle: 'white',
     navigationBarBackgroundColor: '#777',
     navigationBarTitleText: 'uniapp-vue3',
-    // navigationStyle:'custom'
+    // navigationStyle: 'custom',
   },
   tabBar: {
     list: [
@@ -45,6 +43,7 @@ export default defineUniPages({
         text: 'Count',
       },
     ],
+    custom: true,
   },
 
 })
