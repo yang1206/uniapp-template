@@ -28,3 +28,18 @@ export const UniNutUiResolver = (): ComponentResolver => {
     },
   }
 }
+
+export const TmUiResolver = (): ComponentResolver => {
+  return {
+    type: 'component',
+    resolve: (name: string) => {
+      if (name.match(/^(Tm[A-Z]|tm-[a-z])/)) {
+        const cName = name.slice(2).replace(/([a-z])([A-Z])/, '$1-$2').toLowerCase()
+        return {
+          name,
+          from: `@/tmui/components/tm-${cName}/tm-${cName}.vue`,
+        }
+      }
+    },
+  }
+}

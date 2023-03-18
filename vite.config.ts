@@ -30,7 +30,7 @@ export default defineConfig((configEnv: ConfigEnv) => {
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@import \'@vingogo/uni-ui/styles/variables.scss\';',
+          additionalData: '',
         },
       },
     },

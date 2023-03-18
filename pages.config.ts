@@ -4,7 +4,7 @@ export default defineUniPages({
   easycom: {
     autoscan: true,
     custom: {
-      '^vin-(.*)': '@vingogo/uni-ui/components/$1/index.vue',
+      '^tm-(.*)': '@/tmui/components/tm-$1/tm-$1.vue',
     },
   },
 

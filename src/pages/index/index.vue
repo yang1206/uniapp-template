@@ -3,8 +3,12 @@ import { useTitle } from '@/composables/useTitle'
 import { router } from '@/router'
 import { useCounterStore } from '@/store'
 const useCount = useCounterStore()
-const show = ref(true)
 const { title, changeTitle } = useTitle()
+const showWin = ref(false)
+const showWin2 = ref(false)
+const showWin3 = ref(false)
+const pos = ref('bottom')
+
 function goTest() {
   router.push({
     type: 'navigateTo',
@@ -41,9 +45,20 @@ function goTest() {
       <div @click="changeTitle">
         changeTitle
       </div>
-      <vin-button shape="square" type="info" @click="goTest">
+      <tm-button shape="square" type="info" @click="goTest">
         test
-      </vin-button>
+      </tm-button>
+      <tm-button
+        block :margin="[12, 12]" :padding="[24, 0]" color="cyan"
+        :height="56" :font-size="24" label="通过插槽触发弹层" @click="showWin = true"
+      />
+      <tm-drawer ref="calendarView" v-model:show="showWin" :placement="pos">
+        <tm-button :margin="[12, 12]" color="green" :width="160" :height="56" :font-size="24" label="内弹出盖内部" @click="showWin2 = true" />
+        <tm-button :margin="[12, 12]" color="green" :width="160" :height="56" :font-size="24" label="内弹出盖全屏" @click="showWin3 = true" />
+        <tm-drawer ref="calendarView" v-model:show="showWin2" in-content :width="300" :height="300" :placement="pos" />
+        <tm-drawer ref="calendarView" v-model:show="showWin3" :width="300" :height="300" :placement="pos" />
+        <!-- inContent -->
+      </tm-drawer>
     </div>
   </div>
   <TabBar :active-index="0" />

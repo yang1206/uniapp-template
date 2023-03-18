@@ -10,9 +10,10 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     TabBar: typeof import('./../src/components/TabBar.vue')['default']
-    VinButton: typeof import('@vingogo/uni-ui/components/button/index.vue')['default']
-    VinIcon: typeof import('@vingogo/uni-ui/components/icon/index.vue')['default']
-    VinTabbar: typeof import('@vingogo/uni-ui/components/tabbar/index.vue')['default']
-    VinTabbarItem: typeof import('@vingogo/uni-ui/components/tabbar-item/index.vue')['default']
+    TmButton: typeof import('@/tmui/components/tm-button/tm-button.vue')['default']
+    TmDrawer: typeof import('@/tmui/components/tm-drawer/tm-drawer.vue')['default']
+    TmPicker: typeof import('@/tmui/components/tm-picker/tm-picker.vue')['default']
+    TmTabbar: typeof import('@/tmui/components/tm-tabbar/tm-tabbar.vue')['default']
+    TmTabbarItem: typeof import('@/tmui/components/tm-tabbar-item/tm-tabbar-item.vue')['default']
   }
 }

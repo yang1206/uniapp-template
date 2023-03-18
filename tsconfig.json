@@ -25,6 +25,15 @@
       "miniprogram-api-typings"
     ]
   },
+  "vueCompilerOptions": {
+    "experimentalRuntimeMode": "runtime-uni-app",
+    "nativeTags": [
+      "block",
+      "component",
+      "template",
+      "slot"
+    ]
+  },
   "exclude": [
     "node_modules"
   ]
