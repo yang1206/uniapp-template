@@ -1,4 +1,4 @@
-import { ComponentPublicInstance, nextTick } from "vue"
+import type { ComponentPublicInstance, nextTick } from "vue"
 //如果想要使用框架的自带工具函数请输入uni.$tm.u.?你的方法
 //网络请示为uni.$tm.fetch.?你的方法
 interface beforeRouterOpts {

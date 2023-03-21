@@ -13,15 +13,17 @@ const open = () => {
 </script>
 
 <template>
-  <text>
-    测试router
-  </text>
-  <view>
-    <text v-if="githubInfo" text-20>
-      {{ githubInfo?.full_name }}
+  <tm-app>
+    <text>
+      测试router
     </text>
-  </view>
-  <button @click="getData()">
-    测试请求
-  </button>
+    <view>
+      <text v-if="githubInfo" text-20>
+        {{ githubInfo?.full_name }}
+      </text>
+    </view>
+    <button @click="getData()">
+      测试请求
+    </button>
+  </tm-app>
 </template>

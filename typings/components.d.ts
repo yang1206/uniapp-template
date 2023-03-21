@@ -10,10 +10,14 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     TabBar: typeof import('./../src/components/TabBar.vue')['default']
+    ThemeSwitch: typeof import('./../src/components/ThemeSwitch.vue')['default']
+    TmApp: typeof import('@/tmui/components/tm-app/tm-app.vue')['default']
     TmButton: typeof import('@/tmui/components/tm-button/tm-button.vue')['default']
     TmDrawer: typeof import('@/tmui/components/tm-drawer/tm-drawer.vue')['default']
-    TmPicker: typeof import('@/tmui/components/tm-picker/tm-picker.vue')['default']
+    TmResult: typeof import('@/tmui/components/tm-result/tm-result.vue')['default']
+    TmSheet: typeof import('@/tmui/components/tm-sheet/tm-sheet.vue')['default']
     TmTabbar: typeof import('@/tmui/components/tm-tabbar/tm-tabbar.vue')['default']
     TmTabbarItem: typeof import('@/tmui/components/tm-tabbar-item/tm-tabbar-item.vue')['default']
+    TmText: typeof import('@/tmui/components/tm-text/tm-text.vue')['default']
   }
 }

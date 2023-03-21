@@ -1,4 +1,4 @@
-import { fetchConfig,fetchConfigMethod } from './interface';
+import type { fetchConfig, fetchConfigMethod } from './interface';
 let config:fetchConfig={
     url:"",
     data:{},

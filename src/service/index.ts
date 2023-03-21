@@ -7,10 +7,29 @@ export interface BaseRes<T = any> {
   data: T
   [key: string]: unknown
 }
-const request = ajax.create(() => {
+const request = ajax.create((): AjaxRequestConfig => {
   return {
     baseURL,
     timeout: 1000 * 60 * 5,
+    // adapter(config) {
+    //   if (config.method === 'GET') {
+    //     return new Promise((resolve, reject) => {
+    //       const uploadTask = uni.uploadFile({
+    //         ...config,
+    //         complete: (result) => {
+    //           const response = { config, ...result }
+    //           !config.validateStatus || config.validateStatus(result.statusCode)
+    //             ? resolve(response)
+    //             : reject(response)
+    //         },
+    //       })
+
+    //       config.fetcher?.resolve(uploadTask)
+    //     })
+    //   }
+
+    //   return ajax.defaults.adapter!(config)
+    // },
   }
 })
 

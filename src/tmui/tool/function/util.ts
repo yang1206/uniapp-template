@@ -1,4 +1,4 @@
-import { ComponentInternalInstance } from 'vue'
+import type { ComponentInternalInstance } from 'vue';
 interface Data {
 	[key: string]: any;
 }

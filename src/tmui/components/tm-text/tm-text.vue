@@ -5,7 +5,7 @@
   props.lineHeight == 'auto'
     ? { lineHeight: (_fontSize ? _fontSize * 1.3 : 42) + props.unit }
     : {},
-  props.lineHeight > 0 ? { lineHeight: props.lineHeight + props.unit } : {},
+  props.lineHeight as number > 0 ? { lineHeight: props.lineHeight + props.unit } : {},
   {
     color: textColor,
   },
@@ -97,7 +97,7 @@ const isDark = computed(() => computedDark(props, tmcfg.value));
 //计算主题
 // const tmcomputed = computed(() => computedTheme(props, isDark.value));
 const _label = computed(() => props.label);
-const _fontSize = computed(() => Number(props.fontSize)*(store.tmuiConfig.themeConfig?.globalFontSizeRatio??1));
+const _fontSize = computed(() => Number(props.fontSize)*(store?.tmuiConfig?.themeConfig?.globalFontSizeRatio??1));
 //从父应用组件中获取自动文字色。
 const appTextColor = inject(
   "appTextColor",

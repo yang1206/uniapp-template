@@ -3,7 +3,12 @@
  * @description js颜色值转换类
  * @author tmui | tmzdy | vuetify | https://tmui.design
  */
-import { rgba, hsla, hsva } from '../lib/interface';
+/**
+ * 颜色转换工具
+ * @description js颜色值转换类
+ * @author tmui | tmzdy | vuetify | https://tmui.design
+ */
+import type { rgba, hsla, hsva } from '../lib/interface';
 
 export var colortool = {
 

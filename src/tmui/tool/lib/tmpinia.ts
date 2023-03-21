@@ -51,7 +51,7 @@ export const useTmpiniaStore = defineStore('tmpinia', {
 		getAutoDark:(state)=>{
 			let pdefault_cookies_autoDark = u.getCookie('setTmVuetifyAutoDark')??undefined;
 			console.log(pdefault_cookies_autoDark)
-			let autoDark = typeof pdefault_cookies_autoDark === 'boolean' ? pdefault_cookies_autoDark : state.tmuiConfig.autoDark;
+			let autoDark = typeof pdefault_cookies_autoDark === 'boolean' ? pdefault_cookies_autoDark : state.tmuiConfig?.autoDark;
 			return autoDark
 		}
 	},

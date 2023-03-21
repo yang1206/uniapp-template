@@ -4,6 +4,7 @@ export default defineUniPages({
   easycom: {
     autoscan: true,
     custom: {
+      '^uni-(.*)': '@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue',
       '^tm-(.*)': '@/tmui/components/tm-$1/tm-$1.vue',
     },
   },
@@ -12,7 +13,7 @@ export default defineUniPages({
   pages: [
     {
       path: 'pages/index/index',
-      type: 'page',
+      type: 'home',
     },
     {
       path: 'pages/test/test',

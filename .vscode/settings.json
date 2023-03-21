@@ -1,3 +1,8 @@
 {
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "i18n-ally.localesPaths": [
+    "src/tmui/locale",
+    "src/tmui/tool/dayjs/locale",
+    "src/tmui/tool/dayjs/esm/locale"
+  ]
 }

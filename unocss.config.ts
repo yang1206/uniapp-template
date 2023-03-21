@@ -5,6 +5,7 @@ import {
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
+import presetRemToPx from '@unocss/preset-rem-to-px'
 import {
   presetApplet,
   presetRemRpx,
@@ -52,14 +53,19 @@ export default defineConfig({
         'vertical-align': 'middle',
       },
     }),
+    // 保持h5和微信小程序转换比例一致
+    presetRemToPx({ baseFontSize: 2 }),
+    presetApplet({ enable: isApplet, variablePrefix: 'li-' }),
     presetExtra(),
-    presetApplet({ enable: isApplet }),
+    presetRemRpx({
+      baseFontSize: 2,
+      mode: isApplet ? 'rem2rpx' : 'rpx2rem',
+    }),
     /**
      * you can add `presetAttributify()` here to enable unocss attributify mode prompt
      * although preset is not working for applet, but will generate useless css
      */
     presetAttributify(),
-    presetRemRpx({ mode: isApplet ? 'rem2rpx' : 'rpx2rem' }),
   ],
   transformers: [
     transformerDirectives(),

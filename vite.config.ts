@@ -21,7 +21,7 @@ export default defineConfig((configEnv: ConfigEnv) => {
     },
     build: {
       reportCompressedSize: false,
-      sourcemap: false,
+      sourcemap: true,
       chunkSizeWarningLimit: 1024, // chunk 大小警告的限制（单位kb）
       commonjsOptions: {
         ignoreTryCatch: false,
