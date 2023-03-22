@@ -26,7 +26,7 @@ specifiers:
   '@iconify-json/line-md': ^1.1.23
   '@types/node': ^18.15.5
   '@uni-helper/uni-app-types': ^0.5.2
-  '@uni-helper/uni-ui-types': ^0.4.0
+  '@uni-helper/uni-ui-types': ^0.5.0
   '@uni-helper/vite-plugin-uni-components': ^0.0.3
   '@uni-helper/vite-plugin-uni-manifest': ^0.1.1
   '@uni-helper/vite-plugin-uni-pages': ^0.1.4
@@ -89,7 +89,7 @@ devDependencies:
   '@iconify-json/line-md': 1.1.23
   '@types/node': 18.15.5
   '@uni-helper/uni-app-types': 0.5.2_typescript@5.0.2
-  '@uni-helper/uni-ui-types': 0.4.0_lick3jazwoopako62oxwpqglcq
+  '@uni-helper/uni-ui-types': 0.5.0_lick3jazwoopako62oxwpqglcq
   '@uni-helper/vite-plugin-uni-components': 0.0.3
   '@uni-helper/vite-plugin-uni-manifest': 0.1.1
   '@uni-helper/vite-plugin-uni-pages': 0.1.4
@@ -3291,11 +3291,11 @@ packages:
       vue3: /vue/3.2.47
     dev: true
 
-  /@uni-helper/uni-ui-types/0.4.0_lick3jazwoopako62oxwpqglcq:
-    resolution: {integrity: sha512-y8W74Yf5TuKWuYnkAPyYWQ2tl7tT6sJqupkoniAHDgrYEKzlgZfJZMXPn96Qr7ZCGS6qrf1xUge3K32T+uJzog==}
+  /@uni-helper/uni-ui-types/0.5.0_lick3jazwoopako62oxwpqglcq:
+    resolution: {integrity: sha512-t4gVhgYBevTfLHwQ1b4caqBB2pLB5PMxk+LC6mI8Lg6NIPdZpTjmqfUEo9V15+fgZc7DLEY5QSA7E5dmwUzMzg==}
     engines: {node: '>=14.18'}
     peerDependencies:
-      '@uni-helper/uni-app-types': ^0.3.0
+      '@uni-helper/uni-app-types': ^0.5.1
     peerDependenciesMeta:
       '@uni-helper/uni-app-types':
         optional: true
