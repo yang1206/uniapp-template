@@ -91,7 +91,7 @@
     "typescript": "^5.0.2",
     "unocss": "^0.50.6",
     "unocss-applet": "^0.3.4",
-    "unocss-preset-extra": "^0.4.3",
+    "unocss-preset-extra": "^0.5.0",
     "unplugin-auto-import": "^0.15.1",
     "unplugin-vue-components": "0.24.1",
     "vite": "4.2.1",
