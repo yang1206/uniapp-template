@@ -46,7 +46,7 @@ specifiers:
   uni-native-router: ^1.1.2
   unocss: ^0.50.6
   unocss-applet: ^0.3.4
-  unocss-preset-extra: ^0.4.3
+  unocss-preset-extra: ^0.5.0
   unplugin-auto-import: ^0.15.1
   unplugin-vue-components: 0.24.1
   vite: 4.2.1
@@ -105,7 +105,7 @@ devDependencies:
   typescript: 5.0.2
   unocss: 0.50.6_vite@4.2.1
   unocss-applet: 0.3.4
-  unocss-preset-extra: 0.4.3_unocss@0.50.6
+  unocss-preset-extra: 0.5.0_unocss@0.50.6
   unplugin-auto-import: 0.15.1
   unplugin-vue-components: 0.24.1_vue@3.2.47
   vite: 4.2.1_y7rghahg7ddu72pko63vhsxa44
@@ -7872,8 +7872,8 @@ packages:
       '@unocss-applet/transformer-attributify': 0.3.4
     dev: true
 
-  /unocss-preset-extra/0.4.3_unocss@0.50.6:
-    resolution: {integrity: sha512-22E70ah0ziSS9mOzyfxnC9DsWvlcyvRkZTu9Bq8m7Cis2O7T/riqJHdp95ybiSLNqhoq9nqUlfLkHpi7XCvZ6w==}
+  /unocss-preset-extra/0.5.0_unocss@0.50.6:
+    resolution: {integrity: sha512-rNHESQoliY1SuQoVMWKveoUfN/X39xEwYKjOCOPYm5l67zdJwo0KxxCvoVpO7cu5LGSahKEkR8uzr5Ju68Kd3w==}
     peerDependencies:
       unocss: '>= 0.31.0 < 1'
     dependencies:
