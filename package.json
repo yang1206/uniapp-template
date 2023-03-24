@@ -1,7 +1,7 @@
 {
   "name": "uniapp-vite-template",
   "version": "0.0.1",
-  "packageManager": "pnpm@7.29.1",
+  "packageManager": "pnpm@7.30.0",
   "scripts": {
     "dev:app": "uni -p app",
     "dev:app-android": "uni -p app-android",
