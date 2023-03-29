@@ -63,5 +63,10 @@
   },
   "exclude": [
     "node_modules"
+  ],
+  "include": [
+    "**/*.tsx",
+    "**/*.ts",
+    "**/*.vue"
   ]
 }
