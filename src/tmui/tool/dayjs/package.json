@@ -51,7 +51,7 @@
     "karma": "^6.4.1",
     "karma-jasmine": "^5.1.0",
     "karma-sauce-launcher": "^1.1.0",
-    "mockdate": "^2.0.2",
+    "mockdate": "^3.0.0",
     "moment": "2.29.4",
     "moment-timezone": "0.5.41",
     "ncp": "^2.0.0",
