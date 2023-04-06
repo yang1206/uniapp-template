@@ -2,7 +2,7 @@ import { resolve } from 'node:path'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from '@uni-helper/vite-plugin-uni-components'
 import { getRootPath, getSrcPath } from '../utils'
-import { TmUiResolver } from './resolver'
+import { UviewUiResolver } from './resolver'
 
 export default [
   AutoImport({
@@ -12,7 +12,7 @@ export default [
     dts: resolve(getRootPath(), 'typings/auto-import.d.ts'),
   }),
   Components({
-    resolvers: [TmUiResolver()],
+    resolvers: [UviewUiResolver()],
     extensions: ['vue'],
     deep: true,
     dts: resolve(getRootPath(), 'typings/components.d.ts'),

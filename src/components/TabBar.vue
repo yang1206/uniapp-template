@@ -1,14 +1,27 @@
 <script setup lang="ts">
 const props = defineProps<{ activeIndex: string | number }>()
 const active = ref()
+function changeTab(index: number) {
+  active.value = index
+  if (index === 0) {
+    uni.switchTab({
+      url: '/pages/index/index',
+    })
+  }
+  else if (index === 1) {
+    uni.switchTab({
+      url: '/pages/count/count',
+    })
+  }
+}
 onShow(() => {
   active.value = props.activeIndex
 })
 </script>
 
 <template>
-  <tm-tabbar v-model:active="active" :auto-select="false">
-    <tm-tabbar-item :blur="true" open-type="switchTab" active-color="orange" url="/pages/index/index" text="首页" icon="tmicon-collection-fill" />
-    <tm-tabbar-item :blur="true" active-color="orange" open-type="switchTab" url="/pages/count/count" text="Count" unicon="tmicon-account" icon="tmicon-userplus-fill" />
-  </tm-tabbar>
+  <u-tabbar :value="active" :fixed="true" :placeholder="false" :safe-area-inset-bottom="false">
+    <u-tabbar-item text="首页" icon="home" @click="changeTab" />
+    <u-tabbar-item text="我的" icon="account" @click="changeTab" />
+  </u-tabbar>
 </template>

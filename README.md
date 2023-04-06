@@ -24,8 +24,8 @@ Inspired by [Vitesse](https://github.com/antfu/vitesse) ❤
 ### UI 框架
 
 - [UnoCSS](https://github.com/antfu/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎
-- [TMUI](https://tmui.design/) - 基于UNIAPP的VUE3 TypeScript的跨端组件
-
+- [UView Plue](https://uiadmin.net/uview-plus/) - 多平台快速开发的UI框架
+- Uni UI - 性能最好的UniApp组件库
 ### Icons
 
 - [Iconify](https://iconify.design) - 使用任意的图标集，浏览：[🔍Icônes](https://icones.netlify.app/)

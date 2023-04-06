@@ -5,7 +5,6 @@ import uniPages from '@uni-helper/vite-plugin-uni-pages'
 import useUniManifest from '@uni-helper/vite-plugin-uni-manifest'
 import ViteRestart from 'vite-plugin-restart'
 import Inspect from 'vite-plugin-inspect'
-import tmuiCss from '../../src/tmui/tool/vitePlugs/tmuiCss'
 import unplugins from './unplugin'
 export function setupVitePlugins(viteEnv: ViteEnv, isBuild: boolean): PluginOption[] {
   const plugins = [
@@ -23,7 +22,6 @@ export function setupVitePlugins(viteEnv: ViteEnv, isBuild: boolean): PluginOpti
         'unocss.config.[jt]s',
       ],
     }),
-    tmuiCss(),
     useUniManifest(),
   ]
   return plugins
