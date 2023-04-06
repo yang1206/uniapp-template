@@ -7,7 +7,7 @@
     ":automergeTesters",
     ":automergeLinters",
     ":rebaseStalePrs",
-    ":semanticCommits"，
+    ":semanticCommits",
     "schedule:quarterly"
   ],
   "packageRules": [
