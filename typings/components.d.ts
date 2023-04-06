@@ -10,7 +10,6 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     TabBar: typeof import('./../src/components/TabBar.vue')['default']
-    ThemeSwitch: typeof import('./../src/components/ThemeSwitch.vue')['default']
     UBadge: typeof import('uview-plus/components/u-badge/u-badge.vue')['default']
     UIcon: typeof import('uview-plus/components/u-icon/u-icon.vue')['default']
     USafeBottom: typeof import('uview-plus/components/u-safe-bottom/u-safe-bottom.vue')['default']
