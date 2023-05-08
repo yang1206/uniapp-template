@@ -73,8 +73,8 @@ devDependencies:
     specifier: ^3.3.3
     version: 3.3.3
   '@dcloudio/uni-automator':
-    specifier: 3.0.0-alpha-3071220230331002
-    version: 3.0.0-alpha-3071220230331002(jest-environment-node@27.5.1)(jest@27.0.4)(postcss@8.4.23)(ts-node@10.9.1)(vue@3.2.47)
+    specifier: 3.0.0-alpha-3080220230428002
+    version: 3.0.0-alpha-3080220230428002(jest-environment-node@27.5.1)(jest@27.0.4)(postcss@8.4.23)(ts-node@10.9.1)(vue@3.2.47)
   '@dcloudio/uni-cli-shared':
     specifier: 3.0.0-alpha-3080220230428001
     version: 3.0.0-alpha-3080220230428001(postcss@8.4.23)(ts-node@10.9.1)(vue@3.2.47)
@@ -168,6 +168,7 @@ packages:
     dependencies:
       '@jridgewell/gen-mapping': 0.1.1
       '@jridgewell/trace-mapping': 0.3.17
+    dev: true
 
   /@ampproject/remapping@2.2.1:
     resolution: {integrity: sha512-lFMjJTrFL3j7L9yBxwYfCq2k6qqwHyzuUl/XBnif78PWTJYyL/dfowQHWE3sp6U6ZzqWiiIZnpTMO96zhkjwtg==}
@@ -175,7 +176,6 @@ packages:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.2
       '@jridgewell/trace-mapping': 0.3.17
-    dev: true
 
   /@antfu/eslint-config-basic@0.38.5(@typescript-eslint/eslint-plugin@5.59.2)(@typescript-eslint/parser@5.59.2)(eslint@8.39.0)(typescript@5.0.4):
     resolution: {integrity: sha512-Xifabjs94QscgQoLgZbj87GsagvtzZBoEY1+efHsz6RZE8kHqHzxZr9ulEZ/3e563Ld8fDGbgCTAxkDhrhkOjA==}
@@ -302,7 +302,7 @@ packages:
     resolution: {integrity: sha512-qt/YV149Jman/6AfmlxJ04LMIu8bMoyl3RB91yTFrxQmgbrSvQMy7cI8Q62FHx1t8wJ8B5fu0UDoLwHAhUo1QA==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@ampproject/remapping': 2.2.0
+      '@ampproject/remapping': 2.2.1
       '@babel/code-frame': 7.21.4
       '@babel/generator': 7.21.4
       '@babel/helper-compilation-targets': 7.21.4(@babel/core@7.21.4)
@@ -1709,13 +1709,13 @@ packages:
       - vue
     dev: false
 
-  /@dcloudio/uni-automator@3.0.0-alpha-3071220230331002(jest-environment-node@27.5.1)(jest@27.0.4)(postcss@8.4.23)(ts-node@10.9.1)(vue@3.2.47):
-    resolution: {integrity: sha512-K/9dH3pvkcE4swrXluN7P8MCXLwNziAZo9nozaqaDmx9ODmvXa0RKQ+Uf9dDfGqX/PbpIb7IjDzTq1wc4LHC2A==}
+  /@dcloudio/uni-automator@3.0.0-alpha-3080220230428002(jest-environment-node@27.5.1)(jest@27.0.4)(postcss@8.4.23)(ts-node@10.9.1)(vue@3.2.47):
+    resolution: {integrity: sha512-jAld31P87SAq8jh5IT47fr+CnR23LWEm7HCNI70I7FFu0JhzOeN/fRZvGhVbYOl4WwOI++4t5tkiBW7D97smlw==}
     peerDependencies:
       jest: 27.0.4
       jest-environment-node: 27.5.1
     dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-3071220230331002(postcss@8.4.23)(ts-node@10.9.1)(vue@3.2.47)
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-3080220230428002(postcss@8.4.23)(ts-node@10.9.1)(vue@3.2.47)
       address: 1.2.2
       cross-env: 7.0.3
       debug: 4.3.4
@@ -1740,7 +1740,7 @@ packages:
     resolution: {integrity: sha512-pebeKrsWgPcrnJxejlEJLg4abVFIDY6/06wWKRPsDMdZoXgxPzTOrb0+WBLUP5HVS/jH4kWioGBKgjUxec3jKg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     dependencies:
-      '@ampproject/remapping': 2.2.0
+      '@ampproject/remapping': 2.2.1
       '@babel/core': 7.21.4
       '@babel/parser': 7.21.4
       '@babel/types': 7.21.4
@@ -1796,6 +1796,57 @@ packages:
       '@babel/types': 7.21.4
       '@dcloudio/uni-i18n': 3.0.0-alpha-3080220230428001
       '@dcloudio/uni-shared': 3.0.0-alpha-3080220230428001
+      '@intlify/core-base': 9.1.9
+      '@intlify/shared': 9.1.9
+      '@intlify/vue-devtools': 9.1.9
+      '@rollup/pluginutils': 4.2.1
+      '@vue/compiler-core': 3.2.47
+      '@vue/compiler-dom': 3.2.47
+      '@vue/compiler-sfc': 3.2.47
+      '@vue/server-renderer': 3.2.47(vue@3.2.47)
+      '@vue/shared': 3.2.47
+      autoprefixer: 10.4.14(postcss@8.4.23)
+      base64url: 3.0.1
+      chokidar: 3.5.3
+      compare-versions: 3.6.0
+      debug: 4.3.4
+      es-module-lexer: 1.2.1
+      esbuild: 0.17.15
+      estree-walker: 2.0.2
+      fast-glob: 3.2.12
+      fs-extra: 10.1.0
+      hash-sum: 2.0.0
+      jsonc-parser: 3.2.0
+      magic-string: 0.30.0
+      merge: 2.1.1
+      mime: 3.0.0
+      module-alias: 2.2.2
+      os-locale-s-fix: 1.0.8-fix-1
+      picocolors: 1.0.0
+      postcss-import: 14.1.0(postcss@8.4.23)
+      postcss-load-config: 3.1.4(postcss@8.4.23)(ts-node@10.9.1)
+      postcss-modules: 4.3.1(postcss@8.4.23)
+      postcss-selector-parser: 6.0.11
+      resolve: 1.22.2
+      tapable: 2.2.1
+      xregexp: 3.1.0
+    transitivePeerDependencies:
+      - postcss
+      - supports-color
+      - ts-node
+      - vue
+    dev: true
+
+  /@dcloudio/uni-cli-shared@3.0.0-alpha-3080220230428002(postcss@8.4.23)(ts-node@10.9.1)(vue@3.2.47):
+    resolution: {integrity: sha512-lHgF9uApx2pFCZ2fANTqT1IAuY0GaX2PR5lPQ8sBV/ZIUFchvMvrDvFio4Tp5RYRk7wUCYHQW3lETnIYMO6sag==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    dependencies:
+      '@ampproject/remapping': 2.2.1
+      '@babel/core': 7.21.4
+      '@babel/parser': 7.21.4
+      '@babel/types': 7.21.4
+      '@dcloudio/uni-i18n': 3.0.0-alpha-3080220230428002
+      '@dcloudio/uni-shared': 3.0.0-alpha-3080220230428002
       '@intlify/core-base': 9.1.9
       '@intlify/shared': 9.1.9
       '@intlify/vue-devtools': 9.1.9
@@ -1910,6 +1961,10 @@ packages:
 
   /@dcloudio/uni-i18n@3.0.0-alpha-3080220230428001:
     resolution: {integrity: sha512-5ASvrYh36Y1dzigwT8vx0iP47RSprnP6hxzpojVTfBJyeNeKnG7ZRg1EWDsbBuswdr6TOcRA20DS7wqRPyYhHw==}
+    dev: true
+
+  /@dcloudio/uni-i18n@3.0.0-alpha-3080220230428002:
+    resolution: {integrity: sha512-oZbdRTR+9t/wBiSxnUbkh5qLnB1H0W2CY+IiCrKVMHtsqNUWQ7uEb4jTTqH52l+KiJ1eOued6IRitbz0sRU+qg==}
     dev: true
 
   /@dcloudio/uni-mp-alipay@3.0.0-alpha-3071220230331002(postcss@8.4.23)(ts-node@10.9.1)(vue@3.2.47):
@@ -2131,6 +2186,12 @@ packages:
 
   /@dcloudio/uni-shared@3.0.0-alpha-3080220230428001:
     resolution: {integrity: sha512-gjOsQpkPq2fNwRyvCLmrvOB80TXbn/YS/5rsQgqIRLHdjSz9ttDIM6xODtknZvfjnpXOxF8lQu0J7aq2Z55/lw==}
+    dependencies:
+      '@vue/shared': 3.2.47
+    dev: true
+
+  /@dcloudio/uni-shared@3.0.0-alpha-3080220230428002:
+    resolution: {integrity: sha512-145D0xwxnnexJtSgmjFj3thA69hOY1TM4p3ncTU4svJCBACLwu8ThrkB3nvmfYKyZSxxJe55J5xQq2uqVFAfwA==}
     dependencies:
       '@vue/shared': 3.2.47
     dev: true
@@ -3156,6 +3217,7 @@ packages:
     dependencies:
       '@jridgewell/set-array': 1.1.2
       '@jridgewell/sourcemap-codec': 1.4.14
+    dev: true
 
   /@jridgewell/gen-mapping@0.3.2:
     resolution: {integrity: sha512-mh65xKQAzI6iBcFzwv28KVWSmCkdRBWoOh+bYQGW3+6OZvbbN3TqMGo5hqYxQniRcH9F2VZIoJCm4pa3BPDK/A==}
@@ -9691,6 +9753,7 @@ packages:
 
   /w3c-hr-time@1.0.2:
     resolution: {integrity: sha512-z8P5DvDNjKDoFIHK7q8r8lackT6l+jo/Ye3HOle7l9nICP9lf1Ci25fy9vHd0JOWewkIFzXIEig3TdKT7JQ5fQ==}
+    deprecated: Use your platform's native performance.now() and performance.timeOrigin.
     dependencies:
       browser-process-hrtime: 1.0.0
     dev: true
