@@ -34,7 +34,6 @@ Inspired by [Vitesse](https://github.com/antfu/vitesse) ❤
 ### 插件
 
 - Router
-  - [`uni-native-router`](https://github.com/Gertyxs/uni-native-router#readme) - 使用uni-app原生钩子实现和方法实现、hooks的使用方式适配vue3
   - [`@uni-helper/vite-plugin-uni-pages`](https://github.com/uni-helper/vite-plugin-uni-pages) - 在 Vite 驱动的 uni-app 上使用基于文件的路由系统。
 - [Pinia](https://pinia.vuejs.org) - 直接的, 类型安全的, 使用 Composition API 的轻便灵活的 Vue 状态管理
 - [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - 自动加载组件

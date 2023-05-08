@@ -1,16 +1,9 @@
 <script setup lang="ts">
 import { useTitle } from '@/composables/useTitle'
-import { router } from '@/router'
 import { useCounterStore } from '@/store'
+
 const useCount = useCounterStore()
 const { title, changeTitle } = useTitle()
-
-function goTest() {
-  router.push({
-    type: 'navigateTo',
-    path: 'pages/test/test',
-  })
-}
 </script>
 
 <template>
