@@ -1,4 +1,5 @@
 import request from '@/service'
+
 interface GITHUB {
   owner: {
     archive_url: string
@@ -7,7 +8,7 @@ interface GITHUB {
   full_name: string
   html_url: string
 }
-export const getGithub = () => {
+export function getGithub() {
   return request<any, GITHUB>({
     url: '/uniapp-template',
     method: 'GET',

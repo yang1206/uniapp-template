@@ -1,13 +1,14 @@
 <script setup lang="ts">
 import { getGithub } from '@/api'
+
 const githubInfo = ref()
-const getData = async () => {
+async function getData() {
   const data = await getGithub()
   githubInfo.value = data
 }
 getData()
 const popup = ref()
-const open = () => {
+function open() {
   popup.value.open()
 }
 </script>

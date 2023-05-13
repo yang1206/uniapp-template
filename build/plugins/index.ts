@@ -6,6 +6,7 @@ import useUniManifest from '@uni-helper/vite-plugin-uni-manifest'
 import ViteRestart from 'vite-plugin-restart'
 import Inspect from 'vite-plugin-inspect'
 import unplugins from './unplugin'
+
 export function setupVitePlugins(viteEnv: ViteEnv, isBuild: boolean): PluginOption[] {
   const plugins = [
     ...unplugins,

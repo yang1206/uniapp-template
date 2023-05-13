@@ -1,5 +1,6 @@
 import ajax from 'uni-ajax'
 import type { AjaxRequestConfig, AjaxResponse } from 'uni-ajax'
+
 const baseURL = import.meta.env.VITE_APP_GLOB_BASE_API
 export interface BaseRes<T = any> {
   code: number

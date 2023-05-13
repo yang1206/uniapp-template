@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import type { UniPopupInstance } from '@uni-helper/uni-ui-types'
 import { useCounterStore } from '@/store'
+
 const useCount = useCounterStore()
 const { inc, dec } = useCount
 const popup = ref<UniPopupInstance>()
@@ -20,12 +21,14 @@ style:
       {{ useCount.count }}
     </p>
 
-    <button class="rounded-full text-center lh-60 size-60 animated animated-bounce btn" @click="inc()">
-      +
-    </button>
-    <button class="rounded-full text-center lh-60 size-60 animated animated-jello btn" @click="dec()">
-      -
-    </button>
+    <div class="mx-200 my-20 flex gap-20">
+      <button class="f-c-c rounded-full lh-60 size-60 animated animated-bounce btn" @click="inc()">
+        +
+      </button>
+      <button class="f-c-c rounded-full lh-60 size-60 animated animated-jello btn" @click="dec()">
+        -
+      </button>
+    </div>
     <button @click="popOpen">
       弹出
     </button>
@@ -37,5 +40,3 @@ style:
   </div>
   <TabBar :active-index="1" />
 </template>
-
-<style lang="scss" scoped></style>

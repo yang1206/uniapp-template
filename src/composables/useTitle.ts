@@ -1,4 +1,4 @@
-export const useTitle = () => {
+export function useTitle() {
   let oldValue = 'Hello'
   let newValue = 'Word'
   const title = ref(oldValue)
