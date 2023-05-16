@@ -22,7 +22,7 @@ export function getSrcPath(srcName = 'src') {
  * @param envOptions
  * @descrition boolean和数字类型转换
  */
-export function convertEnv(envOptions: Record<string, any>): ViteEnv {
+export function convertEnv(envOptions: Record<string, any>): ImportMetaEnv {
   const result: any = {}
   if (!envOptions)
     return result
