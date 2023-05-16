@@ -10,13 +10,8 @@ function popOpen() {
 }
 </script>
 
-<route  lang="yaml">
-style:
-  navigationBarTitleText: Count
-</route>
-
 <template>
-  <div px-4 py-10 text-center font-sans text-gray-700 class="dark:text-gray-200">
+  <div class="px-4 py-10 text-center font-sans text-gray-700 dark:text-gray-200">
     <p class="font-semibold">
       {{ useCount.count }}
     </p>
@@ -32,8 +27,8 @@ style:
     <button @click="popOpen">
       弹出
     </button>
-    <uni-popup ref="popup" type="center" :safe-area="false">
-      <div bg-white size-400>
+    <uni-popup ref="popup" type="center">
+      <div class="bg-white size-400">
         <uni-countdown show-day :hour="12" :minute="12" :second="12" />
       </div>
     </uni-popup>

@@ -7,7 +7,7 @@ const { title, changeTitle } = useTitle()
 </script>
 
 <template>
-  <div px-4 py-10 text-center font-sans text-gray-700 class="dark:text-gray-200">
+  <div class="px-4 py-10 text-center font-sans text-gray-700">
     <div>
       <div class="i-carbon-campsite" inline-block text-80 />
       <p>

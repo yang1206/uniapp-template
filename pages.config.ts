@@ -5,7 +5,7 @@ export default defineUniPages({
     autoscan: true,
     custom: {
       '^uni-(.*)': '@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue',
-      '^tm-(.*)': '@/tmui/components/tm-$1/tm-$1.vue',
+      '^u-(.*)': 'uview-plus/components/u-$1/u-$1.vue',
     },
   },
 
@@ -14,17 +14,6 @@ export default defineUniPages({
     {
       path: 'pages/index/index',
       type: 'home',
-    },
-    {
-      path: 'pages/test/test',
-      type: 'page',
-    },
-    {
-      path: 'pages/not-found/index',
-      name: 'notfound',
-      style: {
-        navigationBarTitleText: 'NotFound',
-      },
     },
   ],
   globalStyle: {

@@ -3,7 +3,7 @@
     "autoscan": true,
     "custom": {
       "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue",
-      "^tm-(.*)": "@/tmui/components/tm-$1/tm-$1.vue"
+      "^u-(.*)": "uview-plus/components/u-$1/u-$1.vue"
     }
   },
   "pages": [
@@ -16,21 +16,6 @@
     },
     {
       "path": "pages/count/count",
-      "type": "page",
-      "style": {
-        "navigationBarTitleText": "Count"
-      }
-    },
-    {
-      "path": "pages/not-found/index",
-      "type": "page",
-      "style": {
-        "navigationBarTitleText": "NotFound"
-      },
-      "name": "notfound"
-    },
-    {
-      "path": "pages/test/test",
       "type": "page",
       "style": {}
     }
