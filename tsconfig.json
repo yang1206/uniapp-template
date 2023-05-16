@@ -1,4 +1,5 @@
 {
+  "extends": "@vue/tsconfig/tsconfig.json",
   "compilerOptions": {
     "moduleResolution": "Node",
     "resolveJsonModule": true,
@@ -59,6 +60,9 @@
       "component",
       "template",
       "slot"
+    ],
+    "plugins": [
+
     ]
   },
   "exclude": [

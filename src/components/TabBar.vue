@@ -10,7 +10,7 @@ function changeTab(index: number) {
   }
   else if (index === 1) {
     uni.switchTab({
-      url: '/pages/count/count',
+      url: '/pages/count/count?id=12h12b1',
     })
   }
 }
@@ -24,7 +24,7 @@ function changeTab(index: number) {
         safe-area-inset-bottom
       >
         <u-tabbar-item text="首页" icon="home" @click="changeTab" />
-        <u-tabbar-item text="我的" icon="account" @click="changeTab" />
+        <u-tabbar-item text="Count" icon="plus-circle" @click="changeTab" />
       </u-tabbar>
     </block>
   </view>

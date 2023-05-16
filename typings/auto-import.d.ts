@@ -86,8 +86,8 @@ declare global {
   const useAttrs: typeof import('vue')['useAttrs']
   const useCssModule: typeof import('vue')['useCssModule']
   const useCssVars: typeof import('vue')['useCssVars']
+  const useQuery: typeof import('../src/composables/useQuery')['useQuery']
   const useSlots: typeof import('vue')['useSlots']
-  const useTitle: typeof import('../src/composables/useTitle')['useTitle']
   const watch: typeof import('vue')['watch']
   const watchEffect: typeof import('vue')['watchEffect']
   const watchPostEffect: typeof import('vue')['watchPostEffect']
@@ -184,8 +184,8 @@ declare module 'vue' {
     readonly useAttrs: UnwrapRef<typeof import('vue')['useAttrs']>
     readonly useCssModule: UnwrapRef<typeof import('vue')['useCssModule']>
     readonly useCssVars: UnwrapRef<typeof import('vue')['useCssVars']>
+    readonly useQuery: UnwrapRef<typeof import('../src/composables/useQuery')['useQuery']>
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>
-    readonly useTitle: UnwrapRef<typeof import('../src/composables/useTitle')['useTitle']>
     readonly watch: UnwrapRef<typeof import('vue')['watch']>
     readonly watchEffect: UnwrapRef<typeof import('vue')['watchEffect']>
     readonly watchPostEffect: UnwrapRef<typeof import('vue')['watchPostEffect']>

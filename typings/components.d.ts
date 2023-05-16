@@ -9,6 +9,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    Counter: typeof import('./../src/components/Counter.vue')['default']
     TabBar: typeof import('./../src/components/TabBar.vue')['default']
     UBadge: typeof import('uview-plus/components/u-badge/u-badge.vue')['default']
     UIcon: typeof import('uview-plus/components/u-icon/u-icon.vue')['default']

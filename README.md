@@ -61,6 +61,10 @@ pnpm dev:对应平台 如 pnpm dev:mp-weixin
 pnpm build:对应平台 如 pnpm build:mp-weixin
 ```
 
+### 注意
+
+由于使用了UView Plus，所以不支持h5 ssr,如果需要使用ssr，建议更换为其他组件库
+
 ## Variations
 
 - [react-template](https://github.com/yang1206/react-template.git)

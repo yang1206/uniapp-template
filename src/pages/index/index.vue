@@ -1,9 +1,5 @@
 <script setup lang="ts">
-import { useTitle } from '@/composables/useTitle'
-import { useCounterStore } from '@/store'
 
-const useCount = useCounterStore()
-const { title, changeTitle } = useTitle()
 </script>
 
 <template>
@@ -20,20 +16,10 @@ const { title, changeTitle } = useTitle()
       </p>
 
       <div class="py-4" />
-      <p class="font-semibold">
-        {{ useCount.count }}
-      </p>
+      <Counter />
     </div>
     <div text-cyan class="content">
       <image class="logo" src="/static/logo.png" />
-      <div class="text-area">
-        <p text-yellow class="title">
-          {{ title }}
-        </p>
-      </div>
-      <div @click="changeTitle">
-        changeTitle
-      </div>
     </div>
   </div>
   <TabBar :active-index="0" />
