@@ -6,7 +6,7 @@ import { UviewUiResolver } from './resolver'
 
 export default [
   AutoImport({
-    imports: ['vue', 'pinia', 'uni-app'],
+    imports: ['vue', '@vueuse/core', 'pinia', 'uni-app'],
     dirs: [resolve(getSrcPath(), 'composables')],
     vueTemplate: true,
     dts: resolve(getRootPath(), 'typings/auto-import.d.ts'),
