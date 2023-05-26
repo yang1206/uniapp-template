@@ -1,7 +1,7 @@
 {
   "name": "uniapp-vite-template",
   "version": "0.0.1",
-  "packageManager": "pnpm@7.30.0",
+  "packageManager": "pnpm@8.5.1",
   "license": "MIT",
   "scripts": {
     "dev:app": "uni -p app",
