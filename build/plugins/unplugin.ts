@@ -15,6 +15,7 @@ export default [
     resolvers: [UviewUiResolver()],
     extensions: ['vue'],
     deep: true,
+    directoryAsNamespace: true,
     dts: resolve(getRootPath(), 'typings/components.d.ts'),
   }),
 ]

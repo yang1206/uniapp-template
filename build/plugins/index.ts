@@ -4,10 +4,9 @@ import unocss from 'unocss/vite'
 import uniPages from '@uni-helper/vite-plugin-uni-pages'
 import useUniManifest from '@uni-helper/vite-plugin-uni-manifest'
 import ViteRestart from 'vite-plugin-restart'
-import Inspect from 'vite-plugin-inspect'
 import unplugins from './unplugin'
 
-export function setupVitePlugins(viteEnv: ViteEnv, isBuild: boolean): PluginOption[] {
+export function setupVitePlugins(viteEnv: ImportMetaEnv, isBuild: boolean): PluginOption[] {
   const plugins = [
     ...unplugins,
     uni(),
@@ -15,7 +14,6 @@ export function setupVitePlugins(viteEnv: ViteEnv, isBuild: boolean): PluginOpti
     uniPages({
       mergePages: true,
     }),
-    Inspect(), // vite分析工具
     ViteRestart({
       restart: [
         'pages.config.[jt]s',

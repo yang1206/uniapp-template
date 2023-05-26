@@ -13,7 +13,6 @@ export default defineUniPages({
   pages: [
     {
       path: 'pages/index/index',
-      type: 'home',
     },
   ],
   globalStyle: {

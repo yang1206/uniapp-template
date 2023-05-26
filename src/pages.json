@@ -10,9 +10,9 @@
     {
       "path": "pages/index/index",
       "type": "home",
-      "style": {
-        "navigationBarTitleText": "首页"
-      }
+      "layout": "home",
+      "navigationBarTitleText": "首页",
+      "style": {}
     },
     {
       "path": "pages/count/count",

@@ -14,7 +14,6 @@
       <p>
         <em class="text-sm op75">Opinionated Vite Starter Template</em>
       </p>
-
       <div class="py-4" />
       <Counter />
     </div>
@@ -25,9 +24,11 @@
   <TabBar :active-index="0" />
 </template>
 
-<route type="home" lang="yaml">
-style:
-  navigationBarTitleText: 首页
+<route  lang="json">
+{
+  "layout": "home",
+  "navigationBarTitleText": "首页"
+}
 </route>
 
 <style scoped>
