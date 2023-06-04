@@ -1,3 +1,4 @@
+import { useRequest } from 'alova'
 import request from '@/service'
 
 interface GITHUB {
@@ -8,9 +9,7 @@ interface GITHUB {
   full_name: string
   html_url: string
 }
+
 export function getGithub() {
-  return request<any, GITHUB>({
-    url: '/uniapp-template',
-    method: 'GET',
-  })
+  return useRequest(request.Get<GITHUB>('/uniapp-template'))
 }
