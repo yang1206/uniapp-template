@@ -3,18 +3,17 @@ import uni from '@dcloudio/vite-plugin-uni'
 import unocss from 'unocss/vite'
 import uniPages from '@uni-helper/vite-plugin-uni-pages'
 import useUniManifest from '@uni-helper/vite-plugin-uni-manifest'
-import ViteRestart from 'vite-plugin-restart'
+import restart from 'vite-plugin-restart'
 import unplugins from './unplugin'
 
 export function setupVitePlugins(viteEnv: ImportMetaEnv, isBuild: boolean): PluginOption[] {
   const plugins = [
     ...unplugins,
-    uni(),
     unocss(),
     uniPages({
       mergePages: true,
     }),
-    ViteRestart({
+    restart({
       restart: [
         'pages.config.[jt]s',
         'manifest.config.[jt]s',
@@ -22,6 +21,7 @@ export function setupVitePlugins(viteEnv: ImportMetaEnv, isBuild: boolean): Plug
       ],
     }),
     useUniManifest(),
+    uni(),
   ]
   return plugins
 }

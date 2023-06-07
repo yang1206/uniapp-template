@@ -1,12 +1,22 @@
 import { defineManifestConfig } from '@uni-helper/vite-plugin-uni-manifest'
 
 export default defineManifestConfig({
-  'name': 'uni-helper',
+  'name': 'uniapp-vite-template',
   'appid': '',
   'description': '',
   'versionName': '1.0.0',
   'versionCode': '100',
   'transformPx': false,
+  'mp-weixin': {
+    appid: '',
+    setting: {
+      urlCheck: false,
+      ignoreDevUnusedFiles: false,
+      ignoreUploadUnusedFiles: false,
+    },
+    usingComponents: true,
+
+  },
   /* 5+App特有相关 */
   'app-plus': {
     usingComponents: true,
@@ -54,16 +64,6 @@ export default defineManifestConfig({
   /* 快应用特有相关 */
   'quickapp': {},
   /* 小程序特有相关 */
-  'mp-weixin': {
-    appid: '',
-    setting: {
-      urlCheck: false,
-      ignoreDevUnusedFiles: false,
-      ignoreUploadUnusedFiles: false,
-    },
-    usingComponents: true,
-
-  },
   'mp-alipay': {
     usingComponents: true,
   },

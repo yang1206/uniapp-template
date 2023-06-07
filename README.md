@@ -44,6 +44,7 @@ Inspired by [Vitesse](https://github.com/antfu/vitesse) ❤
 - [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 等，无需导入
 - [`@uni-helper/vite-plugin-uni-manifest`](https://github.com/uni-helper/vite-plugin-uni-manifest#readme) - 使用 TypeScript 编写 uni-app 的 manifest.json
 - [`alova`](https://uniajax.ponjs.com) - 轻量级的请求策略库
+- [`unocss-applet`](https://github.com/unocss-applet/unocss-applet) - 在小程序中使用 unocss
 
 ## 使用
 

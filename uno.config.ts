@@ -16,19 +16,23 @@ import { presetExtra } from 'unocss-preset-extra'
 
 const isApplet = process.env?.UNI_PLATFORM?.startsWith('mp')
 export default defineConfig({
-  exclude: [
-    'node_modules',
-    '.git',
-    '.github',
-    '.husky',
-    '.vscode',
-    'build',
-    'dist',
-    'mock',
-    'public',
-    'types',
-    './stats.html',
-  ],
+  content: {
+    pipeline: {
+      exclude: [
+        'node_modules',
+        '.git',
+        '.github',
+        '.husky',
+        '.vscode',
+        'build',
+        'dist',
+        'mock',
+        'public',
+        'types',
+        './stats.html',
+      ],
+    },
+  },
   shortcuts: [
     ['btn', 'rounded inline-block bg-teal-600 text-white cursor-pointer hover:bg-teal-700 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'],
     ['wh-full', 'w-full h-full'],

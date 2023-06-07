@@ -26,8 +26,10 @@
 
 <route  lang="json">
 {
-  "layout": "home",
-  "navigationBarTitleText": "首页"
+  "style": {
+    "navigationStyle": "default",
+    "navigationBarTitleText": "Home"
+  }
 }
 </route>
 

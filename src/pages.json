@@ -10,20 +10,29 @@
     {
       "path": "pages/index/index",
       "type": "home",
-      "layout": "home",
-      "navigationBarTitleText": "首页",
-      "style": {}
+      "style": {
+        "navigationStyle": "default",
+        "navigationBarTitleText": "Home"
+      }
     },
     {
       "path": "pages/count/count",
       "type": "page",
-      "style": {}
+      "style": {
+        "navigationStyle": "default",
+        "navigationBarTitleText": "Count"
+      }
     }
   ],
   "globalStyle": {
-    "navigationBarTextStyle": "white",
-    "navigationBarBackgroundColor": "#777",
-    "navigationBarTitleText": "uniapp-vue3"
+    "navigationBarBackgroundColor": "@navBgColor",
+    "navigationBarTextStyle": "@navTxtStyle",
+    "navigationBarTitleText": "uniapp-vite-template",
+    "backgroundColor": "@bgColor",
+    "backgroundTextStyle": "@bgTxtStyle",
+    "backgroundColorTop": "@bgColorTop",
+    "backgroundColorBottom": "@bgColorBottom",
+    "navigationStyle": "custom"
   },
   "tabBar": {
     "list": [

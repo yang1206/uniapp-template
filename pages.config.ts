@@ -16,10 +16,14 @@ export default defineUniPages({
     },
   ],
   globalStyle: {
-    navigationBarTextStyle: 'white',
-    navigationBarBackgroundColor: '#777',
-    navigationBarTitleText: 'uniapp-vue3',
-    // navigationStyle: 'custom',
+    navigationBarBackgroundColor: '@navBgColor',
+    navigationBarTextStyle: '@navTxtStyle',
+    navigationBarTitleText: 'uniapp-vite-template',
+    backgroundColor: '@bgColor',
+    backgroundTextStyle: '@bgTxtStyle',
+    backgroundColorTop: '@bgColorTop',
+    backgroundColorBottom: '@bgColorBottom',
+    navigationStyle: 'custom',
   },
   tabBar: {
     list: [

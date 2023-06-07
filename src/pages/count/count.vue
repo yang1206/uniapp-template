@@ -21,3 +21,12 @@ function popOpen() {
   </div>
   <TabBar :active-index="1" />
 </template>
+
+<route  lang="json">
+{
+  "style": {
+    "navigationStyle": "default",
+    "navigationBarTitleText": "Count"
+  }
+}
+</route>
