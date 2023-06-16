@@ -12,7 +12,6 @@ import {
   transformerApplet,
   transformerAttributify,
 } from 'unocss-applet'
-import { presetExtra } from 'unocss-preset-extra'
 
 const isApplet = process.env?.UNI_PLATFORM?.startsWith('mp')
 export default defineConfig({
@@ -61,7 +60,6 @@ export default defineConfig({
     // 保持h5和微信小程序转换比例一致
     presetRemToPx({ baseFontSize: 2 }),
     presetApplet({ enable: isApplet, variablePrefix: 'li-' }),
-    presetExtra(),
     presetRemRpx({
       baseFontSize: 2,
       mode: isApplet ? 'rem2rpx' : 'rpx2rem',

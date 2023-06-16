@@ -13,11 +13,14 @@ const request = createAlova({
   timeout: 1000 * 60 * 5,
   ...AdapterUniapp(),
   async beforeRequest({ config }) {
-
+    uni.showLoading(({
+      title: 'Loading...',
+    }))
   },
   responded: {
     onSuccess: async (response, method) => {
       const { statusCode, data } = response as UniNamespace.RequestSuccessCallbackResult
+      uni.hideLoading()
       return data || null
     },
     onError: () => {

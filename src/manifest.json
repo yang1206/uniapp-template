@@ -12,7 +12,9 @@
       "ignoreDevUnusedFiles": false,
       "ignoreUploadUnusedFiles": false
     },
-    "usingComponents": true
+    "usingComponents": true,
+    "darkmode": true,
+    "themeLocation": "theme.json"
   },
   "app-plus": {
     "usingComponents": true,
@@ -60,6 +62,10 @@
   },
   "mp-toutiao": {
     "usingComponents": true
+  },
+  "h5": {
+    "darkmode": true,
+    "themeLocation": "theme.json"
   },
   "uniStatistics": {
     "enable": false

@@ -15,6 +15,8 @@ export default defineManifestConfig({
       ignoreUploadUnusedFiles: false,
     },
     usingComponents: true,
+    darkmode: true,
+    themeLocation: 'theme.json',
 
   },
   /* 5+App特有相关 */
@@ -72,6 +74,10 @@ export default defineManifestConfig({
   },
   'mp-toutiao': {
     usingComponents: true,
+  },
+  'h5': {
+    darkmode: true,
+    themeLocation: 'theme.json',
   },
   'uniStatistics': {
     enable: false,
