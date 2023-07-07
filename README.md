@@ -20,7 +20,6 @@ Inspired by [Vitesse](https://github.com/antfu/vitesse) ❤
 - 📥 [API 自动加载](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 与UniAPP API 无需引入
 - 🦾 TypeScript, 当然
 
-
 <br>
 
 ## 预配置
@@ -28,8 +27,9 @@ Inspired by [Vitesse](https://github.com/antfu/vitesse) ❤
 ### UI 框架
 
 - [UnoCSS](https://github.com/antfu/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎
-- [UView Plus](https://uiadmin.net/uview-plus/) - 多平台快速开发的UI框架
+- [UniAPP-NutUi](https://github.com/yang1206/uniapp-nutui) - 支持TS与 Uniapp的多端开发组件库
 - Uni UI - 性能最好的UniApp组件库
+
 ### Icons
 
 - [Iconify](https://iconify.design) - 使用任意的图标集，浏览：[🔍Icônes](https://icones.netlify.app/)
@@ -38,11 +38,12 @@ Inspired by [Vitesse](https://github.com/antfu/vitesse) ❤
 ### 插件
 
 - Router
-  - [`@uni-helper/vite-plugin-uni-pages`](https://github.com/uni-helper/vite-plugin-uni-pages) - 在 Vite 驱动的 uni-app 上使用基于文件的路由系统。
+  - [`vite-plugin-uni-pages`](https://github.com/uni-helper/vite-plugin-uni-pages) - 在 Vite 驱动的 uni-app 上使用基于文件的路由系统。
+  - [`vite-plugin-uni-layouts`](https://github.com/uni-helper/vite-plugin-uni-layouts) - Vite 下 uni-app 的可定制布局框架。
 - [Pinia](https://pinia.vuejs.org) - 直接的, 类型安全的, 使用 Composition API 的轻便灵活的 Vue 状态管理
-- [`unplugin-vue-components`](https://github.com/antfu/unplugin-vue-components) - 自动加载组件
+- [`vite-plugin-uni-components`](https://github.com/uni-helper/vite-plugin-uni-components) - 自动加载组件
 - [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 等，无需导入
-- [`@uni-helper/vite-plugin-uni-manifest`](https://github.com/uni-helper/vite-plugin-uni-manifest#readme) - 使用 TypeScript 编写 uni-app 的 manifest.json
+- [`vite-plugin-uni-manifest`](https://github.com/uni-helper/vite-plugin-uni-manifest#readme) - 使用 TypeScript 编写 uni-app 的 manifest.json
 - [`alova`](https://uniajax.ponjs.com) - 轻量级的请求策略库
 - [`unocss-applet`](https://github.com/unocss-applet/unocss-applet) - 在小程序中使用 unocss
 
@@ -65,10 +66,6 @@ pnpm dev:对应平台 如 pnpm dev:mp-weixin
 ```bash
 pnpm build:对应平台 如 pnpm build:mp-weixin
 ```
-
-### 注意
-
-由于使用了UView Plus，所以不支持h5 ssr,如果需要使用ssr，建议更换为其他组件库
 
 ## Variations
 

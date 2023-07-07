@@ -1,7 +1,3 @@
-<script setup lang="ts">
-
-</script>
-
 <template>
   <div class="px-4 py-10 text-center font-sans text-gray-700">
     <div>
@@ -21,7 +17,6 @@
       <image class="logo" src="/static/logo.png" />
     </div>
   </div>
-  <TabBar :active-index="0" />
 </template>
 
 <route  lang="json">

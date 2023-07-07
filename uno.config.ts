@@ -1,11 +1,16 @@
 import {
+  type Preset,
+  type SourceCodeTransformer,
   defineConfig,
   presetAttributify,
   presetIcons,
+  presetUno,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
 import presetRemToPx from '@unocss/preset-rem-to-px'
+import { isH5, isMp } from '@uni-helper/uni-env'
+
 import {
   presetApplet,
   presetRemRpx,
@@ -13,7 +18,25 @@ import {
   transformerAttributify,
 } from 'unocss-applet'
 
-const isApplet = process.env?.UNI_PLATFORM?.startsWith('mp')
+const presets: Preset[] = []
+const transformers: SourceCodeTransformer[] = []
+const darkMode = isH5 ? 'class' : 'media'
+
+if (isMp) {
+  presets.push(presetApplet({ dark: darkMode, variablePrefix: 'li-' }))
+  presets.push(presetRemRpx({
+    baseFontSize: 2,
+    mode: isMp ? 'rem2rpx' : 'rpx2rem',
+  }))
+  transformers.push(transformerAttributify({ ignoreAttributes: ['block', 'fixed'] }))
+  transformers.push(transformerApplet())
+}
+else {
+  presets.push(presetUno({ dark: darkMode }))
+  presets.push(presetAttributify())
+  presets.push(presetRemRpx({ mode: 'rpx2rem' }))
+}
+
 export default defineConfig({
   content: {
     pipeline: {
@@ -33,7 +56,7 @@ export default defineConfig({
     },
   },
   shortcuts: [
-    ['btn', 'rounded inline-block bg-teal-600 text-white cursor-pointer hover:bg-teal-700 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'],
+    ['btn', 'w-60 h-60 flex items-center justify-center rounded-full bg-teal-600 text-white cursor-pointer'],
     ['wh-full', 'w-full h-full'],
     ['f-c-c', 'flex justify-center items-center'],
     ['flex-col', 'flex flex-col'],
@@ -59,23 +82,15 @@ export default defineConfig({
     }),
     // 保持h5和微信小程序转换比例一致
     presetRemToPx({ baseFontSize: 2 }),
-    presetApplet({ enable: isApplet, variablePrefix: 'li-' }),
-    presetRemRpx({
-      baseFontSize: 2,
-      mode: isApplet ? 'rem2rpx' : 'rpx2rem',
-    }),
-    /**
-     * you can add `presetAttributify()` here to enable unocss attributify mode prompt
-     * although preset is not working for applet, but will generate useless css
-     */
-    presetAttributify(),
+    ...presets,
   ],
   transformers: [
     transformerDirectives(),
     transformerVariantGroup(),
-    // Don't change the following order
-    transformerAttributify({ ignoreAttributes: ['block'] }),
-    transformerApplet(),
+    ...transformers,
   ],
   safelist: 'prose prose-sm m-auto text-left'.split(' '),
+  theme: {
+    preflightRoot: isMp ? ['page,::before,::after'] : undefined,
+  },
 })

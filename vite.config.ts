@@ -30,7 +30,7 @@ export default defineConfig((configEnv: ConfigEnv) => {
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '',
+          additionalData: '@import "uniapp-nutui/styles/variables.scss";',
         },
       },
     },

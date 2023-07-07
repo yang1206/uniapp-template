@@ -1,8 +1,10 @@
 import { resolve } from 'node:path'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from '@uni-helper/vite-plugin-uni-components'
+import { UniUIResolver } from '@uni-helper/vite-plugin-uni-components/resolvers'
+
+import { NutResolver } from 'uniapp-nutui'
 import { getRootPath, getSrcPath } from '../utils'
-import { UviewUiResolver } from './resolver'
 
 export default [
   AutoImport({
@@ -12,7 +14,7 @@ export default [
     dts: resolve(getRootPath(), 'typings/auto-import.d.ts'),
   }),
   Components({
-    resolvers: [UviewUiResolver()],
+    resolvers: [NutResolver(), UniUIResolver()],
     extensions: ['vue'],
     deep: true,
     directoryAsNamespace: true,

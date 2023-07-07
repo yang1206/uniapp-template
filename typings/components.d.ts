@@ -10,11 +10,9 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Counter: typeof import('./../src/components/Counter.vue')['default']
-    TabBar: typeof import('./../src/components/TabBar.vue')['default']
-    UBadge: typeof import('uview-plus/components/u-badge/u-badge.vue')['default']
-    UIcon: typeof import('uview-plus/components/u-icon/u-icon.vue')['default']
-    USafeBottom: typeof import('uview-plus/components/u-safe-bottom/u-safe-bottom.vue')['default']
-    UTabbar: typeof import('uview-plus/components/u-tabbar/u-tabbar.vue')['default']
-    UTabbarItem: typeof import('uview-plus/components/u-tabbar-item/u-tabbar-item.vue')['default']
+    NutButton: typeof import('uniapp-nutui/components/button/button.vue')['default']
+    NutConfigProvider: typeof import('uniapp-nutui/components/configprovider/configprovider.vue')['default']
+    NutTabBar: typeof import('uniapp-nutui/components/tabbar/tabbar.vue')['default']
+    NutTabbarItem: typeof import('uniapp-nutui/components/tabbaritem/tabbaritem.vue')['default']
   }
 }

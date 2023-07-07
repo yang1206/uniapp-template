@@ -1,14 +1,6 @@
 import { defineUniPages } from '@uni-helper/vite-plugin-uni-pages'
 
 export default defineUniPages({
-  easycom: {
-    autoscan: true,
-    custom: {
-      '^uni-(.*)': '@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue',
-      '^u-(.*)': 'uview-plus/components/u-$1/u-$1.vue',
-    },
-  },
-
   // 你也可以定义 pages 字段，它具有最高的优先级。
   pages: [
     {
@@ -26,6 +18,11 @@ export default defineUniPages({
     navigationStyle: 'custom',
   },
   tabBar: {
+    // h5设置自定义 tabbar也会编译出一个 tabbar
+    color: `rgba(${255}, ${255}, ${255}, ${0})`,
+    selectedColor: `rgba(${255}, ${255}, ${255}, ${0})`,
+    backgroundColor: `rgba(${255}, ${255}, ${255}, ${0})`,
+    borderStyle: 'rgb(255,255,255,0)',
     list: [
       {
         pagePath: 'pages/index/index',
@@ -36,7 +33,6 @@ export default defineUniPages({
         text: 'Count',
       },
     ],
-    custom: true,
   },
 
 })
