@@ -19,10 +19,11 @@ export default defineUniPages({
   },
   tabBar: {
     // h5设置自定义 tabbar也会编译出一个 tabbar
+    custom: true,
     color: `rgba(${255}, ${255}, ${255}, ${0})`,
     selectedColor: `rgba(${255}, ${255}, ${255}, ${0})`,
     backgroundColor: `rgba(${255}, ${255}, ${255}, ${0})`,
-    borderStyle: 'rgb(255,255,255,0)',
+    borderStyle: 'white',
     list: [
       {
         pagePath: 'pages/index/index',

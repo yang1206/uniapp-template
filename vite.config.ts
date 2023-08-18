@@ -1,3 +1,4 @@
+import process from 'node:process'
 import type { ConfigEnv } from 'vite'
 import { defineConfig, loadEnv } from 'vite'
 import { createViteProxy } from './build/config'
@@ -20,12 +21,17 @@ export default defineConfig((configEnv: ConfigEnv) => {
       proxy: createViteProxy(VITE_USE_PROXY, VITE_PROXY_TYPE as ProxyType),
     },
     build: {
+      target: 'es6',
+      cssTarget: 'chrome61',
       reportCompressedSize: false,
       sourcemap: false,
       chunkSizeWarningLimit: 1024, // chunk 大小警告的限制（单位kb）
       commonjsOptions: {
         ignoreTryCatch: false,
       },
+    },
+    optimizeDeps: {
+      exclude: ['vue-demi'],
     },
     css: {
       preprocessorOptions: {
