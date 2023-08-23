@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@alova/adapter-uniapp':
     specifier: ^1.1.1
@@ -49,18 +53,12 @@ dependencies:
   '@dcloudio/uni-ui':
     specifier: ^1.4.28
     version: 1.4.28
-  '@uni-helper/uni-use':
-    specifier: ^0.14.1
-    version: 0.14.1(@vueuse/core@9.13.0)(postcss@8.4.28)(ts-node@10.9.1)(typescript@5.1.6)(vue@3.2.47)
   '@vueuse/core':
     specifier: 9.13.0
     version: 9.13.0(vue@3.2.47)
   alova:
     specifier: ^2.10.0
     version: 2.10.0
-  core-js:
-    specifier: ^3.32.0
-    version: 3.32.0
   pinia:
     specifier: 2.0.36
     version: 2.0.36(typescript@5.1.6)(vue@3.2.47)
@@ -68,8 +66,8 @@ dependencies:
     specifier: ^1.2.0
     version: 1.2.0(pinia@2.0.36)(vue@3.2.47)
   uniapp-nutui:
-    specifier: ^0.2.2
-    version: 0.2.2(vue@3.2.47)
+    specifier: ^0.2.4
+    version: 0.2.4(vue@3.2.47)
   vue:
     specifier: 3.2.47
     version: 3.2.47
@@ -1886,7 +1884,6 @@ packages:
       - supports-color
       - ts-node
       - vue
-    dev: false
 
   /@dcloudio/uni-cloud@3.0.0-alpha-3081220230802001(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47):
     resolution: {integrity: sha512-4fSp1JwdWsPGVIJnCKBrzwj5WoCgQLpkJa1cSfO2zY2bvjm7IkFfLmx01iHo7TLKfH12Uu8YDRGwW4a0H9j1dA==}
@@ -2219,7 +2216,6 @@ packages:
     resolution: {integrity: sha512-pxhRZfuU+eT+oHfaBRTjV2XZnBBNAJcqtCnyLppwbeFsDkpvITdSHQVKy0TwDtRhXgJ/TkdR4w458f9Ho7481g==}
     dependencies:
       '@vue/shared': 3.2.47
-    dev: false
 
   /@dcloudio/uni-stacktracey@3.0.0-alpha-3081220230802001:
     resolution: {integrity: sha512-atcvxe41RZ+vyxoA8lSfl3zykUcMW3sTLhIpFBhwGZ7ifwWDNSJ/hWsEJKkdfWMcOW7zutTk132evDCH713Bmw==}
@@ -3899,28 +3895,6 @@ packages:
       vue3: /vue@3.2.47
     dev: true
 
-  /@uni-helper/uni-use@0.14.1(@vueuse/core@9.13.0)(postcss@8.4.28)(ts-node@10.9.1)(typescript@5.1.6)(vue@3.2.47):
-    resolution: {integrity: sha512-MbvTR9PwIpxp7FHLU8FiTkU0yavBnwERS+hxWhbN7hZsG9XTYccW0mfQj+dqGKPZWAYOyp+K2qrMQm2wqY5d9w==}
-    engines: {node: '>=14.18'}
-    peerDependencies:
-      '@vueuse/core': ^9.0.0
-      typescript: ^4.5.0 || ^5.0.0
-      vue: ^3.2.0
-    peerDependenciesMeta:
-      typescript:
-        optional: true
-    dependencies:
-      '@dcloudio/types': 3.3.3
-      '@dcloudio/uni-app': 3.0.0-alpha-3081220230802001(@dcloudio/types@3.3.3)(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47)
-      '@vueuse/core': 9.13.0(vue@3.2.47)
-      typescript: 5.1.6
-      vue: 3.2.47
-    transitivePeerDependencies:
-      - postcss
-      - supports-color
-      - ts-node
-    dev: false
-
   /@uni-helper/vite-plugin-uni-components@0.0.6:
     resolution: {integrity: sha512-MNlEMfiGXPtsgiGTbvwljs1dFXKxcuY5meCEOuyejPIJ47eQf35vV8d7U5nRKsdAYX9lcn7ZYL0EXfgaMnLKug==}
     dependencies:
@@ -4629,12 +4603,6 @@ packages:
     resolution: {integrity: sha512-F0SAmZ8iUtS//m8DmCTA0jlh6TDKkHQyK6xc6V4KDTyZKA9dnvX9/3sRTVQrWm79glUAZbnmmNcdYwUIHWVybw==}
     engines: {node: '>=0.4.0'}
     hasBin: true
-
-  /acorn@8.8.2:
-    resolution: {integrity: sha512-xjIYgE8HBrkpd/sJqOGNspf8uHG+NOHGOw6a/Urj8taM2EXfdNAH2oFcPeIFfsv3+kz/mJrS5VuMqbNLjCa2vw==}
-    engines: {node: '>=0.4.0'}
-    hasBin: true
-    dev: true
 
   /address@1.2.2:
     resolution: {integrity: sha512-4B/qKCfeE/ODUaAUpSwfzazo5x29WD4r3vXiWsB7I2mSDAihwEqKO+g8GELZUQSSAo5e1XTYh3ZVfLyxBc12nA==}
@@ -9436,8 +9404,8 @@ packages:
       jiti: 1.18.2
     dev: true
 
-  /uniapp-nutui@0.2.2(vue@3.2.47):
-    resolution: {integrity: sha512-AalVmmO9glLDQz6j820X0A80HnE3XjqTkrrSV5DZTnDeEoDgq6qIYFSSrocDGhdlPvPbJ1XDBYtFF9lQeINTOg==}
+  /uniapp-nutui@0.2.4(vue@3.2.47):
+    resolution: {integrity: sha512-qnV+Zax8JZYEBkqu92vRqN+6RRVS/qs/XpbX0J71OuIIovQzDnLhMfp/7g1jvF9yVrCObUDpM3h4BKMTCWnWYQ==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
@@ -10085,7 +10053,3 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false

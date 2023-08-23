@@ -3,7 +3,7 @@
     <div>
       <div class="i-carbon-campsite" inline-block text-80 />
       <p>
-        <a text-sm text-gray decoration-none op75 rel="noreferrer" href="https://github.com/yang1206/uniapp-template" target="_blank">
+        <a text-14px text-gray decoration-none op75 rel="noreferrer" href="https://github.com/yang1206/uniapp-template" target="_blank">
           一个uniapp，vite，vue3的起始模版
         </a>
       </p>

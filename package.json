@@ -60,13 +60,11 @@
     "@dcloudio/uni-mp-xhs": "3.0.0-alpha-3081220230802001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-alpha-3081220230802001",
     "@dcloudio/uni-ui": "^1.4.28",
-    "@uni-helper/uni-use": "^0.14.1",
     "@vueuse/core": "9.13.0",
     "alova": "^2.10.0",
-    "core-js": "^3.32.0",
     "pinia": "2.0.36",
     "pinia-plugin-persist-uni": "^1.2.0",
-    "uniapp-nutui": "^0.2.2",
+    "uniapp-nutui": "^0.2.4",
     "vue": "3.2.47"
   },
   "devDependencies": {

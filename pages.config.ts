@@ -18,12 +18,12 @@ export default defineUniPages({
     navigationStyle: 'custom',
   },
   tabBar: {
-    // h5设置自定义 tabbar也会编译出一个 tabbar
+    // 支付宝小程序自定义需要特殊处理
     custom: true,
     color: `rgba(${255}, ${255}, ${255}, ${0})`,
     selectedColor: `rgba(${255}, ${255}, ${255}, ${0})`,
     backgroundColor: `rgba(${255}, ${255}, ${255}, ${0})`,
-    borderStyle: 'white',
+    borderStyle: 'rgb(255,255,255,0)',
     list: [
       {
         pagePath: 'pages/index/index',

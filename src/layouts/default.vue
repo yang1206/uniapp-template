@@ -31,6 +31,8 @@ function changeTab(_: any, index: number | string) {
 <template>
   <nut-config-provider :theme="darkMode ? 'dark' : ''">
     <slot />
+    <!-- 支付宝小程序自定义 tabbar需要特殊处理 -->
+    <!-- #ifndef MP-ALIPAY -->
     <NutTabBar
       v-model="activeIndex"
       :size="size" :active-color="aColor"
@@ -39,6 +41,7 @@ function changeTab(_: any, index: number | string) {
       <nut-tabbar-item tab-title="Home" icon="home" @click="changeTab" />
       <nut-tabbar-item dot tab-title="Count" icon="my" @click="changeTab" />
     </NutTabBar>
+    <!-- #endif -->
   </nut-config-provider>
 </template>
 
