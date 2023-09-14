@@ -3,7 +3,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from '@uni-helper/vite-plugin-uni-components'
 import { UniUIResolver } from '@uni-helper/vite-plugin-uni-components/resolvers'
 
-import { NutResolver } from 'uniapp-nutui'
+import { NutResolver } from 'nutui-uniapp'
 import { getRootPath, getSrcPath } from '../utils'
 
 export default [

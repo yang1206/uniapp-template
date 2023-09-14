@@ -22,7 +22,7 @@ function changeTab(_: any, index: number | string) {
   }
   else if (index === 1) {
     uni.switchTab({
-      url: '/pages/count/count?id=12h12b1',
+      url: '/pages/count/count',
     })
   }
 }

@@ -69,6 +69,7 @@
     "node_modules"
   ],
   "include": [
+    "typings/components.d.ts",
     "**/*.d.ts",
     "**/*.tsx",
     "**/*.ts",

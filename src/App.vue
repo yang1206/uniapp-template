@@ -38,5 +38,5 @@ onHide(() => {
 </script>
 
 <style lang="scss">
-@import 'uniapp-nutui/styles/index';
+@import 'nutui-uniapp/styles/index';
 </style>
