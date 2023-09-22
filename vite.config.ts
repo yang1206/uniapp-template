@@ -1,6 +1,7 @@
 import process from 'node:process'
 import type { ConfigEnv } from 'vite'
-import { defineConfig, loadEnv } from 'vite'
+import { loadEnv } from 'vite'
+import { defineConfig } from 'vitest/config'
 import { createViteProxy } from './build/config'
 import { setupVitePlugins } from './build/plugins'
 import { convertEnv, getRootPath, getSrcPath } from './build/utils'
@@ -20,6 +21,7 @@ export default defineConfig((configEnv: ConfigEnv) => {
       open: false,
       proxy: createViteProxy(VITE_USE_PROXY, VITE_PROXY_TYPE as ProxyType),
     },
+    envPrefix: ['VITE_', 'UNI_'],
     build: {
       target: 'es6',
       cssTarget: 'chrome61',
@@ -45,6 +47,10 @@ export default defineConfig((configEnv: ConfigEnv) => {
         '~': rootPath,
         '@': srcPath,
       },
+    },
+    test: {
+      environment: 'jsdom',
+      singleThread: true,
     },
   }
 })

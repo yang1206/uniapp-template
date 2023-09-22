@@ -1,3 +1,4 @@
+import { isMpWeixin } from '@uni-helper/uni-env'
 import { defineUniPages } from '@uni-helper/vite-plugin-uni-pages'
 
 export default defineUniPages({
@@ -23,7 +24,7 @@ export default defineUniPages({
     color: `rgba(${255}, ${255}, ${255}, ${0})`,
     selectedColor: `rgba(${255}, ${255}, ${255}, ${0})`,
     backgroundColor: `rgba(${255}, ${255}, ${255}, ${0})`,
-    borderStyle: 'rgb(255,255,255,0)',
+    borderStyle: isMpWeixin ? 'white' : 'rgb(255,255,255,0)',
     list: [
       {
         pagePath: 'pages/index/index',

@@ -1,0 +1,62 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "compilerOptions": {
+    "composite": true,
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "useDefineForClassFields": true,
+    "module": "esnext",
+    "moduleResolution": "Node",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "~/*": [
+        "./*"
+      ]
+    },
+    "types": [
+      "@dcloudio/types",
+      "@mini-types/alipay",
+      "miniprogram-api-typings",
+      "@uni-helper/uni-app-types",
+      "pinia-plugin-persist-uni",
+      "@uni-helper/uni-ui-types",
+      "unplugin-vue-macros/macros-global",
+      "nutui-uniapp/global.d.ts",
+      "unplugin-icons/types/vue",
+      "type-fest",
+      "vite/client"
+    ],
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    // See <https://github.com/vuejs/vue-cli/pull/5688>
+    "skipLibCheck": true
+  },
+  "include": [
+    "typings/components.d.ts",
+    "**/*.d.ts",
+    "**/*.tsx",
+    "**/*.ts",
+    "**/*.vue",
+    "package.json"
+  ],
+  "exclude": [
+    "src/**/__tests__/*",
+    "src/**/*.test.*"
+  ],
+  "vueCompilerOptions": {
+    "nativeTags": [
+      "block",
+      "component",
+      "template",
+      "slot"
+    ]
+  }
+}

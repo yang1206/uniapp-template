@@ -11,13 +11,14 @@ import unplugins from './unplugin'
 
 export function setupVitePlugins(viteEnv: ImportMetaEnv, isBuild: boolean): PluginOption[] {
   const plugins = [
-    ...unplugins,
-    unocss(),
+    uniManifest({ minify: true }),
     uniPages({
       mergePages: true,
       minify: true,
       dts: resolve(getRootPath(), 'typings/uni-pages.d.ts'),
     }),
+    uniLayouts(),
+    ...unplugins,
     restart({
       restart: [
         'pages.config.[jt]s',
@@ -25,8 +26,7 @@ export function setupVitePlugins(viteEnv: ImportMetaEnv, isBuild: boolean): Plug
         'uno.config.[jt]s',
       ],
     }),
-    uniManifest({ minify: true }),
-    uniLayouts(),
+    unocss(),
     uni(),
   ]
   return plugins

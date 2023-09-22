@@ -18,7 +18,7 @@ export function createViteProxy(isUseProxy = true, proxyType: ProxyType) {
 const proxyConfigMappings: Record<ProxyType, ProxyConfig> = {
   dev: {
     prefix: '/app',
-    target: 'https://www.halocn.top/',
+    target: 'http://localhost:1206',
   },
   test: {
     prefix: '/api',

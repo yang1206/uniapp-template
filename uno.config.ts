@@ -1,6 +1,7 @@
 import {
   type Preset,
   type SourceCodeTransformer,
+  type UserConfig,
   defineConfig,
   presetAttributify,
   presetIcons,
@@ -31,13 +32,14 @@ if (isMp) {
   transformers.push(transformerAttributify({ ignoreAttributes: ['block', 'fixed'] }))
   transformers.push(transformerApplet())
 }
+
 else {
   presets.push(presetUno({ dark: darkMode }))
   presets.push(presetAttributify())
   presets.push(presetRemRpx({ mode: 'rpx2rem' }))
 }
 
-export default defineConfig({
+const config: UserConfig = defineConfig({
   content: {
     pipeline: {
       exclude: [
@@ -94,3 +96,5 @@ export default defineConfig({
     preflightRoot: isMp ? ['page,::before,::after'] : undefined,
   },
 })
+
+export default config
