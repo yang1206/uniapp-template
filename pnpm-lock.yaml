@@ -18,8 +18,8 @@ dependencies:
     specifier: 3.0.0-alpha-3090120230928001
     version: 3.0.0-alpha-3090120230928001(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47)
   '@dcloudio/uni-h5':
-    specifier: 3.0.0-alpha-3090020230909001
-    version: 3.0.0-alpha-3090020230909001(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47)
+    specifier: 3.0.0-alpha-3090120230928001
+    version: 3.0.0-alpha-3090120230928001(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47)
   '@dcloudio/uni-mp-alipay':
     specifier: 3.0.0-alpha-3090020230909001
     version: 3.0.0-alpha-3090020230909001(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47)
@@ -2033,27 +2033,6 @@ packages:
       - vue
     dev: false
 
-  /@dcloudio/uni-h5-vite@3.0.0-alpha-3090020230909001(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47):
-    resolution: {integrity: sha512-RBAZyLp+8zFmwBd1FTxJV+/9kuKIII1iGwitxzJ49z6Yb3rDux0EFuFW8+yV6P0rYdj1DJ4S2SoeTx8b68JzLQ==}
-    dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-3090020230909001(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47)
-      '@dcloudio/uni-shared': 3.0.0-alpha-3090020230909001
-      '@rollup/pluginutils': 4.2.1
-      '@vue/compiler-dom': 3.2.47
-      '@vue/compiler-sfc': 3.2.47
-      '@vue/server-renderer': 3.2.47(vue@3.2.47)
-      '@vue/shared': 3.2.47
-      debug: 4.3.4
-      fs-extra: 10.1.0
-      mime: 3.0.0
-      module-alias: 2.2.2
-    transitivePeerDependencies:
-      - postcss
-      - supports-color
-      - ts-node
-      - vue
-    dev: false
-
   /@dcloudio/uni-h5-vite@3.0.0-alpha-3090120230928001(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47):
     resolution: {integrity: sha512-PeJdWiJb7X3J+AeM/pJTy+kWrxyFisqUQ+EQYGz3X8X/5VrIOURtn21liRV00ppy9HeSbq/LlURFGWkQVbHFBg==}
     dependencies:
@@ -2075,43 +2054,12 @@ packages:
       - vue
     dev: false
 
-  /@dcloudio/uni-h5-vue@3.0.0-alpha-3090020230909001(vue@3.2.47):
-    resolution: {integrity: sha512-GKWsJLzphECsYr7hm0NAvDdkH8tKpync5R2Jug78hLcxawdnkJuqf6tFnhc1i1oUulXGBHywnSh/KcUivxqiFQ==}
-    dependencies:
-      '@dcloudio/uni-shared': 3.0.0-alpha-3090020230909001
-      '@vue/server-renderer': 3.2.47(vue@3.2.47)
-    transitivePeerDependencies:
-      - vue
-    dev: false
-
   /@dcloudio/uni-h5-vue@3.0.0-alpha-3090120230928001(vue@3.2.47):
     resolution: {integrity: sha512-i9VzlykaM9QsZfatUFIIE+O2LwdTFrDJvRFZBKPtJtjjt82xGhFXJzKn0t/Jh48np+Sd2vVzRr//QPh76tOGtw==}
     dependencies:
       '@dcloudio/uni-shared': 3.0.0-alpha-3090120230928001
       '@vue/server-renderer': 3.2.47(vue@3.2.47)
     transitivePeerDependencies:
-      - vue
-    dev: false
-
-  /@dcloudio/uni-h5@3.0.0-alpha-3090020230909001(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47):
-    resolution: {integrity: sha512-pyjHWo2VqWYQOkibnFqMxG3wEw50TcdLjbqgYLDYVOG8iCDdaoGu1cRtPS3NXJQYjnzGAL0bAL0MwZtA0F4qHA==}
-    dependencies:
-      '@dcloudio/uni-h5-vite': 3.0.0-alpha-3090020230909001(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47)
-      '@dcloudio/uni-h5-vue': 3.0.0-alpha-3090020230909001(vue@3.2.47)
-      '@dcloudio/uni-i18n': 3.0.0-alpha-3090020230909001
-      '@dcloudio/uni-shared': 3.0.0-alpha-3090020230909001
-      '@vue/server-renderer': 3.2.47(vue@3.2.47)
-      '@vue/shared': 3.2.47
-      debug: 4.3.4
-      localstorage-polyfill: 1.0.1
-      postcss-selector-parser: 6.0.13
-      safe-area-insets: 1.4.1
-      vue-router: 4.1.6(vue@3.2.47)
-      xmlhttprequest: 1.8.0
-    transitivePeerDependencies:
-      - postcss
-      - supports-color
-      - ts-node
       - vue
     dev: false
 
