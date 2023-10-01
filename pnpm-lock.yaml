@@ -95,8 +95,8 @@ devDependencies:
     specifier: 3.0.0-alpha-3090120230928001
     version: 3.0.0-alpha-3090120230928001
   '@dcloudio/vite-plugin-uni':
-    specifier: 3.0.0-alpha-3090020230909001
-    version: 3.0.0-alpha-3090020230909001(postcss@8.4.28)(ts-node@10.9.1)(vite@4.4.9)(vue@3.2.47)
+    specifier: 3.0.0-alpha-3090120230928001
+    version: 3.0.0-alpha-3090120230928001(postcss@8.4.28)(ts-node@10.9.1)(vite@4.4.9)(vue@3.2.47)
   '@iconify-json/carbon':
     specifier: ^1.1.21
     version: 1.1.21
@@ -633,6 +633,7 @@ packages:
     hasBin: true
     dependencies:
       '@babel/types': 7.22.19
+    dev: false
 
   /@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression@7.22.5(@babel/core@7.22.5):
     resolution: {integrity: sha512-NP1M5Rf+u2Gw9qfSO4ihjcTGW5zXTi36ITLd4/EoAcEhIZ0yjMqmftDNl3QC19CX7olhrjpyU454g/2W7X0jvQ==}
@@ -1600,6 +1601,7 @@ packages:
       '@babel/helper-string-parser': 7.22.5
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
+    dev: false
 
   /@bcoe/v8-coverage@0.2.3:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
@@ -1951,6 +1953,7 @@ packages:
       - supports-color
       - ts-node
       - vue
+    dev: false
 
   /@dcloudio/uni-cli-shared@3.0.0-alpha-3090120230928001(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47):
     resolution: {integrity: sha512-JFHjEV+Uv81+tos9KLvRE6XCHPMqAV9QQ1LOJSTQNSlXeJKx43AGlR3u4miwNpSB6WmSkOpRr+CdmZ6QfIa1FA==}
@@ -2085,6 +2088,7 @@ packages:
 
   /@dcloudio/uni-i18n@3.0.0-alpha-3090020230909001:
     resolution: {integrity: sha512-GViryZuU4FVJdwMbGLeN/XbHKcYRCkynKKgOxmx+Jejejz2g64uKUEqrblGz5Pb3iCxU9uGvFakNdAR6G6J9bg==}
+    dev: false
 
   /@dcloudio/uni-i18n@3.0.0-alpha-3090120230928001:
     resolution: {integrity: sha512-Df7IfF1aC8jQxasCqlWAbevDsNM9NNbIUlFuiaH/TAMYdmG+x4pgqrT8MDlQeIlmUJc0zBK8dY1MA6sfQd/q0w==}
@@ -2338,6 +2342,7 @@ packages:
     resolution: {integrity: sha512-Lkkp5+pESJrDitWaQQcHhs8CGj3BE1i0379Qor1VcgCqKSocmNXGDVkZqY3ReYbTlJYlfQMedrUlZaY/WWnS1g==}
     dependencies:
       '@vue/shared': 3.2.47
+    dev: false
 
   /@dcloudio/uni-shared@3.0.0-alpha-3090120230928001:
     resolution: {integrity: sha512-SWX3bYOkRX+0Q5uHAi4ludIlpLpPm6rYQx6/OWcukPFpOP0eTCJ0n3DIpm3eX33Ya/wDhX9+fx8RJYcUndTY/Q==}
@@ -2366,8 +2371,8 @@ packages:
     resolution: {integrity: sha512-e/lSbvR79KH9+d3D4ueNbvD6szigjO/5IyjBNmiTqaj0PTS324fBV3L6f3s1qpkYonM4rdOl000hVOcAg6Gh/A==}
     dev: false
 
-  /@dcloudio/vite-plugin-uni@3.0.0-alpha-3090020230909001(postcss@8.4.28)(ts-node@10.9.1)(vite@4.4.9)(vue@3.2.47):
-    resolution: {integrity: sha512-2EVDmh1rADnqRN1wIsiE/thSCf+wbJUO4tSPNdiMQoz+Lcz57H9PPe2F5a3pkrbAt7vI2dKMo4EDiX3ccHbJiA==}
+  /@dcloudio/vite-plugin-uni@3.0.0-alpha-3090120230928001(postcss@8.4.28)(ts-node@10.9.1)(vite@4.4.9)(vue@3.2.47):
+    resolution: {integrity: sha512-+csnUtVTAKYfet3fMR9+ZsMVdP16hUocjcZuFr8q0mZJWkPbJS/SyWjSwURm1Q09dgMeFPmJevOon/r1392NGw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -2376,8 +2381,8 @@ packages:
       '@babel/core': 7.22.5
       '@babel/plugin-syntax-import-meta': 7.10.4(@babel/core@7.22.5)
       '@babel/plugin-transform-typescript': 7.21.3(@babel/core@7.22.5)
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-3090020230909001(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47)
-      '@dcloudio/uni-shared': 3.0.0-alpha-3090020230909001
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-3090120230928001(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47)
+      '@dcloudio/uni-shared': 3.0.0-alpha-3090120230928001
       '@rollup/pluginutils': 4.2.1
       '@vitejs/plugin-legacy': 4.0.5(terser@5.16.8)(vite@4.4.9)
       '@vitejs/plugin-vue': 4.2.3(vite@4.4.9)(vue@3.2.47)
@@ -2394,7 +2399,7 @@ packages:
       fs-extra: 10.1.0
       hash-sum: 2.0.0
       jsonc-parser: 3.2.0
-      magic-string: 0.30.2
+      magic-string: 0.30.3
       picocolors: 1.0.0
       terser: 5.16.8
       vite: 4.4.9(@types/node@20.6.3)(sass@1.68.0)(terser@5.16.8)
@@ -8985,6 +8990,7 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
+    dev: false
 
   /magic-string@0.30.3:
     resolution: {integrity: sha512-B7xGbll2fG/VjP+SWg4sX3JynwIU0mjoTc6MPpKNuIvftk6u6vqhDnk1R80b8C2GBR6ywqy+1DcKBrevBg+bmw==}
@@ -11183,9 +11189,9 @@ packages:
   /unimport@3.0.14:
     resolution: {integrity: sha512-67Rh/sGpEuVqdHWkXaZ6NOq+I7sKt86o+DUtKeGB6dh4Hk1A8AQrzyVGg2+LaVEYotStH7HwvV9YSaRjyT7Uqg==}
     dependencies:
-      '@rollup/pluginutils': 5.0.2
+      '@rollup/pluginutils': 5.0.4(rollup@3.29.2)
       escape-string-regexp: 5.0.0
-      fast-glob: 3.3.0
+      fast-glob: 3.3.1
       local-pkg: 0.4.3
       magic-string: 0.30.3
       mlly: 1.4.0
