@@ -27,8 +27,8 @@ dependencies:
     specifier: 3.0.0-alpha-3090120230928001
     version: 3.0.0-alpha-3090120230928001(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47)
   '@dcloudio/uni-mp-jd':
-    specifier: 3.0.0-alpha-3090020230909001
-    version: 3.0.0-alpha-3090020230909001(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47)
+    specifier: 3.0.0-alpha-3090120230928001
+    version: 3.0.0-alpha-3090120230928001(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47)
   '@dcloudio/uni-mp-kuaishou':
     specifier: 3.0.0-alpha-3090020230909001
     version: 3.0.0-alpha-3090020230909001(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47)
@@ -2154,14 +2154,14 @@ packages:
       - vue
     dev: false
 
-  /@dcloudio/uni-mp-jd@3.0.0-alpha-3090020230909001(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47):
-    resolution: {integrity: sha512-oveXe769RS8AR3zRCewYc60OBRLLDVXdO36A/awXBQnVl3BX1/Rl4SsmPWe6zZw5O4eWQaMQAcPzyaFTBLtcGA==}
+  /@dcloudio/uni-mp-jd@3.0.0-alpha-3090120230928001(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47):
+    resolution: {integrity: sha512-848KjyEi/SOzvfFypEiHNnPEnJJ3m4iHHyikI3RWsD9ZgHwN9x6Y++vmx/5PrEdReqoxPVZZz1UHzFgOUAb3qw==}
     dependencies:
-      '@dcloudio/uni-cli-shared': 3.0.0-alpha-3090020230909001(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47)
-      '@dcloudio/uni-mp-compiler': 3.0.0-alpha-3090020230909001(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47)
-      '@dcloudio/uni-mp-vite': 3.0.0-alpha-3090020230909001(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47)
-      '@dcloudio/uni-mp-vue': 3.0.0-alpha-3090020230909001
-      '@dcloudio/uni-shared': 3.0.0-alpha-3090020230909001
+      '@dcloudio/uni-cli-shared': 3.0.0-alpha-3090120230928001(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47)
+      '@dcloudio/uni-mp-compiler': 3.0.0-alpha-3090120230928001(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47)
+      '@dcloudio/uni-mp-vite': 3.0.0-alpha-3090120230928001(postcss@8.4.28)(ts-node@10.9.1)(vue@3.2.47)
+      '@dcloudio/uni-mp-vue': 3.0.0-alpha-3090120230928001
+      '@dcloudio/uni-shared': 3.0.0-alpha-3090120230928001
       '@vue/shared': 3.2.47
     transitivePeerDependencies:
       - postcss
