@@ -1,43 +1,16 @@
 import {
-  type Preset,
-  type SourceCodeTransformer,
   type UserConfig,
   defineConfig,
-  presetAttributify,
   presetIcons,
-  presetUno,
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
 import presetRemToPx from '@unocss/preset-rem-to-px'
 import { isH5, isMp } from '@uni-helper/uni-env'
 
-import {
-  presetApplet,
-  presetRemRpx,
-  transformerApplet,
-  transformerAttributify,
-} from 'unocss-applet'
+import { presetUni } from '@uni-helper/unocss-preset-uni'
 
-const presets: Preset[] = []
-const transformers: SourceCodeTransformer[] = []
 const darkMode = isH5 ? 'class' : 'media'
-
-if (isMp) {
-  presets.push(presetApplet({ dark: darkMode, variablePrefix: 'li-' }))
-  presets.push(presetRemRpx({
-    baseFontSize: 2,
-    mode: isMp ? 'rem2rpx' : 'rpx2rem',
-  }))
-  transformers.push(transformerAttributify({ ignoreAttributes: ['block', 'fixed'] }))
-  transformers.push(transformerApplet())
-}
-
-else {
-  presets.push(presetUno({ dark: darkMode }))
-  presets.push(presetAttributify())
-  presets.push(presetRemRpx({ mode: 'rpx2rem' }))
-}
 
 const config: UserConfig = defineConfig({
   content: {
@@ -74,6 +47,19 @@ const config: UserConfig = defineConfig({
     ],
   ],
   presets: [
+    presetUni({
+      uno: {
+        dark: darkMode,
+        variablePrefix: 'li-',
+      },
+      attributify: {
+        ignoreAttributes: ['block', 'fixed'],
+      },
+      remRpx: {
+        baseFontSize: 2,
+        mode: isMp ? 'rem2rpx' : 'rpx2rem',
+      },
+    }),
     presetIcons({
       scale: 1.2,
       warn: true,
@@ -84,12 +70,10 @@ const config: UserConfig = defineConfig({
     }),
     // 保持h5和微信小程序转换比例一致
     presetRemToPx({ baseFontSize: 2 }),
-    ...presets,
   ],
   transformers: [
     transformerDirectives(),
     transformerVariantGroup(),
-    ...transformers,
   ],
   safelist: 'prose prose-sm m-auto text-left'.split(' '),
   theme: {

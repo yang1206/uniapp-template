@@ -8,9 +8,9 @@
       "DOM.Iterable"
     ],
     "useDefineForClassFields": true,
+    "baseUrl": ".",
     "module": "esnext",
     "moduleResolution": "Node",
-    "baseUrl": ".",
     "paths": {
       "@/*": [
         "src/*"
@@ -19,6 +19,7 @@
         "./*"
       ]
     },
+    "resolveJsonModule": true,
     "types": [
       "@dcloudio/types",
       "@mini-types/alipay",
@@ -32,7 +33,6 @@
       "type-fest",
       "vite/client"
     ],
-    "resolveJsonModule": true,
     "sourceMap": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
