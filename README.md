@@ -27,7 +27,7 @@ Inspired by [Vitesse](https://github.com/antfu/vitesse) ❤
 ### UI 框架
 
 - [UnoCSS](https://github.com/antfu/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎
-- [UniAPP-NutUi](https://github.com/yang1206/uniapp-nutui) - 支持TS与 Uniapp的多端开发组件库
+- [nutui-uniapp](https://github.com/nutui-uniapp/nutui-uniapp) - 支持TS与 Uniapp的多端开发组件库
 - Uni UI - 性能最好的UniApp组件库
 
 ### Icons
@@ -45,7 +45,7 @@ Inspired by [Vitesse](https://github.com/antfu/vitesse) ❤
 - [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 等，无需导入
 - [`vite-plugin-uni-manifest`](https://github.com/uni-helper/vite-plugin-uni-manifest#readme) - 使用 TypeScript 编写 uni-app 的 manifest.json
 - [`alova`](https://uniajax.ponjs.com) - 轻量级的请求策略库
-- [`unocss-applet`](https://github.com/unocss-applet/unocss-applet) - 在小程序中使用 unocss
+- [`unocss-preset-uni`](https://github.com/uni-helper/unocss-preset-uni) - 专为 uni-app 打造的 UnoCSS 预设
 
 ## 使用
 
