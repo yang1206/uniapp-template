@@ -1,5 +1,6 @@
 {
   "recommendations": [
+    "dbaeumer.vscode-eslint",
     "uni-helper.uni-helper-vscode",
     "vue.volar",
     "vue.vscode-typescript-vue-plugin",
