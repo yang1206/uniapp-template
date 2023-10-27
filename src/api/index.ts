@@ -11,5 +11,9 @@ interface GITHUB {
 }
 
 export function getGithub() {
-  return useRequest(request.Get<GITHUB>('/uniapp-template'))
+  return useRequest(request.Get<GITHUB>('repos/yang1206/uniapp-template'), {
+    force: (is) => {
+      return is
+    },
+  })
 }
