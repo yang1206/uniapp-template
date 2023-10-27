@@ -7,7 +7,6 @@ import {
 } from 'unocss'
 import presetRemToPx from '@unocss/preset-rem-to-px'
 import { isH5, isMp } from '@uni-helper/uni-env'
-
 import { presetUni } from '@uni-helper/unocss-preset-uni'
 
 const darkMode = isH5 ? 'class' : 'media'

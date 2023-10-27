@@ -10,11 +10,10 @@ import { convertEnv, getRootPath, getSrcPath } from './build/utils'
 export default defineConfig((configEnv: ConfigEnv) => {
   const srcPath = getSrcPath()
   const rootPath = getRootPath()
-  const isBuild = configEnv.command === 'build'
   const viteEnv = convertEnv(loadEnv(configEnv.mode, process.cwd()))
   const { VITE_PORT, VITE_USE_PROXY, VITE_PROXY_TYPE } = viteEnv
   return {
-    plugins: setupVitePlugins(viteEnv, isBuild),
+    plugins: setupVitePlugins(),
     server: {
       host: '0.0.0.0',
       port: VITE_PORT,
@@ -38,7 +37,7 @@ export default defineConfig((configEnv: ConfigEnv) => {
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@import "nutui-uniapp/styles/variables.scss";',
+          additionalData: `@import '@/styles/variables.scss';`,
         },
       },
     },

@@ -25,13 +25,14 @@
       "@mini-types/alipay",
       "miniprogram-api-typings",
       "@uni-helper/uni-app-types",
-      "pinia-plugin-persist-uni",
       "@uni-helper/uni-ui-types",
       "unplugin-vue-macros/macros-global",
       "nutui-uniapp/global.d.ts",
       "unplugin-icons/types/vue",
       "type-fest",
-      "vite/client"
+      "vite/client",
+      "@vue-macros/volar/define-options",
+      "@vue-macros/volar/define-slots"
     ],
     "sourceMap": true,
     "esModuleInterop": true,

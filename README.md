@@ -44,7 +44,7 @@ Inspired by [Vitesse](https://github.com/antfu/vitesse) ❤
 - [`vite-plugin-uni-components`](https://github.com/uni-helper/vite-plugin-uni-components) - 自动加载组件
 - [`unplugin-auto-import`](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 等，无需导入
 - [`vite-plugin-uni-manifest`](https://github.com/uni-helper/vite-plugin-uni-manifest#readme) - 使用 TypeScript 编写 uni-app 的 manifest.json
-- [`alova`](https://uniajax.ponjs.com) - 轻量级的请求策略库
+- [`alova`](https://alova.js.org) - 轻量级的请求策略库
 - [`unocss-preset-uni`](https://github.com/uni-helper/unocss-preset-uni) - 专为 uni-app 打造的 UnoCSS 预设
 
 ## 使用

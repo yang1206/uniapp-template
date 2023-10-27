@@ -2,6 +2,7 @@ import { resolve } from 'node:path'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from '@uni-helper/vite-plugin-uni-components'
 import { UniUIResolver } from '@uni-helper/vite-plugin-uni-components/resolvers'
+import { UniUseAutoImports } from '@uni-helper/uni-use'
 import IconsResolver from 'unplugin-icons/resolver'
 import icons from 'unplugin-icons/vite'
 import { NutResolver } from 'nutui-uniapp'
@@ -10,7 +11,7 @@ import { getRootPath, getSrcPath } from '../utils'
 
 export default [
   AutoImport({
-    imports: ['vue', '@vueuse/core', 'pinia', 'uni-app'],
+    imports: ['vue', 'pinia', 'uni-app', '@vueuse/core', UniUseAutoImports],
     dirs: [resolve(getSrcPath(), 'composables')],
     vueTemplate: true,
     dts: resolve(getRootPath(), 'typings/auto-import.d.ts'),

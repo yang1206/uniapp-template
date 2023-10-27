@@ -1,30 +1,35 @@
 import { createAlova } from 'alova'
 import AdapterUniapp from '@alova/adapter-uniapp'
+import { showNetworkError } from './helper'
+import { DefaultBaseUrl, DefaultHeaders } from '@/constants'
+import { useAuthStore } from '@/store'
 
-const baseURL = import.meta.env.VITE_BASE_API
-export interface BaseRes<T = any> {
-  code: number
-  msg: string
-  data: T
-  [key: string]: unknown
-}
 const request = createAlova({
-  baseURL,
+  baseURL: DefaultBaseUrl,
   timeout: 1000 * 60 * 5,
+
   ...AdapterUniapp(),
-  async beforeRequest({ config }) {
-    uni.showLoading(({
-      title: 'Loading...',
-    }))
+  async beforeRequest(method) {
+    const authStore = useAuthStore()
+    method.config.headers = {
+      'token': authStore.token,
+      'X-Token': authStore.token,
+      'X-Access-Token': authStore.token,
+      ...method.config.headers,
+      ...DefaultHeaders,
+    }
   },
   responded: {
-    onSuccess: async (response, method) => {
-      const { statusCode, data } = response as UniNamespace.RequestSuccessCallbackResult
-      uni.hideLoading()
+    onSuccess: async (response, _method) => {
+      const { data } = response as UniNamespace.RequestSuccessCallbackResult
+
       return data || null
     },
-    onError: () => {
-
+    onError: (error, methodInstance) => {
+      showNetworkError({
+        config: methodInstance,
+      })
+      return Promise.reject(error)
     },
   },
 })

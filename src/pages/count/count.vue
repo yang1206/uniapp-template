@@ -1,7 +1,5 @@
 <script lang="ts" setup>
 import { getGithub } from '@/api'
-
-const { data, loading } = getGithub()
 </script>
 
 <template>

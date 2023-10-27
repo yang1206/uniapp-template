@@ -1,26 +1,22 @@
 import { defineStore } from 'pinia'
 
-export const useCounterStore = defineStore('counter', {
-  state() {
-    return {
-      count: 0,
-    }
-  },
-  actions: {
-    inc() {
-      this.count += 1
-    },
-    dec() {
-      this.count -= 1
-    },
-    async asyncInc() {
-      setTimeout(() => {
-        this.inc()
-      }, 300)
-    },
-  },
-  persist: {
-    enabled: true,
-  },
-
+export const useCounterStore = defineStore('counter', () => {
+  const count = ref(0)
+  function inc() {
+    count.value += 1
+  }
+  function dec() {
+    count.value -= 1
+  }
+  async function asyncInc() {
+    setTimeout(() => {
+      inc()
+    }, 300)
+  }
+  return {
+    count,
+    inc,
+    dec,
+    asyncInc,
+  }
 })

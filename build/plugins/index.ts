@@ -9,7 +9,7 @@ import restart from 'vite-plugin-restart'
 import { getRootPath } from '../utils'
 import unplugins from './unplugin'
 
-export function setupVitePlugins(viteEnv: ImportMetaEnv, isBuild: boolean): PluginOption[] {
+export function setupVitePlugins(): PluginOption[] {
   const plugins = [
     uniManifest({ minify: true }),
     uniPages({
@@ -27,7 +27,9 @@ export function setupVitePlugins(viteEnv: ImportMetaEnv, isBuild: boolean): Plug
       ],
     }),
     unocss(),
-    uni(),
+    uni({
+      vueOptions: {},
+    }),
   ]
   return plugins
 }
