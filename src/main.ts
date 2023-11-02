@@ -15,8 +15,8 @@
 // import 'core-js/actual/string/replace-all'
 
 // since 2.16.1 but consider other platforms
-// import 'core-js/actual/string/trim-end'; // since 2.16.1
-// import 'core-js/actual/string/trim-start'; // since 2.16.1
+import 'core-js/actual/string/trim-end'
+import 'core-js/actual/string/trim-start'
 import { createSSRApp } from 'vue'
 import App from './App.vue'
 import { dayjsPlugin } from './plugins'
