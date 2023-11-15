@@ -6,11 +6,12 @@
   "cSpell.words": [
     "alova"
   ],
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
   "references.preferredLocation": "peek",
   "eslint.experimental.useFlatConfig": true,
   // Auto fix
   "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit",
+    "source.fixAll.eslint": "always",
     "source.organizeImports": "never"
   },
   // Silent the stylistic rules in you IDE, but still auto fix them
@@ -51,5 +52,19 @@
       "rule": "*semi",
       "severity": "off"
     }
-  ]
+  ],
+  // Enable eslint for all supported languages
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml"
+  ],
+  "vue.codeActions.enabled": false,
 }

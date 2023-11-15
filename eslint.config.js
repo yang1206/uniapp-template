@@ -1,7 +1,7 @@
-const antfu = require('@antfu/eslint-config').default
+const uni = require('@uni-helper/eslint-config')
 const unocss = require('@unocss/eslint-plugin')
 
-module.exports = antfu(
+module.exports = uni(
   {
     ignores: ['src/manifest.json', 'src/pages.json'],
   },
