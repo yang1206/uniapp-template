@@ -1,5 +1,5 @@
-import { useRequest } from 'alova'
-import request from '@/service'
+import type { QueryOptions } from '@tanstack/vue-query'
+import { unInstance } from '@/service'
 
 interface GITHUB {
   owner: {
@@ -10,10 +10,9 @@ interface GITHUB {
   html_url: string
 }
 
-export function getGithub() {
-  return useRequest(request.Get<GITHUB>('repos/yang1206/uniapp-template'), {
-    force: (is) => {
-      return is
-    },
-  })
+export function fetchGitHubRepo(repo: string): QueryOptions<GITHUB> {
+  return {
+    queryKey: [repo, 'repos'],
+    queryFn: () => unInstance.get(`repos/${repo}`),
+  }
 }

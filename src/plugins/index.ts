@@ -1,2 +1,2 @@
 export * from './dayjs'
-// export * from './vue-query'
+export * from './vue-query'

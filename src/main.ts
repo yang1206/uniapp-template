@@ -15,17 +15,17 @@
 // import 'core-js/actual/string/replace-all'
 
 // since 2.16.1 but consider other platforms
-import 'core-js/actual/string/trim-end'
-import 'core-js/actual/string/trim-start'
+// import 'core-js/actual/string/trim-end'
+// import 'core-js/actual/string/trim-start'
 import { createSSRApp } from 'vue'
 import App from './App.vue'
-import { dayjsPlugin } from './plugins'
+import { dayjsPlugin, vueQueryPlugin } from './plugins'
 import { setupStore } from '@/store'
 import 'virtual:uno.css'
 import '@/styles/reset.css'
 
 export function createApp() {
-  const app = createSSRApp(App).use(dayjsPlugin)
+  const app = createSSRApp(App).use(dayjsPlugin).use(vueQueryPlugin)
   setupStore(app)
   return {
     app,

@@ -1,9 +1,23 @@
+<script lang="ts" setup>
+import { useQuery } from '@tanstack/vue-query'
+import { fetchGitHubRepo } from '@/api'
+
+// #ifdef MP
+const repo = ref('yang1206/uniapp-template')
+const { data } = useQuery(computed(() => {
+  return {
+    ...fetchGitHubRepo(repo.value),
+  }
+}))
+// #endif
+</script>
+
 <template>
   <div class="px-4 py-10 text-center font-sans text-gray-700">
     <div>
       <div class="i-carbon-campsite" inline-block text-80 />
       <p>
-        <a text-14px text-gray decoration-none op75 rel="noreferrer" href="https://github.com/yang1206/uniapp-template" target="_blank">
+        <a :href="data?.html_url" text-14px text-gray decoration-none op75 rel="noreferrer" target="_blank">
           一个uniapp，vite，vue3的起始模版
         </a>
       </p>
@@ -29,10 +43,10 @@
 
 <style scoped>
 .logo {
-  margin-top: 200rpx;
-  margin-bottom: 50rpx;
   width: 100rpx;
   height: 100rpx;
+  margin-top: 200rpx;
+  margin-bottom: 50rpx;
   text-decoration: none;
 }
 </style>

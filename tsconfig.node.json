@@ -9,6 +9,7 @@
     ]
   },
   "include": [
+    "**/*.ts",
     "*.config.*",
     "*.conf.*",
     "package.json"

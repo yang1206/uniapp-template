@@ -1,18 +1,10 @@
-import type { Method } from 'alova'
-
-export interface BaseRes<T = any> {
-  code: number
-  msg: string
-  data: T
-  [key: string]: unknown
-}
 let hasModal = false
 export function showNetworkError({
   hasPrefix = true,
   message,
-  config,
   response,
-  type = 'modal' as 'toast' | 'modal',
+  error,
+  type = 'modal' as IUnShowErrorType,
   success,
   fail,
   complete,
@@ -20,8 +12,8 @@ export function showNetworkError({
 | {
   hasPrefix?: boolean
   message?: string
-  config?: Method
-  response?: UniNamespace.RequestSuccessCallbackResult
+  response?: IUnResponse
+  error?: IUnError
   type?: 'modal'
   success?: UniApp.ShowModalOptions['success']
   fail?: UniApp.ShowModalOptions['fail']
@@ -30,8 +22,8 @@ export function showNetworkError({
 | {
   hasPrefix?: boolean
   message?: string
-  config?: Method
-  response?: UniNamespace.RequestSuccessCallbackResult
+  response?: IUnResponse
+  error?: IUnError
   type: 'toast'
   success?: UniApp.ShowToastOptions['success']
   fail?: UniApp.ShowToastOptions['fail']
@@ -39,36 +31,89 @@ export function showNetworkError({
 } = {}) {
   // method
   const method
-    = config?.type
+    = error?.config?.method
+    ?? error?.task?.method
+    // @ts-expect-error no types
+    ?? error?.method
+    ?? response?.config?.method
+    ?? response?.task?.method
+    // @ts-expect-error no types
+    ?? response?.method
     ?? ''
   const methodText = method ? `请求方法：${method}` : ''
 
   // url
   const url
-    = config?.url
-
+    = error?.config?.url
+    ?? error?.task?.url
+    // @ts-expect-error no types
+    ?? error?.url
+    ?? response?.config?.url
+    ?? response?.task?.url
+    // @ts-expect-error no types
+    ?? response?.url
     ?? ''
   const urlText = url ? `请求地址：${url}` : ''
 
   // statusCode
   const statusCode
-    = response?.statusCode
-    ?? (response?.data as BaseRes)?.code
+    = error?.status
+    // @ts-expect-error no types
+    ?? error?.statusCode
+    // @ts-expect-error no types
+    ?? error?.data?.status
+    // @ts-expect-error no types
+    ?? error?.data?.statusCode
+    // @ts-expect-error no types
+    ?? error?.data?.code
+    ?? response?.status
+    // @ts-expect-error no types
+    ?? response?.statusCode
+    ?? response?.data?.status
+    ?? response?.data?.code
+    ?? response?.data?.statusCode
     ?? 0
   const statusCodeText = statusCode ? `状态代码：${statusCode}` : ''
 
   // errorCode
   const errorCode
-    = response?.statusCode
-    ?? (response?.data as BaseRes)?.code
+    = error?.code
+    // @ts-expect-error no types
+    ?? error?.errno
+    // @ts-expect-error no types
+    ?? error?.data?.code
+    // @ts-expect-error no types
+    ?? error?.data?.errno
+    // @ts-expect-error no types
+    ?? response?.code
+    ?? response?.errno
+    ?? response?.data?.code
+    ?? response?.data?.errno
     ?? ''
   const errorCodeText = errorCode ? `错误代码：${errorCode}` : ''
 
   // errorMessage
   const errorMessage
-    = message
+    // @ts-expect-error no types
+    = error?.data?.errMsg
+    // @ts-expect-error no types
+    ?? error?.data?.message
+    // @ts-expect-error no types
+    ?? error?.data?.msg
+    // @ts-expect-error no types
+    ?? error?.errMsg
+    ?? error?.message
+    // @ts-expect-error no types
+    ?? error?.msg
+    ?? response?.data?.errMsg
+    ?? response?.data?.message
+    ?? response?.data?.msg
     ?? response?.errMsg
-    ?? (response?.data as BaseRes)?.msg
+    // @ts-expect-error no types
+    ?? response?.message
+    // @ts-expect-error no types
+    ?? response?.msg
+    ?? message
     ?? ''
   const errorMessageText = errorMessage ? `错误信息：${errorMessage}` : ''
 

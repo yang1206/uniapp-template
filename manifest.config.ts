@@ -8,13 +8,15 @@ export default defineManifestConfig({
   'versionCode': '100',
   'transformPx': false,
   'mp-weixin': {
-    appid: 'wxd4e6c25454525507',
+    appid: '',
     setting: {
       urlCheck: false,
-      ignoreDevUnusedFiles: false,
-      ignoreUploadUnusedFiles: false,
+      es6: true,
+      minified: true,
+      postcss: true,
     },
     usingComponents: true,
+    lazyCodeLoading: 'requiredComponents',
     darkmode: true,
     themeLocation: 'theme.json',
 
