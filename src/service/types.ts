@@ -4,18 +4,18 @@ type IUnShowErrorType_ = 'toast' | 'modal'
 
 type IUnRequestData_ = Record<string, any>
 
-interface IUnResponseData_ {
-  success: boolean
-  code: string
-  message: string
-  [key: string]: any
+interface IUnResponseData_<T = unknown> {
+  code: number
+  msg: string
+  status: boolean
+  data: T
 }
 
 interface IUnConfig_<T = IUnResponseData_, D = IUnRequestData_> extends UnConfig<T, D> {
   showError?: boolean
   showErrorType?: IUnShowErrorType_
 }
-interface IUnResponse_<T = IUnResponseData_, D = IUnRequestData_> extends UnResponse<T, D> {}
+interface IUnResponse_<T = IUnResponseData_, D = IUnRequestData_> extends UnResponse<T, D> { }
 
 type IUnPromise_<T = IUnResponseData_, D = IUnRequestData_> = Promise<IUnResponse_<T, D>>
 
@@ -35,10 +35,10 @@ export type {
 
 declare global {
   type IUnShowErrorType = IUnShowErrorType_
-  interface IUnRequestData extends IUnRequestData_ {}
-  interface IUnResponseData extends IUnResponseData_ {}
-  interface IUnConfig<T = IUnResponseData_, D = IUnRequestData_> extends IUnConfig_<T, D> {}
-  interface IUnResponse<T = IUnResponseData_, D = IUnRequestData_> extends IUnResponse_<T, D> {}
-  type IUnPromise<T = IUnResponseData_, D = IUnRequestData_> = IUnPromise_<T, D>
-  interface IUnError<T = IUnResponseData_, D = IUnRequestData_> extends IUnError_<T, D> {}
+  type IUnResponseData<T = unknown> = IUnResponseData_<T>
+  interface IUnRequestData extends IUnRequestData_ { }
+  interface IUnConfig<T = IUnResponseData_, D = IUnRequestData_> extends IUnConfig_<IUnResponseData_<T>, D> { }
+  interface IUnResponse<T = IUnResponseData_, D = IUnRequestData_> extends IUnResponse_<IUnResponseData_<T>, D> { }
+  type IUnPromise<T = IUnResponseData_, D = IUnRequestData_> = IUnPromise_<IUnResponseData_<T>, D>
+  interface IUnError<T = IUnResponseData_, D = IUnRequestData_> extends IUnError_<IUnResponseData_<T>, D> { }
 }

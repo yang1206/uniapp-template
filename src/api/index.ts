@@ -10,9 +10,9 @@ interface GITHUB {
   html_url: string
 }
 
-export function fetchGitHubRepo(repo: string): QueryOptions<GITHUB> {
+export function fetchGitHubRepo(repo: string) {
   return {
     queryKey: [repo, 'repos'],
-    queryFn: () => unInstance.get(`repos/${repo}`),
+    queryFn: async () => (await unInstance.get<GITHUB>(`repos/${repo}`)).data,
   }
 }

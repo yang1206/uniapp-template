@@ -71,6 +71,7 @@ export function showNetworkError({
     ?? response?.statusCode
     ?? response?.data?.status
     ?? response?.data?.code
+    // @ts-expect-error no types
     ?? response?.data?.statusCode
     ?? 0
   const statusCodeText = statusCode ? `状态代码：${statusCode}` : ''
@@ -88,6 +89,7 @@ export function showNetworkError({
     ?? response?.code
     ?? response?.errno
     ?? response?.data?.code
+    // @ts-expect-error no types
     ?? response?.data?.errno
     ?? ''
   const errorCodeText = errorCode ? `错误代码：${errorCode}` : ''
@@ -105,7 +107,9 @@ export function showNetworkError({
     ?? error?.message
     // @ts-expect-error no types
     ?? error?.msg
+    // @ts-expect-error no types
     ?? response?.data?.errMsg
+    // @ts-expect-error no types
     ?? response?.data?.message
     ?? response?.data?.msg
     ?? response?.errMsg

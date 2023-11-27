@@ -35,6 +35,7 @@ instance.interceptors.request.use((config) => {
 })
 instance.interceptors.response.use((response) => {
   const data = response as IUnResponse
+
   // if (response.config?.showError ?? true) {
   //   showNetworkError({
   //     response: response as unknown as IUnResponse,
@@ -42,7 +43,7 @@ instance.interceptors.response.use((response) => {
   //     type: data.config?.showErrorType,
   //   })
   // }
-  return data?.data?.data
+  return data
 })
 
 export { instance as unInstance }
