@@ -167,11 +167,12 @@
     "@uni-helper/uni-promises": "^0.2.1",
     "@uni-helper/uni-use": "^0.17.1",
     "@vueuse/core": "9.13.0",
-    "change-case": "^5.3.0",
+    "change-case": "4.1.2",
     "core-js": "^3.34.0",
     "dayjs": "^1.11.10",
     "nutui-uniapp": "^1.5.9",
     "pinia": "2.0.36",
+    "qs": "6.5.3",
     "vue": "3.2.47"
   },
   "devDependencies": {
