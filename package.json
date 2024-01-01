@@ -1,7 +1,7 @@
 {
   "name": "uniapp-vite-template",
   "version": "0.0.1",
-  "packageManager": "pnpm@8.10.0",
+  "packageManager": "pnpm@8.10.5",
   "license": "MIT",
   "engines": {
     "node": "20"
