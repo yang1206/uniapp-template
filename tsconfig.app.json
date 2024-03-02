@@ -30,9 +30,7 @@
       "nutui-uniapp/global.d.ts",
       "unplugin-icons/types/vue",
       "type-fest",
-      "vite/client",
-      "@vue-macros/volar/define-options",
-      "@vue-macros/volar/define-slots"
+      "vite/client"
     ],
     "sourceMap": true,
     "esModuleInterop": true,

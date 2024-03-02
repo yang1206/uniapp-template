@@ -36,6 +36,7 @@ declare global {
   const getActivePinia: typeof import('pinia')['getActivePinia']
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
   const getCurrentScope: typeof import('vue')['getCurrentScope']
+  const guessSerializerType: typeof import('@uni-helper/uni-use')['guessSerializerType']
   const h: typeof import('vue')['h']
   const ignorableWatch: typeof import('@vueuse/core')['ignorableWatch']
   const inject: typeof import('vue')['inject']
@@ -130,6 +131,7 @@ declare global {
   const toValue: typeof import('vue')['toValue']
   const toggleDark: typeof import('../src/composables/dark')['toggleDark']
   const triggerRef: typeof import('vue')['triggerRef']
+  const tryOnBackPress: typeof import('@uni-helper/uni-use')['tryOnBackPress']
   const tryOnBeforeMount: typeof import('@vueuse/core')['tryOnBeforeMount']
   const tryOnBeforeUnmount: typeof import('@vueuse/core')['tryOnBeforeUnmount']
   const tryOnHide: typeof import('@uni-helper/uni-use')['tryOnHide']
@@ -282,8 +284,9 @@ declare global {
   const useSpeechRecognition: typeof import('@vueuse/core')['useSpeechRecognition']
   const useSpeechSynthesis: typeof import('@vueuse/core')['useSpeechSynthesis']
   const useStepper: typeof import('@vueuse/core')['useStepper']
-  const useStorage: typeof import('@vueuse/core')['useStorage']
+  const useStorage: typeof import('@uni-helper/uni-use')['useStorage']
   const useStorageAsync: typeof import('@uni-helper/uni-use')['useStorageAsync']
+  const useStorageSync: typeof import('@uni-helper/uni-use')['useStorageSync']
   const useStyleTag: typeof import('@vueuse/core')['useStyleTag']
   const useSupported: typeof import('@vueuse/core')['useSupported']
   const useSwipe: typeof import('@vueuse/core')['useSwipe']
@@ -346,6 +349,7 @@ declare global {
 // for vue template auto import
 import { UnwrapRef } from 'vue'
 declare module 'vue' {
+  interface GlobalComponents {}
   interface ComponentCustomProperties {
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
     readonly acceptHMRUpdate: UnwrapRef<typeof import('pinia')['acceptHMRUpdate']>
@@ -360,6 +364,7 @@ declare module 'vue' {
     readonly getActivePinia: UnwrapRef<typeof import('pinia')['getActivePinia']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
+    readonly guessSerializerType: UnwrapRef<typeof import('@uni-helper/uni-use')['guessSerializerType']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
     readonly inject: UnwrapRef<typeof import('vue')['inject']>
     readonly isProxy: UnwrapRef<typeof import('vue')['isProxy']>
@@ -426,6 +431,7 @@ declare module 'vue' {
     readonly toRefs: UnwrapRef<typeof import('vue')['toRefs']>
     readonly toValue: UnwrapRef<typeof import('vue')['toValue']>
     readonly triggerRef: UnwrapRef<typeof import('vue')['triggerRef']>
+    readonly tryOnBackPress: UnwrapRef<typeof import('@uni-helper/uni-use')['tryOnBackPress']>
     readonly tryOnHide: UnwrapRef<typeof import('@uni-helper/uni-use')['tryOnHide']>
     readonly tryOnInit: UnwrapRef<typeof import('@uni-helper/uni-use')['tryOnInit']>
     readonly tryOnLoad: UnwrapRef<typeof import('@uni-helper/uni-use')['tryOnLoad']>
@@ -446,7 +452,6 @@ declare module 'vue' {
     readonly useNetwork: UnwrapRef<typeof import('@uni-helper/uni-use')['useNetwork']>
     readonly useOnline: UnwrapRef<typeof import('@uni-helper/uni-use')['useOnline']>
     readonly usePage: UnwrapRef<typeof import('@uni-helper/uni-use')['usePage']>
-    readonly usePageScroll: UnwrapRef<typeof import('@uni-helper/uni-use')['usePageScroll']>
     readonly usePages: UnwrapRef<typeof import('@uni-helper/uni-use')['usePages']>
     readonly usePreferredDark: UnwrapRef<typeof import('@uni-helper/uni-use')['usePreferredDark']>
     readonly usePreferredLanguage: UnwrapRef<typeof import('@uni-helper/uni-use')['usePreferredLanguage']>
@@ -461,7 +466,9 @@ declare module 'vue' {
     readonly useSelectorQuery: UnwrapRef<typeof import('@uni-helper/uni-use')['useSelectorQuery']>
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>
     readonly useSocket: UnwrapRef<typeof import('@uni-helper/uni-use')['useSocket']>
+    readonly useStorage: UnwrapRef<typeof import('@uni-helper/uni-use')['useStorage']>
     readonly useStorageAsync: UnwrapRef<typeof import('@uni-helper/uni-use')['useStorageAsync']>
+    readonly useStorageSync: UnwrapRef<typeof import('@uni-helper/uni-use')['useStorageSync']>
     readonly useToast: UnwrapRef<typeof import('@uni-helper/uni-use')['useToast']>
     readonly useToken: UnwrapRef<typeof import('../src/composables/useToken')['useToken']>
     readonly useUploadFile: UnwrapRef<typeof import('@uni-helper/uni-use')['useUploadFile']>
@@ -473,6 +480,7 @@ declare module 'vue' {
   }
 }
 declare module '@vue/runtime-core' {
+  interface GlobalComponents {}
   interface ComponentCustomProperties {
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
     readonly acceptHMRUpdate: UnwrapRef<typeof import('pinia')['acceptHMRUpdate']>
@@ -487,6 +495,7 @@ declare module '@vue/runtime-core' {
     readonly getActivePinia: UnwrapRef<typeof import('pinia')['getActivePinia']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
+    readonly guessSerializerType: UnwrapRef<typeof import('@uni-helper/uni-use')['guessSerializerType']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
     readonly inject: UnwrapRef<typeof import('vue')['inject']>
     readonly isProxy: UnwrapRef<typeof import('vue')['isProxy']>
@@ -553,6 +562,7 @@ declare module '@vue/runtime-core' {
     readonly toRefs: UnwrapRef<typeof import('vue')['toRefs']>
     readonly toValue: UnwrapRef<typeof import('vue')['toValue']>
     readonly triggerRef: UnwrapRef<typeof import('vue')['triggerRef']>
+    readonly tryOnBackPress: UnwrapRef<typeof import('@uni-helper/uni-use')['tryOnBackPress']>
     readonly tryOnHide: UnwrapRef<typeof import('@uni-helper/uni-use')['tryOnHide']>
     readonly tryOnInit: UnwrapRef<typeof import('@uni-helper/uni-use')['tryOnInit']>
     readonly tryOnLoad: UnwrapRef<typeof import('@uni-helper/uni-use')['tryOnLoad']>
@@ -573,7 +583,6 @@ declare module '@vue/runtime-core' {
     readonly useNetwork: UnwrapRef<typeof import('@uni-helper/uni-use')['useNetwork']>
     readonly useOnline: UnwrapRef<typeof import('@uni-helper/uni-use')['useOnline']>
     readonly usePage: UnwrapRef<typeof import('@uni-helper/uni-use')['usePage']>
-    readonly usePageScroll: UnwrapRef<typeof import('@uni-helper/uni-use')['usePageScroll']>
     readonly usePages: UnwrapRef<typeof import('@uni-helper/uni-use')['usePages']>
     readonly usePreferredDark: UnwrapRef<typeof import('@uni-helper/uni-use')['usePreferredDark']>
     readonly usePreferredLanguage: UnwrapRef<typeof import('@uni-helper/uni-use')['usePreferredLanguage']>
@@ -588,7 +597,9 @@ declare module '@vue/runtime-core' {
     readonly useSelectorQuery: UnwrapRef<typeof import('@uni-helper/uni-use')['useSelectorQuery']>
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>
     readonly useSocket: UnwrapRef<typeof import('@uni-helper/uni-use')['useSocket']>
+    readonly useStorage: UnwrapRef<typeof import('@uni-helper/uni-use')['useStorage']>
     readonly useStorageAsync: UnwrapRef<typeof import('@uni-helper/uni-use')['useStorageAsync']>
+    readonly useStorageSync: UnwrapRef<typeof import('@uni-helper/uni-use')['useStorageSync']>
     readonly useToast: UnwrapRef<typeof import('@uni-helper/uni-use')['useToast']>
     readonly useToken: UnwrapRef<typeof import('../src/composables/useToken')['useToken']>
     readonly useUploadFile: UnwrapRef<typeof import('@uni-helper/uni-use')['useUploadFile']>

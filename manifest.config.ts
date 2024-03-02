@@ -14,6 +14,8 @@ export default defineManifestConfig({
       es6: true,
       minified: true,
       postcss: true,
+      ignoreDevUnusedFiles: false,
+      ignoreUploadUnusedFiles: false,
     },
     usingComponents: true,
     lazyCodeLoading: 'requiredComponents',

@@ -3,8 +3,6 @@
     "dbaeumer.vscode-eslint",
     "uni-helper.uni-helper-vscode",
     "vue.volar",
-    "vue.vscode-typescript-vue-plugin",
-    "antfu.unocss",
-    "voorjaar.windicss-intellisense"
+    "antfu.unocss"
   ]
 }

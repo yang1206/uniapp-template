@@ -1,4 +1,5 @@
 import {
+  type PresetOrFactory,
   type UserConfig,
   defineConfig,
   presetIcons,
@@ -58,7 +59,7 @@ const config: UserConfig = defineConfig({
         baseFontSize: 2,
         mode: isMp ? 'rem2rpx' : 'rpx2rem',
       },
-    }),
+    }) as PresetOrFactory,
     presetIcons({
       scale: 1.2,
       warn: true,
