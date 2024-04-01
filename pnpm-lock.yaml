@@ -117,7 +117,7 @@ devDependencies:
     version: 3.0.14
   '@tsconfig/node18':
     specifier: ^18.2.2
-    version: 18.2.2
+    version: 18.2.4
   '@types/jsdom':
     specifier: ^21.1.6
     version: 21.1.6
@@ -4301,8 +4301,8 @@ packages:
     engines: {node: '>= 10'}
     dev: true
 
-  /@tsconfig/node18@18.2.2:
-    resolution: {integrity: sha512-d6McJeGsuoRlwWZmVIeE8CUA27lu6jLjvv1JzqmpsytOYYbVi1tHZEnwCNVOXnj4pyLvneZlFlpXUK+X9wBWyw==}
+  /@tsconfig/node18@18.2.4:
+    resolution: {integrity: sha512-5xxU8vVs9/FNcvm3gE07fPbn9tl6tqGGWA9tSlwsUEkBxtRnTsNmwrV8gasZ9F/EobaSv9+nu8AxUKccw77JpQ==}
     dev: true
 
   /@tufjs/canonical-json@2.0.0:
