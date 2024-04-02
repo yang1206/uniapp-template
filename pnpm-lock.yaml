@@ -156,7 +156,7 @@ devDependencies:
     version: 0.2.15(@types/lodash-es@4.17.12)(lodash-es@4.17.21)(lodash@4.17.21)(typescript@5.3.3)(vitest@0.34.6)
   '@uni-helper/volar-service-uni-pages':
     specifier: ^0.2.14
-    version: 0.2.14
+    version: 0.2.15
   '@unocss/eslint-config':
     specifier: ^0.58.5
     version: 0.58.5(eslint@8.57.0)(typescript@5.3.3)
@@ -3930,7 +3930,7 @@ packages:
       agent-base: 7.1.0
       http-proxy-agent: 7.0.0
       https-proxy-agent: 7.0.2
-      lru-cache: 10.0.1
+      lru-cache: 10.2.0
       socks-proxy-agent: 8.0.2
     transitivePeerDependencies:
       - supports-color
@@ -3962,7 +3962,7 @@ packages:
     engines: {node: ^16.14.0 || >=18.0.0}
     dependencies:
       '@npmcli/promise-spawn': 7.0.0
-      lru-cache: 10.0.1
+      lru-cache: 10.2.0
       npm-pick-manifest: 9.0.0
       proc-log: 3.0.0
       promise-inflight: 1.0.1
@@ -3987,8 +3987,8 @@ packages:
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
     dependencies:
       '@npmcli/name-from-folder': 2.0.0
-      glob: 10.3.5
-      minimatch: 9.0.3
+      glob: 10.3.12
+      minimatch: 9.0.4
       read-package-json-fast: 3.0.2
     dev: true
 
@@ -4298,7 +4298,7 @@ packages:
     engines: {node: ^16.14.0 || >=18.0.0}
     dependencies:
       '@tufjs/canonical-json': 2.0.0
-      minimatch: 9.0.3
+      minimatch: 9.0.4
     dev: true
 
   /@types/babel__core@7.20.5:
@@ -4379,6 +4379,10 @@ packages:
 
   /@types/json-schema@7.0.12:
     resolution: {integrity: sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA==}
+    dev: true
+
+  /@types/json-schema@7.0.15:
+    resolution: {integrity: sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==}
     dev: true
 
   /@types/lodash-es@4.17.12:
@@ -4771,7 +4775,7 @@ packages:
       eslint: ^7.0.0 || ^8.0.0
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.57.0)
-      '@types/json-schema': 7.0.12
+      '@types/json-schema': 7.0.15
       '@types/semver': 7.5.0
       '@typescript-eslint/scope-manager': 6.11.0
       '@typescript-eslint/types': 6.11.0
@@ -4790,7 +4794,7 @@ packages:
       eslint: ^7.0.0 || ^8.0.0
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.57.0)
-      '@types/json-schema': 7.0.12
+      '@types/json-schema': 7.0.15
       '@types/semver': 7.5.0
       '@typescript-eslint/scope-manager': 6.14.0
       '@typescript-eslint/types': 6.14.0
@@ -4828,7 +4832,7 @@ packages:
       eslint: ^7.0.0 || ^8.0.0
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@8.57.0)
-      '@types/json-schema': 7.0.12
+      '@types/json-schema': 7.0.15
       '@types/semver': 7.5.0
       '@typescript-eslint/scope-manager': 6.8.0
       '@typescript-eslint/types': 6.8.0
@@ -4899,8 +4903,8 @@ packages:
       - vitest
     dev: true
 
-  /@uni-helper/pages-json-schema@0.2.14:
-    resolution: {integrity: sha512-XSiPh5NKMa+IdL3qOjL4UT7u7AwFPZvLpK8bucKdrv3BDdmyd+8r1HQptxYjlzmi6La5hdkNGeUra0Ki+Bw66Q==}
+  /@uni-helper/pages-json-schema@0.2.15:
+    resolution: {integrity: sha512-gq0AToyJlSB0yASmXFb46R8zewkeuozYrm2kMuhUy1PbJ5W5JxIYvKmAnUijWXTcgD//QWaMr55SnHk7OfsLzg==}
     dev: true
 
   /@uni-helper/uni-app-types@0.5.12(typescript@5.3.3):
@@ -5104,12 +5108,12 @@ packages:
       - vitest
     dev: true
 
-  /@uni-helper/volar-service-uni-pages@0.2.14:
-    resolution: {integrity: sha512-ZnuIcWgWEbd0bp0IlbMB2uBFkpOrMG+dK7R9cLNsiupBQPfyT/O1hdaI3pL+YvE2VrWgDHPkUtfbaC8eFqRytQ==}
+  /@uni-helper/volar-service-uni-pages@0.2.15:
+    resolution: {integrity: sha512-Aw+9Tn2miUyj1ZMT+2P/AuhdRtKLqMhTHUgiWr6hlJpI6eIQGGfUi4D5P+O7z0HXTbVLraJJUJ1Q/V/rYWv5hQ==}
     dependencies:
-      '@uni-helper/pages-json-schema': 0.2.14
+      '@uni-helper/pages-json-schema': 0.2.15
       ts-json-schema-generator: 1.5.0
-      vscode-json-languageservice: 5.3.9
+      vscode-json-languageservice: 5.3.10
       vscode-languageserver-textdocument: 1.0.11
       yaml-language-server: 1.14.0
     dev: true
@@ -6871,7 +6875,7 @@ packages:
     dependencies:
       '@npmcli/fs': 3.1.0
       fs-minipass: 3.0.3
-      glob: 10.3.5
+      glob: 10.3.12
       lru-cache: 7.18.3
       minipass: 7.0.3
       minipass-collect: 1.0.2
@@ -6889,8 +6893,8 @@ packages:
     dependencies:
       '@npmcli/fs': 3.1.0
       fs-minipass: 3.0.3
-      glob: 10.3.5
-      lru-cache: 10.0.1
+      glob: 10.3.12
+      lru-cache: 10.2.0
       minipass: 7.0.3
       minipass-collect: 1.0.2
       minipass-flush: 1.0.5
@@ -8273,7 +8277,7 @@ packages:
     dependencies:
       '@typescript-eslint/utils': 6.14.0(eslint@8.57.0)(typescript@5.3.3)
       eslint: 8.57.0
-      minimatch: 9.0.3
+      minimatch: 9.0.4
       natural-compare-lite: 1.4.0
       vue-eslint-parser: 9.3.2(eslint@8.57.0)
     transitivePeerDependencies:
@@ -9069,28 +9073,16 @@ packages:
       is-glob: 4.0.3
     dev: true
 
-  /glob@10.3.10:
-    resolution: {integrity: sha512-fa46+tv1Ak0UPK1TOy/pZrIybNNt4HCv7SDzwyfiOZkvZLEbjsZkJBPtDHVshZjbecAoAGSC20MjLDG/qr679g==}
+  /glob@10.3.12:
+    resolution: {integrity: sha512-TCNv8vJ+xz4QiqTpfOJA7HvYv+tNIRHKfUWw/q+v2jdgN4ebz+KY9tGx5J4rHP0o84mNP+ApH66HRX8us3Khqg==}
     engines: {node: '>=16 || 14 >=14.17'}
     hasBin: true
     dependencies:
       foreground-child: 3.1.1
       jackspeak: 2.3.6
-      minimatch: 9.0.3
-      minipass: 7.0.3
-      path-scurry: 1.10.1
-    dev: true
-
-  /glob@10.3.5:
-    resolution: {integrity: sha512-bYUpUD7XDEHI4Q2O5a7PXGvyw4deKR70kHiDxzQbe925wbZknhOzUt2xBgTkYL6RBcVeXYuD9iNYeqoWbBZQnA==}
-    engines: {node: '>=16 || 14 >=14.17'}
-    hasBin: true
-    dependencies:
-      foreground-child: 3.1.1
-      jackspeak: 2.3.3
-      minimatch: 9.0.3
-      minipass: 7.0.3
-      path-scurry: 1.10.1
+      minimatch: 9.0.4
+      minipass: 7.0.4
+      path-scurry: 1.10.2
     dev: true
 
   /glob@7.2.3:
@@ -9280,7 +9272,7 @@ packages:
     resolution: {integrity: sha512-+K84LB1DYwMHoHSgaOY/Jfhw3ucPmSET5v98Ke/HdNSw4a0UktWzyW1mjhjpuxxTqOOsfWT/7iVshHmVZ4IpOA==}
     engines: {node: ^16.14.0 || >=18.0.0}
     dependencies:
-      lru-cache: 10.0.1
+      lru-cache: 10.2.0
     dev: true
 
   /html-encoding-sniffer@2.0.1:
@@ -9431,7 +9423,7 @@ packages:
     resolution: {integrity: sha512-C7FfFoTA+bI10qfeydT8aZbvr91vAEU+2W5BZUlzPec47oNb07SsOfwYrtxuvOYdUApPP/Qlh4DtAO51Ekk2QA==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
     dependencies:
-      minimatch: 9.0.3
+      minimatch: 9.0.4
     dev: true
 
   /ignore@5.2.4:
@@ -9803,15 +9795,6 @@ packages:
     dependencies:
       html-escaper: 2.0.2
       istanbul-lib-report: 3.0.1
-    dev: true
-
-  /jackspeak@2.3.3:
-    resolution: {integrity: sha512-R2bUw+kVZFS/h1AZqBKrSgDmdmjApzgY0AlCPumopFiAlbUxE2gf+SCuBzQ0cP5hHmUmFYF5yw55T97Th5Kstg==}
-    engines: {node: '>=14'}
-    dependencies:
-      '@isaacs/cliui': 8.0.2
-    optionalDependencies:
-      '@pkgjs/parseargs': 0.11.0
     dev: true
 
   /jackspeak@2.3.6:
@@ -10744,8 +10727,8 @@ packages:
       tslib: 2.6.2
     dev: false
 
-  /lru-cache@10.0.1:
-    resolution: {integrity: sha512-IJ4uwUTi2qCccrioU6g9g/5rvvVl13bsdczUUcqbciD9iLr095yj8DQKdObriEvuNSx325N1rV1O0sJFszx75g==}
+  /lru-cache@10.2.0:
+    resolution: {integrity: sha512-2bIM8x+VAf6JT4bKAljS1qUWgMsqZRPGJS6FSahIMPVvctcNhyVp7AJu7quxOW9jwkryBReKZY5tY5JYv2n/7Q==}
     engines: {node: 14 || >=16.14}
     dev: true
 
@@ -11024,6 +11007,13 @@ packages:
     engines: {node: '>=16 || 14 >=14.17'}
     dependencies:
       brace-expansion: 2.0.1
+    dev: true
+
+  /minimatch@9.0.4:
+    resolution: {integrity: sha512-KqWh+VchfxcMNRAJjj2tnsSJdNbHsVgnkBhTNrW7AjVo6OvLtxw8zfT9oLw1JSohlFzJ8jCoTgaoXvJ+kHt6fw==}
+    engines: {node: '>=16 || 14 >=14.17'}
+    dependencies:
+      brace-expansion: 2.0.1
 
   /minimist-options@4.1.0:
     resolution: {integrity: sha512-Q4r8ghd80yhO/0j1O3B2BjweX3fiHg9cdOwjJd2J76Q135c+NDxGCqdYKQ1SKBuFfgWbAUzBfvYjPUEeNgqN1A==}
@@ -11097,6 +11087,11 @@ packages:
 
   /minipass@7.0.3:
     resolution: {integrity: sha512-LhbbwCfz3vsb12j/WkWQPZfKTsgqIe1Nf/ti1pKjYESGLHIVjWU96G9/ljLH4F9mWNVhlQOm0VySdAWzf05dpg==}
+    engines: {node: '>=16 || 14 >=14.17'}
+    dev: true
+
+  /minipass@7.0.4:
+    resolution: {integrity: sha512-jYofLM5Dam9279rdkWzqHozUo4ybjdZmCsDHePy5V/PbBcVMiSZR97gmAy45aqi8CK1lG2ECd356FU86avfwUQ==}
     engines: {node: '>=16 || 14 >=14.17'}
     dev: true
 
@@ -11683,12 +11678,12 @@ packages:
   /path-parse@1.0.7:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
 
-  /path-scurry@1.10.1:
-    resolution: {integrity: sha512-MkhCqzzBEpPvxxQ71Md0b1Kk51W01lrYvlMzSUaIzNsODdd7mqhiimSZlr+VegAz5Z6Vzt9Xg2ttE//XBhH3EQ==}
+  /path-scurry@1.10.2:
+    resolution: {integrity: sha512-7xTavNy5RQXnsjANvVvMkEjvloOinkAjv/Z6Ildz9v2RinZ4SBKTWFOVRbaF8p0vpHnyjV/UwNDdKuUv6M5qcA==}
     engines: {node: '>=16 || 14 >=14.17'}
     dependencies:
-      lru-cache: 10.0.1
-      minipass: 7.0.3
+      lru-cache: 10.2.0
+      minipass: 7.0.4
     dev: true
 
   /path-to-regexp@0.1.7:
@@ -12044,11 +12039,6 @@ packages:
     resolution: {integrity: sha512-E/ZsdU4HLs/68gYzgGTkMicWTLPdAftJLfJFlLUAAKZGkStNU72sZjT66SnMDVOfOWY/YAoiD7Jxa9iHvngcag==}
     dev: true
 
-  /punycode@2.3.0:
-    resolution: {integrity: sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==}
-    engines: {node: '>=6'}
-    dev: true
-
   /punycode@2.3.1:
     resolution: {integrity: sha512-vYt7UD1U9Wg6138shLtLOvdAu+8DsC/ilFtEVHcH+wydcSpNE20AfSOduf6MkRFahL5FY7X1oU7nKVZFtfq8Fg==}
     engines: {node: '>=6'}
@@ -12133,7 +12123,7 @@ packages:
     resolution: {integrity: sha512-uL4Z10OKV4p6vbdvIXB+OzhInYtIozl/VxUBPgNkBuUi2DeRonnuspmaVAMcrkmfjKGNmRndyQAbE7/AmzGwFg==}
     engines: {node: ^16.14.0 || >=18.0.0}
     dependencies:
-      glob: 10.3.5
+      glob: 10.3.12
       json-parse-even-better-errors: 3.0.0
       normalize-package-data: 6.0.0
       npm-normalize-package-bin: 3.0.1
@@ -12342,7 +12332,7 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
-      glob: 10.3.10
+      glob: 10.3.12
     dev: true
 
   /rollup@3.29.2:
@@ -13268,7 +13258,7 @@ packages:
     engines: {node: '>=6'}
     dependencies:
       psl: 1.9.0
-      punycode: 2.3.0
+      punycode: 2.3.1
       universalify: 0.2.0
       url-parse: 1.5.10
     dev: true
@@ -13306,7 +13296,7 @@ packages:
     engines: {node: '>=10.0.0'}
     hasBin: true
     dependencies:
-      '@types/json-schema': 7.0.12
+      '@types/json-schema': 7.0.15
       commander: 11.1.0
       glob: 8.1.0
       json5: 2.2.3
@@ -13627,7 +13617,7 @@ packages:
       fast-glob: 3.3.2
       local-pkg: 0.5.0
       magic-string: 0.30.7
-      minimatch: 9.0.3
+      minimatch: 9.0.4
       unimport: 3.6.1
       unplugin: 1.5.1
     transitivePeerDependencies:
@@ -13815,7 +13805,7 @@ packages:
   /uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
     dependencies:
-      punycode: 2.3.0
+      punycode: 2.3.1
     dev: true
 
   /url-parse@1.5.10:
@@ -14016,13 +14006,13 @@ packages:
     dependencies:
       jsonc-parser: 3.2.1
       vscode-languageserver-textdocument: 1.0.11
-      vscode-languageserver-types: 3.17.3
+      vscode-languageserver-types: 3.17.5
       vscode-nls: 5.2.0
-      vscode-uri: 3.0.7
+      vscode-uri: 3.0.8
     dev: true
 
-  /vscode-json-languageservice@5.3.9:
-    resolution: {integrity: sha512-0IcymTw0ZYX5Zcx+7KLLwTRvg0FzXUVnM1hrUH+sPhqEX0fHGg2h5UUOSp1f8ydGS7/xxzlFI3TR01yaHs6Y0Q==}
+  /vscode-json-languageservice@5.3.10:
+    resolution: {integrity: sha512-KlbUYaer3DAnsVyRtgg/MhXOu4TTwY8TjaZYRY7Mt80zSpmvbmd58YT4Wq2ZiqHzdioD6lAvRSxhSCL0DvVY8Q==}
     dependencies:
       '@vscode/l10n': 0.0.18
       jsonc-parser: 3.2.1
@@ -14051,10 +14041,6 @@ packages:
     resolution: {integrity: sha512-k8luDIWJWyenLc5ToFQQMaSrqCHiLwyKPHKPQZ5zz21vM+vIVUSvsRpcbiECH4WR88K2XZqc4ScRcZ7nk/jbeA==}
     dev: true
 
-  /vscode-languageserver-types@3.17.3:
-    resolution: {integrity: sha512-SYU4z1dL0PyIMd4Vj8YOqFvHu7Hz/enbWtpfnVbJHU4Nd1YNYx8u0ennumc6h48GQNeOLxmwySmnADouT/AuZA==}
-    dev: true
-
   /vscode-languageserver-types@3.17.5:
     resolution: {integrity: sha512-Ld1VelNuX9pdF39h2Hgaeb5hEZM2Z3jUrrMgWQAu82jMtZp7p3vJT3BzToKtZI7NgQssZje5o0zryOrhQvzQAg==}
     dev: true
@@ -14068,10 +14054,6 @@ packages:
 
   /vscode-nls@5.2.0:
     resolution: {integrity: sha512-RAaHx7B14ZU04EU31pT+rKz2/zSl7xMsfIZuo8pd+KZO6PXtQmpevpq3vxvWNcrGbdmhM/rr5Uw5Mz+NBfhVng==}
-    dev: true
-
-  /vscode-uri@3.0.7:
-    resolution: {integrity: sha512-eOpPHogvorZRobNqJGhapa0JdwaxpjVvyBp0QIUMRMSf8ZAlqOdEquKuRmw9Qwu0qXtJIWqFtMkmvJjUZmMjVA==}
     dev: true
 
   /vscode-uri@3.0.8:
@@ -14520,9 +14502,9 @@ packages:
       vscode-json-languageservice: 4.1.8
       vscode-languageserver: 7.0.0
       vscode-languageserver-textdocument: 1.0.11
-      vscode-languageserver-types: 3.17.3
+      vscode-languageserver-types: 3.17.5
       vscode-nls: 5.2.0
-      vscode-uri: 3.0.7
+      vscode-uri: 3.0.8
       yaml: 2.2.2
     optionalDependencies:
       prettier: 2.8.7
