@@ -138,7 +138,7 @@ devDependencies:
     version: 0.1.1(typescript@5.3.3)(vitest@0.34.6)
   '@uni-helper/uni-ui-types':
     specifier: ^0.5.11
-    version: 0.5.11(@uni-helper/uni-app-types@0.5.12)(typescript@5.3.3)
+    version: 0.5.13(@uni-helper/uni-app-types@0.5.12)(typescript@5.3.3)
   '@uni-helper/unocss-preset-uni':
     specifier: ^0.2.7
     version: 0.2.7(postcss@8.4.38)(typescript@5.3.3)(vite@4.5.2)(vitest@0.34.6)
@@ -4985,8 +4985,8 @@ packages:
       vue: 3.3.11(typescript@5.3.3)
     dev: false
 
-  /@uni-helper/uni-ui-types@0.5.11(@uni-helper/uni-app-types@0.5.12)(typescript@5.3.3):
-    resolution: {integrity: sha512-tGX4llyJBdq9TmNjmZYKu4eueUWUU0F/YgZeTWDgVCmlgYGavhcUL7R+I0Uxe5hGoqFXkNf0ZnmG/WFZWfK/HQ==}
+  /@uni-helper/uni-ui-types@0.5.13(@uni-helper/uni-app-types@0.5.12)(typescript@5.3.3):
+    resolution: {integrity: sha512-jEOwxc9ISjtNz+noYP0eB+SKHCWqvep7z6DkiSrVbwvbNxZjQOnjga4fdXtrP4TIe41mtjcHIwKVz+sEB0B6KQ==}
     engines: {node: '>=14.18'}
     peerDependencies:
       '@uni-helper/uni-app-types': ^0.5.1
