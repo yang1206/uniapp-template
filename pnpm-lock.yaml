@@ -126,7 +126,7 @@ devDependencies:
     version: 20.11.30
   '@types/qs':
     specifier: ^6.9.10
-    version: 6.9.10
+    version: 6.9.14
   '@uni-helper/eslint-config':
     specifier: ^0.0.6
     version: 0.0.6(@vue/compiler-sfc@3.4.21)(eslint@8.57.0)(typescript@5.3.3)(vitest@0.34.6)
@@ -4447,8 +4447,8 @@ packages:
     resolution: {integrity: sha512-+68kP9yzs4LMp7VNh8gdzMSPZFL44MLGqiHWvttYJe+6qnuVr4Ek9wSBQoveqY/r+LwjCcU29kNVkidwim+kYA==}
     dev: true
 
-  /@types/qs@6.9.10:
-    resolution: {integrity: sha512-3Gnx08Ns1sEoCrWssEgTSJs/rsT2vhGP+Ja9cnnk9k4ALxinORlQneLXFeFKOTJMOeZUFD1s7w+w2AphTpvzZw==}
+  /@types/qs@6.9.14:
+    resolution: {integrity: sha512-5khscbd3SwWMhFqylJBLQ0zIu7c1K6Vz0uBIt915BI3zV0q1nfjRQD3RqSBcPaO6PHEF4ov/t9y89fSiyThlPA==}
     dev: true
 
   /@types/semver@7.5.0:
