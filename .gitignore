@@ -7,6 +7,13 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+typings/auto-import.d.ts
+typings/uni-pages.d.ts
+typings/components.d.ts
+
+src/pages.json
+src/manifest.json
+
 node_modules
 .DS_Store
 dist
