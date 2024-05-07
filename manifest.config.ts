@@ -21,6 +21,7 @@ export default defineManifestConfig({
     lazyCodeLoading: 'requiredComponents',
     darkmode: true,
     themeLocation: 'theme.json',
+    libVersion: '3.4.3',
 
   },
   /* 5+App特有相关 */
@@ -49,15 +50,12 @@ export default defineManifestConfig({
           '<uses-permission android:name="android.permission.VIBRATE"/>',
           '<uses-permission android:name="android.permission.READ_LOGS"/>',
           '<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>',
-          '<uses-feature android:name="android.hardware.camera.autofocus"/>',
           '<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>',
           '<uses-permission android:name="android.permission.CAMERA"/>',
           '<uses-permission android:name="android.permission.GET_ACCOUNTS"/>',
           '<uses-permission android:name="android.permission.READ_PHONE_STATE"/>',
           '<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>',
           '<uses-permission android:name="android.permission.WAKE_LOCK"/>',
-          '<uses-permission android:name="android.permission.FLASHLIGHT"/>',
-          '<uses-feature android:name="android.hardware.camera"/>',
           '<uses-permission android:name="android.permission.WRITE_SETTINGS"/>',
         ],
       },

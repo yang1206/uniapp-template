@@ -21,10 +21,10 @@ export default defineUniPages({
   tabBar: {
     // 支付宝小程序自定义需要特殊处理
     custom: true,
-    color: `rgba(${255}, ${255}, ${255}, ${0})`,
-    selectedColor: `rgba(${255}, ${255}, ${255}, ${0})`,
-    backgroundColor: `rgba(${255}, ${255}, ${255}, ${0})`,
-    borderStyle: isMpWeixin ? 'white' : 'rgb(255,255,255,0)',
+    color: `rgba(${255}, ${255}, ${255}, ${0})` as any,
+    selectedColor: `rgba(${255}, ${255}, ${255}, ${0})` as any,
+    backgroundColor: `rgba(${255}, ${255}, ${255}, ${0})` as any,
+    borderStyle: isMpWeixin ? 'white' : 'rgb(255,255,255,0)' as any,
     list: [
       {
         pagePath: 'pages/index/index',
