@@ -1,14 +1,59 @@
 {
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "compilerOptions": {
+    "composite": true,
+    "lib": [
+      "ESNext",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "useDefineForClassFields": true,
+    "baseUrl": ".",
+    "module": "esnext",
+    "moduleResolution": "Bundler",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "~/*": [
+        "./*"
+      ]
     },
-    {
-      "path": "./tsconfig.node.json"
-    },
-    {
-      "path": "./tsconfig.vitest.json"
-    }
+    "resolveJsonModule": true,
+    "types": [
+      "@dcloudio/types",
+      "@mini-types/alipay",
+      "miniprogram-api-typings",
+      "@uni-helper/uni-app-types",
+      "@uni-helper/uni-ui-types",
+      "unplugin-vue-macros/macros-global",
+      "nutui-uniapp/global.d.ts",
+      "unplugin-icons/types/vue",
+      "type-fest",
+      "vite/client",
+    ],
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    // See <https://github.com/vuejs/vue-cli/pull/5688>
+    "skipLibCheck": true
+  },
+  "include": [
+    "typings/components.d.ts",
+    "**/*.d.ts",
+    "**/*.tsx",
+    "**/*.ts",
+    "**/*.vue",
+    "package.json"
   ],
-  "files": []
+  "exclude": [
+    "src/**/__tests__/*",
+    "src/**/*.test.*"
+  ],
+  "vueCompilerOptions": {
+    "plugins": [
+      "@uni-helper/uni-app-types/volar-plugin"
+    ]
+  }
 }

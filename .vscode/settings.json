@@ -3,15 +3,12 @@
     "vite.config.*": "pages.config.*, manifest.config.*, unocss.config.*, volar.config.*, *.env, .env.*"
   },
   "typescript.tsdk": "node_modules/typescript/lib",
-  "cSpell.words": [
-    "alova"
-  ],
   // "editor.defaultFormatter": "esbenp.prettier-vscode",
   "references.preferredLocation": "peek",
   "eslint.experimental.useFlatConfig": true,
   // Auto fix
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "always",
+    "source.fixAll.eslint": "explicit",
     "source.organizeImports": "never"
   },
   // Silent the stylistic rules in you IDE, but still auto fix them
@@ -66,5 +63,5 @@
     "jsonc",
     "yaml"
   ],
-  "vue.codeActions.enabled": false,
+  "vue.codeActions.enabled": false
 }
