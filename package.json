@@ -181,7 +181,7 @@
     "@dcloudio/uni-automator": "3.0.0-alpha-4020220240624001",
     "@dcloudio/uni-cli-shared": "3.0.0-alpha-4020220240624001",
     "@dcloudio/uni-stacktracey": "3.0.0-alpha-4020220240624001",
-    "@dcloudio/vite-plugin-uni": "3.0.0-alpha-4020220240624001",
+    "@dcloudio/vite-plugin-uni": "3.0.0-alpha-4020320240629001",
     "@iconify/json": "^2.2.222",
     "@mini-types/alipay": "^3.0.14",
     "@types/node": "^20.14.9",
