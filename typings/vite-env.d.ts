@@ -1,6 +1,6 @@
 /// <reference types="vite/client" />
 
-type ProxyType = 'dev' | 'test' | 'prod';
+type ProxyType = 'dev' | 'test' | 'prod'
 
 interface ProxyConfig {
   /** 匹配代理的前缀，接口地址匹配到此前缀将代理的target地址 */
@@ -23,9 +23,8 @@ interface ImportMeta {
   readonly env: ImportMetaEnv
 }
 
-
 declare module '*.vue' {
-  import { DefineComponent } from 'vue'
+  import type { DefineComponent } from 'vue'
   // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/ban-types
   const component: DefineComponent<{}, {}, any>
   export default component

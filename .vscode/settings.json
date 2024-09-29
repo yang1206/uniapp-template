@@ -5,7 +5,6 @@
   "typescript.tsdk": "node_modules/typescript/lib",
   // "editor.defaultFormatter": "esbenp.prettier-vscode",
   "references.preferredLocation": "peek",
-  "eslint.experimental.useFlatConfig": true,
   // Auto fix
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",

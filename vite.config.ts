@@ -1,5 +1,5 @@
-import process from 'node:process'
 import type { ConfigEnv } from 'vite'
+import process from 'node:process'
 import { defineConfig, loadEnv } from 'vite'
 import { createViteProxy } from './build/config'
 import { setupVitePlugins } from './build/plugins'
@@ -36,6 +36,7 @@ export default defineConfig((configEnv: ConfigEnv) => {
     css: {
       preprocessorOptions: {
         scss: {
+          api: 'modern-compiler',
           additionalData: `@import '@/styles/variables.scss';`,
         },
       },

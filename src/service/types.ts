@@ -24,13 +24,13 @@ interface IUnError_<T = IUnResponseData_, D = IUnRequestData_> extends UnError<T
 }
 
 export type {
-  IUnShowErrorType_ as IUnShowErrorType,
-  IUnRequestData_ as IUnRequestData,
-  IUnResponseData_ as IUnResponseData,
   IUnConfig_ as IUnConfig,
-  IUnResponse_ as IUnResponse,
-  IUnPromise_ as IUnPromise,
   IUnError_ as IUnError,
+  IUnPromise_ as IUnPromise,
+  IUnRequestData_ as IUnRequestData,
+  IUnResponse_ as IUnResponse,
+  IUnResponseData_ as IUnResponseData,
+  IUnShowErrorType_ as IUnShowErrorType,
 }
 
 declare global {

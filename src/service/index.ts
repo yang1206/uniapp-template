@@ -1,10 +1,10 @@
+import type { VueQueryPluginOptions } from '@tanstack/vue-query'
+import { DefaultBaseUrl, DefaultHeaders } from '@/constants'
+import { useAuthStore } from '@/store'
+import { MutationCache, QueryCache, QueryClient } from '@tanstack/vue-query'
 import un from '@uni-helper/uni-network'
 import qs from 'qs'
-import { MutationCache, QueryCache, QueryClient } from '@tanstack/vue-query'
-import type { VueQueryPluginOptions } from '@tanstack/vue-query'
 import { showNetworkError } from './helper'
-import { useAuthStore } from '@/store'
-import { DefaultBaseUrl, DefaultHeaders } from '@/constants'
 
 const instance = un.create({
   baseUrl: DefaultBaseUrl,

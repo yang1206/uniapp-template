@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { useQuery } from '@tanstack/vue-query'
 import { fetchGitHubRepo } from '@/api'
+import { useQuery } from '@tanstack/vue-query'
 
 // #ifdef MP
 const repo = ref('yang1206/uniapp-template')
