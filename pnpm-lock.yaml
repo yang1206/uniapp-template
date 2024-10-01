@@ -12,8 +12,8 @@ importers:
         specifier: 3.0.0-4020420240722002
         version: 3.0.0-4020420240722002(@dcloudio/types@3.4.12)(@vueuse/core@9.13.0(vue@3.4.38(typescript@5.5.4)))(postcss@8.4.32)(rollup@4.22.5)(vue@3.4.38(typescript@5.5.4))(webpack-sources@3.2.3)
       '@dcloudio/uni-app-harmony':
-        specifier: 3.0.0-4020420240722002
-        version: 3.0.0-4020420240722002(@vueuse/core@9.13.0(vue@3.4.38(typescript@5.5.4)))(postcss@8.4.32)(rollup@4.22.5)(vite@5.4.8(@types/node@20.16.10)(sass@1.79.4)(terser@5.16.8))(vue@3.4.38(typescript@5.5.4))(webpack-sources@3.2.3)
+        specifier: 3.0.0-alpha-4010320240415001
+        version: 3.0.0-alpha-4010320240415001
       '@dcloudio/uni-app-plus':
         specifier: 3.0.0-4020420240722002
         version: 3.0.0-4020420240722002(@vueuse/core@9.13.0(vue@3.4.38(typescript@5.5.4)))(postcss@8.4.32)(rollup@4.22.5)(vite@5.4.8(@types/node@20.16.10)(sass@1.79.4)(terser@5.16.8))(vue@3.4.38(typescript@5.5.4))(webpack-sources@3.2.3)
@@ -1074,8 +1074,8 @@ packages:
   '@dcloudio/types@3.4.12':
     resolution: {integrity: sha512-xSFDhBCm4bqdRBO9mBj7wySz7fzOv9sMeK9VMI21tHvZbT2bIdGMU5o+kJ/J4H2+N5+7SW2kDY+aIzZs94DAOg==}
 
-  '@dcloudio/uni-app-harmony@3.0.0-4020420240722002':
-    resolution: {integrity: sha512-oa2oaLLgU3L9oOy2mrxUui9tEqof/2pWzhrx8RfNLBDcbIvN5gXEkxAJopx2WbCvHqM/0fx0GofM52vFWPvJUA==}
+  '@dcloudio/uni-app-harmony@3.0.0-alpha-4010320240415001':
+    resolution: {integrity: sha512-xu48+F/HSHqzVB2ScBSsrfUHRB5nADg2p1MNX7/gSDw5AMh97mVE4rF/MQ7PUUlGDWE9I/gJPl6tt9JXw1Tjew==}
 
   '@dcloudio/uni-app-plus@3.0.0-4020420240722002':
     resolution: {integrity: sha512-Gbd/tXSZqHlGUrryZ1NCTkv/MJH/tkspnLdofPpTdk3+dUCO6/5cd05UrCYLQaqSqGwHL4VUZedyZoL0YqolbA==}
@@ -2055,55 +2055,46 @@ packages:
     resolution: {integrity: sha512-PNqXYmdNFyWNg0ma5LdY8wP+eQfdvyaBAojAXgO7/gs0Q/6TQJVXAXe8gwW9URjbS0YAammur0fynYGiWsKlXw==}
     cpu: [arm]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-arm-musleabihf@4.22.5':
     resolution: {integrity: sha512-kSSCZOKz3HqlrEuwKd9TYv7vxPYD77vHSUvM2y0YaTGnFc8AdI5TTQRrM1yIp3tXCKrSL9A7JLoILjtad5t8pQ==}
     cpu: [arm]
     os: [linux]
-    libc: [musl]
 
   '@rollup/rollup-linux-arm64-gnu@4.22.5':
     resolution: {integrity: sha512-oTXQeJHRbOnwRnRffb6bmqmUugz0glXaPyspp4gbQOPVApdpRrY/j7KP3lr7M8kTfQTyrBUzFjj5EuHAhqH4/w==}
     cpu: [arm64]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-arm64-musl@4.22.5':
     resolution: {integrity: sha512-qnOTIIs6tIGFKCHdhYitgC2XQ2X25InIbZFor5wh+mALH84qnFHvc+vmWUpyX97B0hNvwNUL4B+MB8vJvH65Fw==}
     cpu: [arm64]
     os: [linux]
-    libc: [musl]
 
   '@rollup/rollup-linux-powerpc64le-gnu@4.22.5':
     resolution: {integrity: sha512-TMYu+DUdNlgBXING13rHSfUc3Ky5nLPbWs4bFnT+R6Vu3OvXkTkixvvBKk8uO4MT5Ab6lC3U7x8S8El2q5o56w==}
     cpu: [ppc64]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-riscv64-gnu@4.22.5':
     resolution: {integrity: sha512-PTQq1Kz22ZRvuhr3uURH+U/Q/a0pbxJoICGSprNLAoBEkyD3Sh9qP5I0Asn0y0wejXQBbsVMRZRxlbGFD9OK4A==}
     cpu: [riscv64]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-s390x-gnu@4.22.5':
     resolution: {integrity: sha512-bR5nCojtpuMss6TDEmf/jnBnzlo+6n1UhgwqUvRoe4VIotC7FG1IKkyJbwsT7JDsF2jxR+NTnuOwiGv0hLyDoQ==}
     cpu: [s390x]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-x64-gnu@4.22.5':
     resolution: {integrity: sha512-N0jPPhHjGShcB9/XXZQWuWBKZQnC1F36Ce3sDqWpujsGjDz/CQtOL9LgTrJ+rJC8MJeesMWrMWVLKKNR/tMOCA==}
     cpu: [x64]
     os: [linux]
-    libc: [glibc]
 
   '@rollup/rollup-linux-x64-musl@4.22.5':
     resolution: {integrity: sha512-uBa2e28ohzNNwjr6Uxm4XyaA1M/8aTgfF2T7UIlElLaeXkgpmIJ2EitVNQxjO9xLLLy60YqAgKn/AqSpCUkE9g==}
     cpu: [x64]
     os: [linux]
-    libc: [musl]
 
   '@rollup/rollup-win32-arm64-msvc@4.22.5':
     resolution: {integrity: sha512-RXT8S1HP8AFN/Kr3tg4fuYrNxZ/pZf1HemC5Tsddc6HzgGnJm0+Lh5rAHJkDuW3StI0ynNXukidROMXYl6ew8w==}
@@ -8030,23 +8021,14 @@ snapshots:
 
   '@dcloudio/types@3.4.12': {}
 
-  '@dcloudio/uni-app-harmony@3.0.0-4020420240722002(@vueuse/core@9.13.0(vue@3.4.38(typescript@5.5.4)))(postcss@8.4.32)(rollup@4.22.5)(vite@5.4.8(@types/node@20.16.10)(sass@1.79.4)(terser@5.16.8))(vue@3.4.38(typescript@5.5.4))(webpack-sources@3.2.3)':
+  '@dcloudio/uni-app-harmony@3.0.0-alpha-4010320240415001':
     dependencies:
-      '@dcloudio/uni-app-vite': 3.0.0-4020420240722002(@vueuse/core@9.13.0(vue@3.4.38(typescript@5.5.4)))(postcss@8.4.32)(rollup@4.22.5)(vite@5.4.8(@types/node@20.16.10)(sass@1.79.4)(terser@5.16.8))(vue@3.4.38(typescript@5.5.4))(webpack-sources@3.2.3)
       debug: 4.3.7
       fs-extra: 10.1.0
       licia: 1.38.0
       postcss-selector-parser: 6.1.2
     transitivePeerDependencies:
-      - '@nuxt/kit'
-      - '@vueuse/core'
-      - postcss
-      - rollup
       - supports-color
-      - ts-node
-      - vite
-      - vue
-      - webpack-sources
 
   '@dcloudio/uni-app-plus@3.0.0-4020420240722002(@vueuse/core@9.13.0(vue@3.4.38(typescript@5.5.4)))(postcss@8.4.32)(rollup@4.22.5)(vite@5.4.8(@types/node@20.16.10)(sass@1.79.4)(terser@5.16.8))(vue@3.4.38(typescript@5.5.4))(webpack-sources@3.2.3)':
     dependencies:
@@ -14611,7 +14593,7 @@ snapshots:
       known-css-properties: 0.29.0
       postcss-media-query-parser: 0.2.3
       postcss-resolve-nested-selector: 0.1.1
-      postcss-selector-parser: 6.1.0
+      postcss-selector-parser: 6.1.2
       postcss-value-parser: 4.2.0
       stylelint: 16.9.0(typescript@5.5.4)
 
