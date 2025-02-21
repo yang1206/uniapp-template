@@ -21,7 +21,7 @@ import { setupStore } from '@/store'
 import { createSSRApp } from 'vue'
 import App from './App.vue'
 import { dayjsPlugin, vueQueryPlugin } from './plugins'
-import 'virtual:uno.css'
+import 'uno.css'
 import '@/styles/reset.css'
 
 export function createApp() {

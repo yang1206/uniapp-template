@@ -1,15 +1,15 @@
-import { resolve } from 'node:path'
 import type { PluginOption } from 'vite'
+import { resolve } from 'node:path'
 import uni from '@dcloudio/vite-plugin-uni'
-import unocss from 'unocss/vite'
-import uniPages from '@uni-helper/vite-plugin-uni-pages'
-import uniManifest from '@uni-helper/vite-plugin-uni-manifest'
 import uniLayouts from '@uni-helper/vite-plugin-uni-layouts'
-import restart from 'vite-plugin-restart'
+import uniManifest from '@uni-helper/vite-plugin-uni-manifest'
+import uniPages from '@uni-helper/vite-plugin-uni-pages'
+import uniPolyfill from 'vite-plugin-uni-polyfill'
 import { getRootPath } from '../utils'
 import unplugins from './unplugin'
 
-export function setupVitePlugins(): PluginOption[] {
+export async function setupVitePlugins(): Promise<PluginOption[]> {
+  const unocss = (await import('unocss/vite')).default
   const plugins = [
     uniManifest({ minify: true }),
     uniPages({
@@ -19,13 +19,7 @@ export function setupVitePlugins(): PluginOption[] {
     }),
     uniLayouts(),
     ...unplugins,
-    restart({
-      restart: [
-        'pages.config.[jt]s',
-        'manifest.config.[jt]s',
-        'uno.config.[jt]s',
-      ],
-    }),
+    uniPolyfill(),
     unocss(),
     uni({
       vueOptions: {},
