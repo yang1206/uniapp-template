@@ -179,7 +179,7 @@
     "@commitlint/config-conventional": "^19.7.1",
     "@dcloudio/types": "^3.4.14",
     "@dcloudio/uni-automator": "3.0.0-alpha-4050220250208001",
-    "@dcloudio/uni-cli-shared": "3.0.0-alpha-4050220250208001",
+    "@dcloudio/uni-cli-shared": "3.0.0-alpha-5020220260725001",
     "@dcloudio/uni-stacktracey": "3.0.0-alpha-4050220250208001",
     "@dcloudio/vite-plugin-uni": "3.0.0-alpha-4050220250208001",
     "@iconify/json": "^2.2.309",
